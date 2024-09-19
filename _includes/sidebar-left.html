@@ -31,7 +31,7 @@
         <ul>
           {% assign categories_list = site.categories %}
           {% for category in categories_list %}
-            <li><a href="{{page.permalink}}{{ category[0] | camelcase | url_escape | strip | replace: '-', '_' }}/Week1">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
+            <li><a href="{{post.permalink}}{{ category[0] | camelcase | url_escape | strip | replace: '-', '_' }}/Week1">{{ category[0] | camelcase }} ({{ category[1].size }})</a></li>
           {% endfor %}
           {% assign categories_list = nil %}
         </ul>
