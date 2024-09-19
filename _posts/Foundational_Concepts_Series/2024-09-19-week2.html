@@ -1,0 +1,123 @@
+---
+title: 'Week 2: WCAG 2.0 Overview &  Key Requirements'
+layout: series
+subtitle: Essential Guidelines for Web Accessibility
+date: '2024-09-17 09:04:14 -0600'
+category: [Foundational-Concepts]
+permalink: "/ChatterRoom/Foundational_Concepts_Series/Week2"
+infographic: WCAG_Week2_Infographic.jpg
+is_series: true
+series_title: Foundational Concepts
+---
+
+<div class="row">
+  <div class="col-12">
+    <h2>{{page.subtitle}}</h2>
+    <p>In today's digital world, creating an inclusive online experience is not just a best practice; it's a responsibility.
+    Web Content Accessibility Guidelines (WCAG) 2.0 is the foundation for web accessibility, offering a roadmap for making websites
+    usable by everyone, including people with disabilities. Whether you're a business owner, a web developer, or a content creator,
+    understanding WCAG 2.0 is essential for ensuring your site is accessible and compliant.</p>
+
+    <h3>What is WCAG 2.0?</h3>
+    <p>WCAG 2.0, published by the World Wide Web Consortium (W3C) in 2008, is a set of international guidelines for making web content more accessible. It provides web developers, designers, and content creators with recommendations to make digital products accessible to a broader range of users, including individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities.</p>
+
+    <p>These guidelines are organized into four main principles, often referred to as the POUR model, which ensure that websites are Perceivable, Operable, Understandable, and Robust. These four principles form the backbone of web accessibility, shaping the requirements in WCAG 2.0.</p>
+  </div>
+
+  <hr />
+
+  <div class="col-md-10 col-lg-7">
+    <h2>Key Requirements of WCAG 2.0</h2>
+    <dl>
+      <dt class="fs-5">Perceivable</dt>
+      <dd>Information and user interface components must be presented in ways that users can perceive. This is especially important for those with sensory disabilities, such as vision or hearing impairments. To meet this requirement, consider the following:
+        <ul>
+          <li><strong>Text Alternatives:</strong> Provide text for all non-text content like images, audio files, or videos. This includes alternative (alt) text for images, captions for videos, and transcripts for audio content.</li>
+          <li><strong>Adaptable Content:</strong> Ensure content can be presented in different ways (e.g., larger text size or different contrast levels) without losing meaning or functionality.</li>
+          <li><strong>Distinguishable Content:</strong> Make it easier for users to see and hear content. Examples include using sufficient contrast between text and its background and providing clear audio options.</li>
+        </ul>
+      </dd>
+
+      <dt class="fs-5">Operable</dt>
+      <dd>User interface elements and navigation should be operable by all users. This includes those who use assistive technologies or non-standard input devices like screen readers, voice commands, or keyboards instead of a mouse. To make your site operable:
+        <ul>
+          <li><strong>Keyboard Accessibility:</strong> Ensure that all functionality can be accessed using just a keyboard. Some users cannot use a mouse, and web content should be fully navigable without it.</li>
+          <li><strong>Enough Time:</strong> Give users enough time to read and use content. For example, provide mechanisms to adjust time limits or extend the duration of timed activities.</li>
+          <li><strong>Seizure Prevention:</strong> Avoid content that could trigger seizures, such as flashing images or animations.</li>
+          <li><strong>Navigation Aids:</strong> Ensure the site has clear navigation and offers ways to help users find content or determine where they are on the site, like providing breadcrumbs or consistent navigation menus.</li>
+        </ul>
+      </dd>
+
+      <dt class="fs-5">Understandable</dt>
+      <dd>The information and operation of the user interface must be understandable for all users. This includes ensuring content is clear, easy to read, and predictable in its behavior.
+        <ul>
+          <li><strong>Readable Content:</strong> Use language that is easy to understand. Avoid jargon or complex terms where possible, and if you must use them, provide explanations or links to further information.</li>
+          <li>Predictable Functionality: Ensure web pages behave in predictable ways. For example, navigation should be consistent across the site, and users should be notified if a link opens a new window or performs a different action than expected.</li>
+          <li><strong>Input Assistance:</strong> Help users avoid and correct mistakes, especially in forms. For example, provide clear labels, error messages, and guidance on how to fix input errors.</li>
+        </ul>
+      </dd>
+
+      <dt class="fs-5">Robust</dt>
+      <dd>Content must be robust enough to be interpreted by a wide range of user agents, including assistive technologies. As technology evolves, websites must remain accessible to newer devices and tools.
+        <ul>
+          <li><strong>Compatible Code:</strong> Ensure HTML and other coding languages follow proper standards, so they are accessible to assistive technologies like screen readers and other adaptive devices.</li>
+          <li><strong>Assistive Technologies:</strong> Test your website with a variety of devices and software to ensure that it is accessible across different platforms.</li>
+        </ul>
+      </dd>
+    </dl>
+
+    <hr />
+
+    <h3>Why WCAG 2.0 Compliance Matters</h3>
+    <p>WCAG 2.0 isn't just about legal compliance—it’s about providing a positive user experience for all visitors. In many countries, including the United States, the UK, and EU nations, failure to comply with web accessibility standards can lead to legal action, especially under laws like the Americans with Disabilities Act (ADA) and the European Accessibility Act.</p>
+
+    <p>But beyond the legal risk, making your website accessible means opening your digital doors to millions of potential customers who may have otherwise struggled to use your site. Accessible websites are more user-friendly for everyone, which can boost customer satisfaction, improve SEO, and enhance your brand's reputation as inclusive and socially responsible.</p>
+  </div>
+
+  <div class="col-md-11 col-lg-5 mt-5 pt5">
+    <!-- infographic -->
+    <aside class="infograph">
+      <div class="row">
+        <div class="col-md-12 d-none d-md-none d-lg-block">
+            <!--[infographic]-->
+            <img src="{{site.url}}/assets/img/blog-series/{{ page.infographic }}" alt="" width="525px" class="img-thumbnail">
+        </div>
+      </div>
+      <!-- [Buttons]-->
+      <div class="row chat-buttons">
+        <div class="col-12">
+          <p class="text-center mt-2"><a href="{{site.url}}/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>
+          <!--<a href="localhost:4567" class="btn btn-md btn-danger ms-4">Join The Discussion</a></p>-->
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-12">
+    <h2>Key Takeaways for Ensuring WCAG 2.0 Compliance</h2>
+    <p>The WCAG 2.2 update introduces several key success criteria aimed at making the web more accessible than ever:</p>
+
+    <ol>
+      <li><strong>Perceivable:</strong> Make sure that everyone can perceive the information on your website, whether through alt text for images or captions for videos.</li>
+      <li><strong>Operable:</strong> Ensure all site functions can be navigated using a keyboard and make navigation intuitive and accessible for all users.</li>
+      <li><strong>Understandable:</strong> Simplify the language, make functionality predictable, and offer user assistance where needed.</li>
+      <li><strong>Robust</strong> Ensure your website's code is compatible with a wide range of devices and assistive technologies.</li>
+    </ol>
+
+    <p>By following WCAG 2.0 guidelines, you create a more inclusive online environment and ensure that your website is usable by as many people as possible. Web accessibility is not a trend—it’s a necessity for a more equitable digital world. So, start making these updates today and be part of the movement toward a more accessible web.</p>
+
+    <p>Are you unsure about where to begin with web accessibility? Our team at Kaffeinated Kodemonkey is here to help. We specialize in accessibility audits, website design, and Proof of Compliance certification to ensure your site meets WCAG standards. Reach out to us today and make your website accessible to everyone!</p>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-1"></div>
+ <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
+   <h3 class="fs-4">Get a Free Guide & Stay Updated on Web Accessibility!</h3>
+   <p>Stay informed about the latest in web accessibility? Join our newsletter today and receive a free Web Accessibility Checklist to help you get started on making your site WCAG-compliant. Don't miss out on expert tips, updates, and exclusive resources—sign up now!!</p>
+ </div>
+</div>
