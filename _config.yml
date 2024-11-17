@@ -29,7 +29,7 @@ url: "https://www.kaffeinatedkodemonkey.com" # the base hostname & protocol for 
 twitter_username: jekyllrb
 github_username:  jekyll
 A11yDev: Heather Welsh
-TTID: #TT-2311-03604
+TTID: TT-2311-03604
 
 # Build settings
 theme: minima
