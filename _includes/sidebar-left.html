@@ -1,17 +1,12 @@
-<div class="row">
-  <div class="col">
-    {% assign url = page.url %}
-    {% assign pcat = page.categories %}
-    <h4>{{pcat}}</h4>
 
-    <ul>
-      {% for page in site.pages %}
-        {% if page.categories contains pcat %}
-          <li><a href="{{site.url}}{{page.url}}" {% if page.url == url %} class="isDisabled" {% endif %}>{{page.title}}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+{% assign url = page.url %}
+{% assign pcat = page.categories %}
+<h2>{{pcat}}</h2>
 
-    <hr />
-  </div>
-</div>
+<ul>
+  {% for page in site.pages %}
+    {% if page.categories contains pcat %}
+      <li><a href="{{site.url}}{{page.url}}" {% if page.url == url %} class="isDisabled" {% endif %}>{{page.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
