@@ -75,7 +75,7 @@
  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
  --bs-body-font-family: var(--bs-font-sans-serif);
- --bs-body-font-size: 1rem;
+ --bs-body-font-size: 1.2rem;
  --bs-body-font-weight: 400;
  --bs-body-line-height: 1.5;
  --bs-body-color: #212529;
@@ -133,7 +133,7 @@ body {
   /*font-family: "Open Sans", sans-serif;*/
   font-family: "Open-Dyslexic", Dyslexie;
   color: #444444;
-  font-size: 100%;
+  font-size: 1.25em;
 }
 
 a {
@@ -154,18 +154,6 @@ h4,
 h5,
 h6 {
   font-family: "Jost", sans-serif;
-}
-
-h1 {
-  font-size: 2.5em;
-}
-
-h2{
-  font-size: 1.875em;
-}
-
-p {
-  font-size: 1.25em;
 }
 
 .text-orange{
@@ -337,7 +325,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
@@ -503,7 +491,7 @@ p {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 18px;
   color: #37517e;
 }
 
@@ -587,7 +575,7 @@ p {
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
@@ -747,6 +735,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -802,7 +791,7 @@ section {
   position: absolute;
   left: 0;
   top: 2px;
-  font-size: 20px;
+  font-size: 18px;
   color: #47b2e4;
   line-height: 1;
 }
@@ -874,7 +863,7 @@ section {
 }
 
 .why-us .accordion-list li+li {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .why-us .accordion-list li {
@@ -1059,7 +1048,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -1093,7 +1082,7 @@ section {
 .cta .cta-btn {
   font-family: "Jost", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
@@ -1816,7 +1805,7 @@ section {
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .breadcrumbs ol li+li {
@@ -1834,7 +1823,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
+  font-size: 16px;
   background: #37517e;
 }
 
@@ -1911,7 +1900,7 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
