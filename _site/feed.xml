@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-23T22:41:34-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated kodemonkey</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Week 4: WCAG 2.1 &amp;amp; 2.2</title><link href="http://localhost:4000/ChatterRoom/WCAG_Series/Week4" rel="alternate" type="text/html" title="Week 4: WCAG 2.1 &amp;amp; 2.2" /><published>2024-11-04T05:04:14-07:00</published><updated>2024-11-04T05:04:14-07:00</updated><id>http://localhost:4000/ChatterRoom/WCAG_Series/week4</id><content type="html" xml:base="http://localhost:4000/ChatterRoom/WCAG_Series/Week4"><![CDATA[<div class="row">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-23T22:44:58-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated kodemonkey</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Week 4: WCAG 2.1 &amp;amp; 2.2</title><link href="http://localhost:4000/ChatterRoom/WCAG_Series/Week4" rel="alternate" type="text/html" title="Week 4: WCAG 2.1 &amp;amp; 2.2" /><published>2024-11-04T05:04:14-07:00</published><updated>2024-11-04T05:04:14-07:00</updated><id>http://localhost:4000/ChatterRoom/WCAG_Series/week4</id><content type="html" xml:base="http://localhost:4000/ChatterRoom/WCAG_Series/Week4"><![CDATA[<div class="row">
   <div class="col-12">
     <h2>Enhancing Accessibility for All</h2>
     <p>In today’s digital age, accessibility has become a crucial element of user experience design. The Web Content Accessibility Guidelines (WCAG)
@@ -46,13 +46,13 @@
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-            <img src="http://localhost:4000/assets/img/blog-series/WCAG_Week4_Infograph.png" alt="" width="525px" class="img-thumbnail">
+            <img src="/assets/img/blog-series/WCAG_Week4_Infograph.png" alt="" width="525px" class="img-thumbnail">
         </div>
       </div>
       <!-- [Buttons]-->
       <div class="row chat-buttons">
         <div class="col-12">
-          <!--<p class="text-center mt-2"><a href="http://localhost:4000/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a> -->
+          <!--<p class="text-center mt-2"><a href="/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a> -->
           <!--<a href="localhost:4567" class="btn btn-md btn-danger ms-4">Join The Discussion</a></p>-->
         </div>
       </div>
@@ -96,7 +96,7 @@
 <!--<div class="row text-center">
   <div class="col-1"></div>
  <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
-   <h3 class="fs-4"><a href="http://localhost:4000/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
+   <h3 class="fs-4"><a href="/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
    <p>Stay informed about the latest in web accessibility? Join our newsletter today and receive a free Web Accessibility Checklist to help you get started on making your site WCAG-compliant. Don't miss out on expert tips, updates, and exclusive resources—sign up now!!</p>
  </div>
 </div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[Enhancing Accessibility for All In today’s digital age, accessibility has become a crucial element of user experience design. The Web Content Accessibility Guidelines (WCAG) have been developed to ensure that websites and applications are usable by everyone, including individuals with disabilities. Over the years, WCAG has evolved, with updates in WCAG 2.1 and WCAG 2.2 that address emerging accessibility challenges.]]></summary></entry><entry><title type="html">Week 3: Pour Web Design</title><link href="http://localhost:4000/ChatterRoom/WCAG_Series/Week3" rel="alternate" type="text/html" title="Week 3: Pour Web Design" /><published>2024-11-03T08:04:14-07:00</published><updated>2024-11-03T08:04:14-07:00</updated><id>http://localhost:4000/ChatterRoom/WCAG_Series/week3</id><content type="html" xml:base="http://localhost:4000/ChatterRoom/WCAG_Series/Week3"><![CDATA[<div class="row">
@@ -168,13 +168,13 @@
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-            <img src="http://localhost:4000/assets/img/blog-series/WCAG_Week3_Infograph.jpg" alt="" width="89%" class="img-thumbnail">
+            <img src="/assets/img/blog-series/WCAG_Week3_Infograph.jpg" alt="" width="89%" class="img-thumbnail">
         </div>
       </div>
       <!-- [Buttons]-->
       <div class="row chat-buttons">
         <div class="col-12">
-          <!-- <p class="text-center mt-2"><a href="http://localhost:4000/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->www
+          <!-- <p class="text-center mt-2"><a href="/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->www
           <!--<a href="localhost:4567" class="btn btn-md btn-danger ms-4">Join The Discussion</a></p>-->
         </div>
       </div>
@@ -221,7 +221,7 @@
   <div class="col-1"></div>
  <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
    <h3 class="fs-4">Unlock Your Free WCAG 2.2 Integration Checklist!</h3>
-   <p><a href="http://localhost:4000/blog/Free-WCAG-2.2-Integration-Checklist.html"><strong><i>Join our newsletter today</i></strong></a>
+   <p><a href="/blog/Free-WCAG-2.2-Integration-Checklist.html"><strong><i>Join our newsletter today</i></strong></a>
     and receive instant access to our comprehensive WCAG 2.2 Integration Checklist. Stay updated with the
    latest web accessibility insights, tips, and best practices. Don't miss out—subscribe now and make your website accessible to all!</p>
  </div>
@@ -310,13 +310,13 @@
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-            <img src="http://localhost:4000//assets/img/blog-series/WCAG_Week2_Infograph.jpg" alt="" width="100%" class="img-thumbnail">
+            <img src="//assets/img/blog-series/WCAG_Week2_Infograph.jpg" alt="" width="100%" class="img-thumbnail">
         </div>
       </div>
       <!-- [Buttons]-->
       <div class="row chat-buttons">
         <div class="col-12">
-          <!--<p class="text-center mt-2"><a href="http://localhost:4000/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->
+          <!--<p class="text-center mt-2"><a href="/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->
           <!--<a href="localhost:4567" class="btn btn-md btn-danger ms-4">Join The ChatterRoom</a></p>-->
         </div>
       </div>
@@ -361,7 +361,7 @@
 <!--<div class="row text-center">
   <div class="col-1"></div>
  <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
-   <h3 class="fs-4"><a href="http://localhost:4000/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
+   <h3 class="fs-4"><a href="/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
    <p>Stay informed about the latest in web accessibility? Join our newsletter today and receive a free Web Accessibility Checklist to help you get started on making your site WCAG-compliant. Don't miss out on expert tips, updates, and exclusive resources—sign up now!!</p>
  </div>
 </div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[A11y Overview In today’s digital age, designing an inclusive online experience is not only a best practice but a responsibility. Many small and medium-sized enterprises (SMEs) are focusing on the latest Web Content Accessibility Guidelines (WCAG) 2.2 standards, yet understanding earlier guidelines, such as WCAG 2.0, is essential to fully grasp the evolution and importance of accessibility. In our previous post, we explored the history of web accessibility; today, we’ll dive into WCAG 2.0, the foundational guidelines that shaped current standards.]]></summary></entry><entry><title type="html">Week 1: The Evolution of Accessibility Guidelines</title><link href="http://localhost:4000/ChatterRoom/WCAG_Series/Week1" rel="alternate" type="text/html" title="Week 1: The Evolution of Accessibility Guidelines" /><published>2024-11-01T02:04:14-06:00</published><updated>2024-11-01T02:04:14-06:00</updated><id>http://localhost:4000/ChatterRoom/WCAG_Series/week1</id><content type="html" xml:base="http://localhost:4000/ChatterRoom/WCAG_Series/Week1"><![CDATA[<div class="row">
@@ -440,7 +440,7 @@
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-              <img src="http://localhost:4000/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" width="68%" class="ms-5 img-thumbnail">
+              <img src="/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" width="68%" class="ms-5 img-thumbnail">
         </div>
       </div>
       <div class="row mx-1 mt-3">
@@ -448,7 +448,7 @@
           <!-- [Buttons]-->
           <div class="row chat-buttons">
             <div class="col-12">
-              <!-- <p><a href="http://localhost:4000/newsletter" class="btn btn-lg btn-danger">Join Our Newsletter</a> -->
+              <!-- <p><a href="/newsletter" class="btn btn-lg btn-danger">Join Our Newsletter</a> -->
               </div>
             </div>
           </div>
@@ -525,7 +525,7 @@
 <!--<div class="row text-center">
   <div class="col-1"></div>
  <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
-   <h3 class="fs-4"><a href="http://localhost:4000/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
+   <h3 class="fs-4"><a href="/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
    <p>Stay informed about the latest in web accessibility? Join our newsletter today and receive a free Web Accessibility Checklist to help you get started on making your site WCAG-compliant. Don't miss out on expert tips, updates, and exclusive resources—sign up now!!</p>
  </div>
 </div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[A Journey Through WCAG In today’s digital-first world, accessibility is more than a feature—it’s a core principle of web design that ensures everyone can connect, learn, work, and access online services. Whether for social media, online shopping, or essential information, the internet is woven into modern life, making digital accessibility crucial. It’s about more than just meeting legal requirements; it’s about creating a web that’s inclusive and welcoming for all.]]></summary></entry></feed>
