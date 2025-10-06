@@ -132,7 +132,7 @@
 body {
   /*font-family: "Open Sans", sans-serif;*/
   font-family: "Open-Dyslexic", Dyslexie;
-  color: #444444;
+  /*color: #444444;*/
   font-size: 1.25em;
 }
 
@@ -152,8 +152,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Jost", sans-serif;
+h6,
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .text-orange{
@@ -230,6 +231,25 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Custom Colors
+--------------------------------------------------------------*/
+.mcolor {
+  background: rgba(40, 58, 90, 0.9);
+}
+
+.btn-warning {
+    background-color: #DC6733; /* Your desired background color */
+    border-color: #DC6733;    /* Your desired border color */
+    color: white;             /* Text color for contrast */
+}
+
+.btn-warning:hover {
+    background-color: #d5461d; /* Darker shade for hover effect */
+    border-color: #d5461d;
+    color: white;
 }
 
 /*--------------------------------------------------------------

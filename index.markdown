@@ -11,11 +11,8 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: homepage-template
-title: Kaffeinated Kodemonkey - Web Accessibility
-subtitle: Web Accessibility Agency
-description: Boost local governments' ROI by applying WCAG POUR principles, web accessibility guidelines (WCAG), and Section 508 for ADA compliance success.
+title: A11y Solutions for Edu & Gov
+description: Empowering education and government with WCAG 2.2, Section 508, and ADA-compliant web accessibility solutions. Our A11y Audits, Monitoring, and POUR Web Design ensure inclusive digital experiences.
 og-image: KKM-Logo.png
 url: /
-redirect_from:
-  - /Clients
 ---
