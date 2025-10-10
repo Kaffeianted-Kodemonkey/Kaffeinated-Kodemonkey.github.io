@@ -3,21 +3,24 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!--<meta name="robots" content="noindex">-->
 
-  <title>{{ site.title }} - {{ page.title }}</title>
-  <!-- <meta name="description" content="{% if page.title == 'WCAG and ADA Compliance' %}{{ site.description }}{% else %}{{page.description}}{% endif %}"> -->
-  <meta name="description" content="{{page.description}}">
-  <meta content="" name="keywords">
-
   <!-- OG meta tags -->
-  <meta property="og:title" content="{{ site.title }} | {{ page.title }}" >
-  <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ page.og-image }}">
-  <meta property="og:description" content="{{ page.description }}" />
+  {% if page.categories == "Services" %}
+    <meta property="og:title" content="{{ site.title }} | {{ page.title }}" >
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ page.image }}">
+    <meta property="og:description" content="{{ page.description }}" />
+  {% else %}
+    <meta title = "{{ site.title }} | {{ page.title }}" >
+    <meta url="{{ site.baseurl }}{{ page.url }}">
+    {% if page.image != null %}<meta image="{{ site.baseurl }}/assets/img/{{ page.image }}">{% endif %}
+    <meta description="{{ page.description }}" />
+  {% endif %}
+
 
   <!-- Favicons -->
   <link href="{{ site.baseurl }}/assets/img/Kaffeinated_Kodemonkey_Favicon.png" rel="icon">
   <!-- <link href="{{ site.baseurl }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-  <link rel="canonical" href="{{ site.baseurl }}/{{ page.url }}" />
+  <link rel="canonical" href="{{ site.baseurl }}/{{ page.og-url }}" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
