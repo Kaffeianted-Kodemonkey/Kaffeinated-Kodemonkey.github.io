@@ -13,6 +13,6 @@
 layout: homepage-template
 title: {{ site.title }}
 description: Empowering education and government with WCAG 2.2, Section 508, and ADA-compliant web accessibility solutions. Our A11y Audits, Monitoring, and POUR Web Design ensure inclusive digital experiences.
-og-image: KKM-Logo.png
-og-url: https://www.kaffeinatedkodemonkey.com/
+image: KKM-Logo.png
+url: https://www.kaffeinatedkodemonkey.com/
 ---
