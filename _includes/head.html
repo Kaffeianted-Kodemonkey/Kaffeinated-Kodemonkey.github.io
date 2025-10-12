@@ -4,7 +4,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <meta title="{{ site.title }} | {{ page.title }}">
-  <meta url="{{ site.baseurl }}{{ page.url }}">
+  <meta url="{{ site.url }}{{ page.url }}">
   {% if page.image != null %}<meta image="{{ site.baseurl }}/assets/img/{{ page.image }}">{% endif %}
   <meta description="{{ page.description }}" />
   <!--<meta name="robots" content="noindex">-->
@@ -22,7 +22,7 @@
   <!-- Favicons -->
   <link href="{{ site.baseurl }}/assets/img/Kaffeinated_Kodemonkey_Favicon.png" rel="icon">
   <!-- <link href="{{ site.baseurl }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-  <link rel="canonical" href="{{ site.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
