@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kaffeinated Kodemonkey
+title: Kaffeinated kodemonkey
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   HB21-1110 & ADA compliance audits for CO gov & edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!
