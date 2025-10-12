@@ -12,7 +12,7 @@
 
 layout: homepage-template
 title: Web Accessibility
-description: "Empowering education and government with WCAG, Section 508, and ADA-compliant web accessibility solutions. Our Accessibility Audit with a focus on Digital Accessibility we offer the following services: Accessibility Audit, Accessibility Monitoring, and Accessibility Web Design ensuring an inclusive digital experience."
+description: "Empowering education & gov with WCAG, Section 508, ADA-compliant solutions. Accessibility Audit, Monitoring, Web Design ensure inclusive digital experience, focusing on Digital Accessibility, HB21-1110, VPAT, Website Compliance."
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
 ---
