@@ -12,7 +12,7 @@
 
 layout: homepage-template
 title: Web Accessibility
-description: Empowering education and government with WCAG 2.2, Section 508, and ADA-compliant web accessibility solutions. Our A11y Audits, Monitoring, and POUR Web Design ensure inclusive digital experiences.
+description: Empowering education and government with WCAG 2.2, Section 508, Section 508, and ADA-compliant web accessibility solutions, including ADA Compliance and HB21-1110 standards. Our Accessibility Audits, Accessibility Audit, Accessibility Monitoring, Accessibility Monitoring, and Accessible Web Design, Accessible Web Design ensure inclusive digital experiences with a focus on Digital Accessibility, Digital Accessibility, VPAT, VPAT, Web Accessibility, Web Accessibility, and Website Compliance, Website Compliance.
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
 ---
