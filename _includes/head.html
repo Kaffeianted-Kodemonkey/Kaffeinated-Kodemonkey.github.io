@@ -12,7 +12,7 @@
   <!-- OG meta tags -->
   {% if page.title == "Web Accessibility" or page.categories == "Services" %}
     <meta property="og:title" content="{{ site.title }}{% if page.title != site.title %} | {{ page.title }}{% endif %}" >
-    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ page.image }}">
     <meta property="og:description" content="{{ page.description }}" />
 
