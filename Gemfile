@@ -43,3 +43,5 @@ gem "rake"
 ruby "3.3.4"
 
 gem 'puma'
+
+gem 'jekyll-seo-tag'

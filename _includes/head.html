@@ -1,22 +1,8 @@
 <head>
-  <title>{{ site.title }}{% if page.title != site.title %} | {{ page.title }}{% endif %}</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <meta title="{{ site.title }} | {{ page.title }}">
-  <meta url="{{ site.url }}{{ page.url }}">
-  {% if page.image != null %}<meta image="{{ site.baseurl }}/assets/img/{{ page.image }}">{% endif %}
-  <meta description="{{ page.description }}">
-  <!--<meta name="robots" content="noindex">-->
-
-  <!-- OG meta tags -->
-  {% if page.title == "Web Accessibility" or page.categories == "Services" %}
-    <meta property="og:title" content="{{ site.title }}{% if page.title != site.title %} | {{ page.title }}{% endif %}" >
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ page.image }}">
-    <meta property="og:description" content="{{ page.description }}">
-
-  {% endif %}
+  {% seo %}
 
   <!-- Favicons -->
   <link href="{{ site.baseurl }}/assets/img/Kaffeinated_Kodemonkey_Favicon.png" rel="icon">
