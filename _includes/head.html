@@ -10,7 +10,8 @@
     <meta property="og:image" content="{{ site.baseurl }}/assets/img/{{ page.image }}">
     <meta property="og:description" content="{{ page.description }}" />
   {% else %}
-    <meta title = "{{ site.title }} | {{ page.title }}" >
+    {% if page.title == null %}<meta title = "{{ site.title }}" >
+    {% else %}<meta title = "{{ site.title }} | {{ page.title }}" >{% endif %}
     <meta url="{{ site.baseurl }}{{ page.url }}">
     {% if page.image != null %}<meta image="{{ site.baseurl }}/assets/img/{{ page.image }}">{% endif %}
     <meta description="{{ page.description }}" />
