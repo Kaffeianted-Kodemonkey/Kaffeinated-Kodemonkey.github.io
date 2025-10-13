@@ -11,7 +11,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: homepage-template
-title: Web Accessibility
+title: Web Accessibility Audit Services
 description: "Empower education & gov with WCAG, Section 508, ADA solutions. Accessibility Audit, Monitoring, Web Design, ensure inclusive digital experience, with Digital Accessibility, HB21-1110, VPAT, Website Compliance."
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
