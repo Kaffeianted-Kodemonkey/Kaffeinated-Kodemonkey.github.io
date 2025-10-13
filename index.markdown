@@ -12,7 +12,7 @@
 
 layout: homepage-template
 title: Web Accessibility Audit Services
-description: "Empower education & gov with WCAG, 508, ADA solutions. Accessibility Audit, Monitoring, Web Design for inclusive digital experience, HB21-1110, VPAT, Compliance."
+description: "Empowering education & goverment with WCAG, 508, ADA solutions for HB21-1110, VPAT, Accessibility Audits and Web Design."
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
 ---
