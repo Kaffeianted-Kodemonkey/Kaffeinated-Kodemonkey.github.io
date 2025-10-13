@@ -12,7 +12,7 @@
 
 layout: homepage-template
 title: Web Accessibility
-description: "Empowering education & gov with WCAG, Section 508, ADA-compliant solutions. Accessibility Audit, Monitoring, Web Design ensure inclusive digital experience, focusing on Digital Accessibility, HB21-1110, VPAT, Website Compliance."
+description: "Empowering education & gov with Web Content Accessibility Guidelines (WCAG), Section 508, ADA-compliant solutions. Accessibility Audit, Monitoring, Web Design ensure inclusive digital experience, focusing on Digital Accessibility, HB21-1110, VPAT, Website Compliance."
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
 ---
