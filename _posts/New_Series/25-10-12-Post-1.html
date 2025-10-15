@@ -1,0 +1,157 @@
+---
+title: 'Understanding WCAG Conformance Levels'
+layout: series
+subtitle: A Beginner’s Guide
+date: '2025-10-12'
+category: [WCAG_Series]
+permalink: "ChatterRoom/WCAG_Series/post1"
+infographic: assets/img/blog-series/WCAG_Week1_Infograph.jpg
+is_series: true
+series_title: WCAG Series
+---
+
+<div class="row mt-3">
+  <div class="col-7">
+    <h2>{{page.subtitle}}</h2>
+    <p>The Web Content Accessibility Guidelines (WCAG) 2.1, developed by the World Wide Web Consortium (W3C), provide a
+    framework to make web content accessible to people with disabilities. Conformance to WCAG means your website meets
+    specific accessibility standards, ensuring it’s usable by as many people as possible, including those with visual,
+    auditory, motor, or cognitive impairments. Conformance is measured through success criteria, which are specific,
+    testable requirements organized under WCAG’s four principles: Perceivable, Operable, Understandable, and Robust.
+    These criteria are grouped into three conformance levels—A, AA, and AAA—each representing a progressively higher
+    standard of accessibility. Understanding these levels helps you prioritize accessibility improvements and meet
+    legal requirements, such as those in Section 508 or the Americans with Disabilities Act (ADA). In this post, we’ll
+    break down the three WCAG conformance levels, explain their differences, and share practical tips to get started.
+    This is part of our series on WCAG 2.1, so check out our other posts for more on making your website inclusive!</p>
+
+    <h2>The Three WCAG Conformance Levels</h2>
+
+    <div class="accordion my-3" id="accordionExample">
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Level A: The Minimum Standard
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse bg-primary " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level A is the baseline for accessibility. It includes the most basic requirements that a website must meet to be
+            minimally accessible. Think of it as the foundation—essential but not sufficient for full inclusivity.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Level A success criteria address critical barriers to access. Examples include:
+                <ul>
+                  <li>Providing text alternatives for images (e.g., alt text for screen readers).</li>
+                  <li>Ensuring all functionality is available via keyboard (e.g., no mouse-only actions).</li>
+                  <li>Avoiding content that causes seizures (e.g., no rapidly flashing elements).</li>
+                </ul>
+              <li><strong>Who it helps:</strong> Users with severe disabilities, such as those who rely on screen readers or keyboard navigation.</li>
+              <li><strong>Limitations:</strong> Level A alone doesn’t provide a great user experience for most people with disabilities. It’s a starting point, not the goal.</li>
+              <li><strong>Example:</strong> Adding alt text like alt="A smiling dog sitting on grass" to an image ensures screen reader users understand the content, meeting a Level A criterion (1.1.1 Non-text Content).</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> Meeting Level A prevents the worst accessibility failures, but it’s rarely enough for legal compliance or broad usability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Level AA: The Common Target
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level AA builds on Level A, adding requirements to make content more usable and inclusive. This is the most
+            commonly targeted level for websites, as it balances practicality with meaningful accessibility improvements.
+            Many laws, like Section 508 in the U.S., reference WCAG 2.0 or 2.1 Level AA as a standard.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Level AA addresses a wider range of disabilities and user needs. Examples include:
+                <ul>
+                  <li>Ensuring sufficient color contrast (e.g., 4.5:1 for text, making it readable for low-vision users).</li>
+                  <li>Providing captions for pre-recorded videos.</li>
+                  <li>Making navigation consistent and predictable across pages.</li>
+                </ul>
+                <li><strong>Who it helps:</strong> Users with moderate visual impairments, hearing disabilities, or those needing
+                consistent navigation (e.g., older adults or users with cognitive challenges)</li>
+                <li><strong>Why it’s popular:</strong> Level AA offers significant accessibility improvements without requiring complex changes that may be impractical for some websites.</li>
+                <li><strong>Example:</strong> Using a contrast checker to ensure your website’s text (e.g., black text on a white background) meets the 4.5:1 ratio requirement (1.4.3 Contrast Minimum).</li>
+              </ul>
+
+              <p><strong>Why it matters:</strong> Level AA is often the legal benchmark for accessibility compliance, such as for
+              government websites or businesses under ADA Title III. It’s a practical goal for most organizations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Level AAA: The Gold Standard
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level AAA is the highest level of accessibility, aiming for maximum inclusivity. It includes all Level A
+            and AA criteria, plus additional, stricter requirements. However, achieving full Level AAA conformance is
+            challenging and often impractical for most websites due to its demanding standards.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Level AAA focuses on enhancing accessibility for the widest possible audience. Examples include:
+                <ul>
+                  <li>Providing sign language interpretation for videos.</li>
+                  <li>Ensuring even higher color contrast (e.g., 7:1 for text).</li>
+                  <li>Offering extended context for complex content (e.g., simplified summaries).</li>
+                </ul>
+              <li><strong>Who it helps:</strong> Users with severe or multiple disabilities, such as those requiring highly customized interfaces or extensive accommodations.</li>
+              <li><strong>Limitations:</strong> Some Level AAA criteria, like sign language for all videos, are resource-intensive or not universally applicable. WCAG itself notes that Level AAA isn’t expected for entire websites.</li>
+              <li><strong>Example:</strong> Adding a plain-language summary to a technical article (e.g., “This article explains how solar panels work in simple terms”) to meet criterion 3.1.5 (Reading Level).</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> While full Level AAA conformance is rare, targeting specific AAA criteria can enhance user experience and demonstrate a commitment to inclusivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>How to Get Started with Conformance</h2>
+    <p>Achieving WCAG conformance involves testing your website against the success criteria for your target level.
+    Here are practical steps to begin:</p>
+
+    <ol>
+      <li><strong>Run an Accessibility Audit:</strong> Use free tools like WAVE or axe to identify issues (e.g., missing alt text, low contrast).</li>
+      <li><strong>Prioritize Fixes:</strong> Focus on Level A issues first (e.g., add keyboard support), then tackle Level AA (e.g., improve contrast).</li>
+      <li><strong>Test with Users:</strong> Involve people with disabilities to ensure real-world usability.</li>
+      <li><strong>Document Conformance:</strong> Create an Accessibility Conformance Report (ACR) using the Voluntary Product Accessibility Template (VPAT) to show compliance efforts.</li>
+    </ol>
+
+    <p><strong><span class="text-danger">Pro Tip:</span> Start small—fix one issue, like adding alt text to images, and test it with a screen
+    reader like NVDA or VoiceOver. You’ll be amazed at the impact!</strong></p>
+
+  </div>
+  <div class="col-5 ">
+    <!-- infographic -->
+    <aside class="infograph">
+      <!--[infographic]-->
+        <img src="{{site.baseurl}}/{{page.infographic}}" alt="" width="83%" class="ms-5 img-thumbnail">
+    </aside>
+  </div>
+</div>
+
+<hr />
+
+<div class="row mt-3">
+  <div class="col-12">
+    <h2>Why Conformance Matters</h2>
+    <p>Conforming to WCAG levels ensures your website is inclusive, legally compliant, and user-friendly. It reduces
+    the risk of lawsuits (e.g., under ADA Title III for businesses), improves SEO (search engines favor accessible sites),
+    and builds trust with your audience. Plus, accessibility benefits everyone—clear navigation helps distracted users,
+    captions aid in noisy environments, and keyboard support improves efficiency.</p>
+
+    <h2>What’s Next?</h2>
+    <p>Now that you understand WCAG conformance levels, you’re ready to explore the specific guidelines under each
+    principle. Our next post will dive into the Perceivable principle, showing you how to make your content accessible
+    to all senses with tips like adding alt text and captions. Stay tuned, and try running an accessibility checker on
+    your site today to see where you stand!</p>
+  </div>
+</div>
