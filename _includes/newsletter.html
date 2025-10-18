@@ -1,29 +1,87 @@
-<form action="https://caffeinatedcodemonkey.com/client-tracking/api/tickets.json" method="post" class="mt-5">
+<form id="newsletter-form" class="mt-5">
   <div class="row mb-3">
-    <label for="cname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Company Name:</label>
+    <label for="cname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Company Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="cname">
+      <input type="text" class="form-control" id="cname" name="cname" required>
     </div>
   </div>
   <div class="row mb-3">
-    <label for="fname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>First Name:</label>
+    <label for="fname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>First Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="fname">
+      <input type="text" class="form-control" id="fname" name="fname" required>
     </div>
   </div>
   <div class="row mb-3">
-    <label for="lname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Last Name:</label>
+    <label for="lname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Last Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="lname">
+      <input type="text" class="form-control" id="lname" name="lname" required>
     </div>
   </div>
-
   <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Email</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Email</label>
     <div class="col-sm-6">
-      <input type="email" class="form-control" id="inputEmail3">
+      <input type="email" class="form-control" id="inputEmail3" name="email" required>
     </div>
   </div>
+  <!-- Hidden fields for osTicket -->
+  <input type="hidden" id="subject" value="Newsletter Signup Request">
+  <input type="hidden" id="message" value="New signup from website.">
 
   <button type="submit" class="btn btn-primary">Join Newsletter</button>
 </form>
+
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  // Gather form data
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const email = document.getElementById('inputEmail3').value.trim();
+  const cname = document.getElementById('cname').value.trim();
+  const subject = document.getElementById('subject').value;
+  let message = document.getElementById('message').value;
+  message += `\n\nCompany: ${cname}\nFull Name: ${fname} ${lname}\nEmail: ${email}`;
+
+  if (!fname || !lname || !email || !cname) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  const payload = {
+    name: `${fname} ${lname}`,
+    email: email,
+    subject: subject,
+    message: message
+    // Add custom field if needed: c[1]: cname  (uncomment and adjust)
+    // e.g., if company is custom field 1: , c: { '1': cname }
+  };
+
+  try {
+    const response = await fetch('https://caffeinatedcodemonkey.com/client-tracking/api/tickets.json', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C '  // Replace with your actual API key
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    if (data.id) {
+      alert(`Success! Ticket created with ID: ${data.id}. Check your email for confirmation.`);
+      // Optional: Reset form or redirect
+      this.reset();
+    } else {
+      throw new Error('Unexpected response from server.');
+    }
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert(`Error submitting ticket: ${error.message}. Please try again or contact support.`);
+  }
+});
+</script>

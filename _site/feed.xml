@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-17T21:09:07-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">The Evolution of Web A11y</title><link href="http://localhost:4000/wcag_series/Evolution-A11y/" rel="alternate" type="text/html" title="The Evolution of Web A11y" /><published>2024-10-13T02:04:14-06:00</published><updated>2024-10-13T02:04:14-06:00</updated><id>http://localhost:4000/wcag_series/Evolution-A11y</id><content type="html" xml:base="http://localhost:4000/wcag_series/Evolution-A11y/"><![CDATA[<div class="row">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-17T22:41:04-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">The Evolution of Web A11y</title><link href="http://localhost:4000/wcag_series/Evolution-A11y/" rel="alternate" type="text/html" title="The Evolution of Web A11y" /><published>2024-10-13T02:04:14-06:00</published><updated>2024-10-13T02:04:14-06:00</updated><id>http://localhost:4000/wcag_series/Evolution-A11y</id><content type="html" xml:base="http://localhost:4000/wcag_series/Evolution-A11y/"><![CDATA[<div class="row">
   <div class="col-12">
     <h2>A Journey Through WCAG</h2>
     <p>In today’s digital-first world, accessibility is more than a feature—it’s a core principle of web design that ensures everyone can connect,
@@ -9,9 +9,13 @@
     <p>The <strong>Web Content Accessibility Guidelines (WCAG)</strong> provide a roadmap to ensure that digital experiences are accessible for everyone, regardless
     of ability. In this series, we’ll explore WCAG’s progression and how each update expanded inclusivity, advanced technology, and promoted digital
     equity.</p>
+  </div>
+</div>
 
-    <hr />
+<hr />
 
+<div class="row">
+  <div class="col">
     <h2>The Early Beginnings: WCAG 1.0 and Basic Web Accessibility</h2>
     <p>When WCAG 1.0 launched in 1999, it marked a significant step in making the internet accessible. The primary focus was on essential
     accessibility, with an emphasis on creating web content usable by people with visual impairments.</p>
@@ -66,6 +70,18 @@
 
     <p>By embracing mobile accessibility, WCAG 2.1 extended digital inclusion to users navigating unique challenges due to environment, age, or disability.</p>
 
+    <hr />
+
+    <h2>Enhanced Focus on Cognitive Accessibility: WCAG 2.2</h2>
+    <p>Launched in 2021, WCAG 2.2 introduced nine new success criteria focused on cognitive accessibility, ease of navigation, and improved authentication processes. These updates continue to simplify digital interactions and reduce the cognitive demands of web navigation.</p>
+
+    <h3 class="fs-4">Key Enhancements in WCAG 2.2:</h3>
+    <ul>
+      <li><strong>Cognitive Support:</strong> Features like memory-free authentication reduce the need for password recall, benefiting users with memory or focus challenges.</li>
+      <li><strong>Improved Navigation:</strong> Guidelines for intuitive navigation, clear form elements, and interactive features enhance the overall user experience.</li>
+    </ul>
+
+    <p>These updates reflect a commitment to designing websites that are not only accessible but also easier to use for everyone.</p>
   </div>
 
   <div class="col-md-12 col-lg-5 mt-5">
@@ -74,7 +90,7 @@
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-              <img src="/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" width="68%" class="ms-5 img-thumbnail">
+              <img src="/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" class="img-thumbnail">
         </div>
       </div>
       <div class="row mx-1 mt-3">
@@ -95,22 +111,6 @@
 
 <div class="row">
   <div class="col-12">
-    <h2>Enhanced Focus on Cognitive Accessibility: WCAG 2.2</h2>
-    <p>Launched in 2021, WCAG 2.2 introduced nine new success criteria focused on cognitive accessibility, ease of navigation, and improved authentication processes. These updates continue to simplify digital interactions and reduce the cognitive demands of web navigation.</p>
-
-    <h3 class="fs-4">Key Enhancements in WCAG 2.2:</h3>
-    <ul>
-      <li><strong>Cognitive Support:</strong> Features like memory-free authentication reduce the need for password recall, benefiting users with memory or focus challenges.</li>
-      <li><strong>Improved Navigation:</strong> Guidelines for intuitive navigation, clear form elements, and interactive features enhance the overall user experience.</li>
-    </ul>
-
-    <p>These updates reflect a commitment to designing websites that are not only accessible but also easier to use for everyone.</p>
-  </div>
-</div>
-
-<hr />
-<div class="row">
-  <div class="col-12">
     <h2>Looking Ahead: WCAG 3.0 and the Future of Accessibility</h2>
     <p>Although WCAG 2.2 represents the latest in accessibility standards, WCAG 3.0 is anticipated to bring transformative changes, adopting a
     flexible, user-centric approach to accessibility.</p>
@@ -121,13 +121,9 @@
       <li><strong>Coverage of Diverse Contexts:</strong> Accessibility will expand to cover virtual reality, voice commands, and immersive, multi-modal experiences.</li>
       <li><strong>User Experience Focus:</strong> A shift towards UX-focused guidelines that prioritize user interaction quality for all abilities.</li>
     </ul>
-  </div>
-</div>
 
-<hr />
+    <hr />    
 
-<div class="row">
-  <div class="col-12">
     <h2>The Real-World Impact of Accessibility</h2>
     <p>Accessible design doesn’t just help people with disabilities—it improves the user experience for all. For example, captions benefit those
     in noisy environments, while intuitive navigation and layouts make sites easier to use for everyone.</p>
@@ -193,7 +189,22 @@
   </div>
 </div>
 
-<hr />
+<blockquote class="blockquote mt-4 mb-5">
+  <div class="row bg-orange text-white rounded-5 p-4">
+    <div class="col align-self-center">
+      <h3><strong>Get Your Accessibility Checklist</strong></h3>
+      <p>Want a practical checklist to kickstart your WCAG and Section 508 compliance? Sign up for Kaffeinated
+      Kodemonkey’s newsletter or schedule a free consultation to access our exclusive 5-step checklist.</p>
+
+      <p>Join newsletter to receive the full A11y Checklist and start making your site inclusive today or Chat with a SME!</p>
+      <p><a href="/newsletter" class="btn btn-lg btn-primary">Join now</a> <a href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" class="btn btn-lg btn-primary">Schedule Free A11y Consultation</a></p>
+    </div>
+    <div class="col-3">
+      <img src="https://strategylaw.com/wp-content/uploads/2024/05/liability.png">
+
+    </div>
+  </div>
+</blockquote>
 
 <div class="row mt-3">
   <div class="col-7">
@@ -316,20 +327,7 @@
 
 <div class="row">
   <div class="col">
-      <blockquote class="blockquote my-4 fs-4">
-        <div class="row bg-orange text-white rounded-5 p-4">
-          <div class="col-6 align-self-center">
-            <h3><strong>Get Your Accessibility Checklist</strong></h3>
-            <p>Want a practical checklist to kickstart your WCAG and Section 508 compliance? Sign up for Kaffeinated
-            Kodemonkey’s newsletter or schedule a free consultation to access our exclusive 5-step checklist.</p>
-          </div>
-          <div class="col-6">
-            <img src="https://strategylaw.com/wp-content/uploads/2024/05/liability.png">
-            <p>Join newsletter to receive the full A11y Checklist and start making your site inclusive today or Chat with a SME!</p>
-            <p><a href="/newsletter" class="btn btn-lg btn-primary">Join now</a> <a href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" class="btn btn-lg btn-primary">Schedule Free A11y Consultation</a></p>
-          </div>
-        </div>
-      </blockquote>
+
 
 
 
