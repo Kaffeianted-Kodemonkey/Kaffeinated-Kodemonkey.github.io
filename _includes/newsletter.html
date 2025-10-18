@@ -63,7 +63,8 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C'  // Replace with your actual API key
+        //'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C'  // Local - Replace with your actual API key
+        'X-API-Key': 'AE84CD30E08CF3D22AC40C8AAA56655B'  // Live - Replace with your actual API key
       },
       body: JSON.stringify(payload)
     });
