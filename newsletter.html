@@ -1,10 +1,11 @@
 ---
-title: Newsletter
 layout: inner-pages
+title: Newsletter Signup
+subtitle: Kodemonkey Newsletter
 description: Keep informed about all things A11y and ADA Compliance
-url: "ChatterRoom/Newsletter"
+url: "newsletter/"
 resource: true
-categories: newsletter
+categories: [ChatterRoom]
 ---
 
 <!-- <div class="row">
@@ -19,14 +20,17 @@ categories: newsletter
   </div>
 </div> -->
 <div class="row">
-  <div class="col-10">
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-    <script>
-      hbspt.forms.create({
-        region: "na1",
-        portalId: "21502915",
-        formId: "5d46f3fc-d086-4dfc-80cc-afc51ff22bff"
-      });
-    </script>
+  <div class="col">
+    <h2>{{ page.subtitle }}</h2>
+    <p><strong>Welcome to the ChatterRoom</strong> ~ A place where you can learn, grow, and expand your A11y skills.</p>
+    <p>While your here you can also join the ChatterRoom full of forums where you can join a conversation or checkout our
+    knowledge base for a deeper dive into an A11y topic or criteria.</p>
+
+    <p>Currently let's get you signed up for our monthly newsletter, where we will keep you update on post events
+    and anything else that may come up in the insusty, and get you the Free Checklist.</p>
+
+    <hr/>
+
+    {% include newsletter.html %}
   </div>
 </div>

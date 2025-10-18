@@ -47,7 +47,7 @@ jekyll_admin:
 
 category-list: [Services, Policies, ADA-Compliance]
 
-permalink: /:categories/:title
+permalink: /:categories/:title/
 
 gems: ['kramdown']
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']

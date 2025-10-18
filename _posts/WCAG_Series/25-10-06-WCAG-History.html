@@ -1,0 +1,188 @@
+---
+layout: series
+title: 'Understanding WCAG & 508'
+subtitle: A Brief Introduction to Web Accessibility and Federal Compliance
+date: '2024-10-06 06:00:00 -0600'
+category: [WCAG_Series]
+infographic: assets/img/blog-series/WCAG_Week1_Infograph.jpg
+is_series: true
+series_title: WCAG Series
+---
+<!-- This is WCAG - Week 1 - post 1 -->
+<div class="row mt-3">
+  <div class="col">
+    <h2>{{page.subtitle}}</h2>
+    <p>Welcome to Kaffeinated Kodemonkey’s WCAG series! The <strong>Web Content Accessibility Guidelines (WCAG)</strong>,
+    developed by the World Wide Web Consortium (W3C) through global collaboration, are the gold standard for making web
+    content accessible to everyone, including people with disabilities. Web content includes text, images, sounds, videos,
+    and the code (like HTML) that structures it. WCAG ensures websites are usable by people with visual, auditory, motor,
+    or cognitive impairments—about 1 in 4 U.S. adults, according to the CDC. In the U.S., Section 508 of the Rehabilitation
+    Act mandates that federal agencies and contractors make digital content (web and non-web, like PDFs) accessible,
+    aligning with WCAG 2.0 Level A and AA standards.</p>
+
+    <p>WCAG organizes accessibility into four principles— <strong>Perceivable, Operable, Understandable, and Robust</strong>
+    (POUR)—with testable <strong>success criteria</strong> at three levels: A, AA, and AAA. These levels help you measure
+    and improve your site’s accessibility. Conformance to WCAG and Section 508 not only ensures inclusivity but also meets
+    legal requirements, like those under the Americans with Disabilities Act (ADA) or Section 508 for federal contracts.
+    In this post, we’ll break down WCAG’s conformance levels, explain Section 508’s role, and share a practical checklist
+    to start your accessibility journey. Whether you’re a developer, designer, or federal contractor, this series will guide you through
+    WCAG 2.1, 2.2, and beyond!</p>
+
+    <h2>Why Accessibility Matters</h2>
+    <p>Accessibility benefits everyone. For users with disabilities (e.g., 26% of U.S. adults, per CDC), it ensures access
+    to information and services. For businesses, it reduces legal risks (e.g., ADA Title III lawsuits), boosts SEO (search
+    engines love accessible sites), and builds trust. Universal design helps all users—captions aid in noisy environments,
+    clear navigation helps distracted users, and keyboard support speeds up interaction. For federal agencies and
+    contractors, Section 508 compliance is mandatory, requiring accessible websites, software, and documents, often
+    documented via a Voluntary Product Accessibility Template (VPAT). Accessibility fosters an inclusive digital world,
+    benefiting society by connecting diverse populations.</p>
+  </div>
+</div>
+
+<hr />
+
+<div class="row mt-3">
+  <div class="col-7">
+    <h2>WCAG & 508 Conformance Levels</h2>
+    <p>WCAG’s success criteria are grouped into three levels, each building on the last. Think of them as a house:
+    Level A is the foundation, AA adds walls and a roof, and AAA is the fully furnished home.</p>
+
+    <div class="accordion my-3" id="accordionExample">
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Level A: The Accessibility Baseline
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse bg-primary " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level A is the minimum standard, addressing critical barriers to access. It’s essential but not enough for
+            full inclusivity.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Basic requirements like:
+                <ul>
+                  <li>Text alternatives for images (e.g., alt text for screen readers, 1.1.1 Non-text Content).</li>
+                  <li>Keyboard-accessible functionality (e.g., no mouse-only actions, 2.1.1 Keyboard).</li>
+                  <li>No seizure-causing content (e.g., avoiding rapid flashes, 2.3.1 Three Flashes or Below).</li>
+                </ul>
+              <li><strong>Who it helps:</strong> Users with severe disabilities, like those using screen readers (e.g., NVDA) or keyboards only.</li>
+              <li><strong>Limitations:</strong> Level A alone leaves gaps, offering minimal usability for many users.</li>
+              <li><strong>Example:</strong> Adding alt="A smiling dog on grass" to an image ensures screen readers describe it.</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> Level A prevents major accessibility failures but isn’t sufficient for legal
+            compliance (e.g., Section 508 requires A and AA) or broad usability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Level AA: The Practical Standard
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level AA builds on Level A, making content more usable. It’s the most common target, aligning with Section
+            508 and many global laws.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Broader requirements like:
+                <ul>
+                  <li>Sufficient color contrast (e.g., 4.5:1 for text, 1.4.3 Contrast Minimum).</li>
+                  <li>Captions for pre-recorded videos (1.2.2 Captions).</li>
+                  <li>Consistent navigation across pages (3.2.3 Consistent Navigation).</li>
+                </ul>
+              <li><strong>Who it helps:</strong> Users with moderate visual or hearing impairments, older adults, or those needing predictable interfaces.</li>
+              <li><strong>Why it’s popular:</strong> Balances accessibility with practicality, meeting legal standards like Section 508.</li>
+              <li><strong>Example:</strong> Using a contrast checker to ensure black text on a white background meets the 4.5:1 ratio.</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> Level AA is the benchmark for Section 508 and ADA compliance, making it a
+            realistic goal for most websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item mb-2">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Level AAA: Maximum Inclusivity
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Level AAA is the highest standard, aiming for the widest accessibility. It includes A and AA criteria plus
+            stricter requirements but is often impractical for full conformance.</p>
+
+            <ul>
+              <li><strong>What it covers:</strong> Enhanced features like:
+                <ul>
+                  <li>Sign language for videos (1.2.6 Sign Language).</li>
+                  <li>Higher contrast (7:1 for text, 1.4.6 Contrast Enhanced).</li>
+                  <li>Simplified content summaries (3.1.5 Reading Level).</li>
+                </ul>
+              <li><strong>Who it helps:</strong> Users with severe or multiple disabilities needing extensive accommodations.</li>
+              <li><strong>Limitations:</strong> Resource-intensive criteria (e.g., sign language for all videos) make full AAA conformance rare, as noted by WCAG.</li>
+              <li><strong>Example:</strong> Adding a plain-language summary to a technical article (e.g., “This explains solar panels simply”).</li>
+            </ul>
+
+            <p><strong>Why it matters:</strong> Targeting specific AAA criteria shows commitment to inclusivity, even if full conformance isn’t feasible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Section 508: Federal Accessibility Compliance</h2>
+    <p>Section 508 requires federal agencies and contractors to ensure ICT (websites, software, PDFs, etc.) is accessible, adopting WCAG 2.0 Level A and AA as its web standard. If you’re a federal contractor, you’ll need a VPAT to document compliance. While Section 508 focuses on WCAG 2.0, adopting WCAG 2.1 or 2.2 (which are backwards compatible) prepares you for future standards and improves accessibility for mobile and cognitive impairments. Non-compliance risks contract penalties or legal challenges. Testing with tools like ANDI or DHS Trusted Tester protocols helps ensure 508 compliance</p>
+
+    <hr />
+
+    <h2>Getting Started with WCAG and Section 508</h2>
+    <p>Here’s how to begin making your site accessible and compliant:</p>
+
+    <ol>
+      <li><strong>Run an Audit:</strong> Use free tools like WAVE or axe to find issues (e.g., missing alt text, low contrast).</li>
+      <li><strong>Prioritize Fixes:</strong> Start with Level A (e.g., keyboard support), then aim for AA (e.g., captions).</li>
+      <li><strong>Test with Users:</strong> Involve people with disabilities for real-world feedback.</li>
+      <li><strong>Document Compliance:</strong> Use a VPAT to detail WCAG 2.0 A/AA (for 508) or 2.1/2.2 conformance.</li>
+      <li><strong>Check Section 508 Scope:</strong> If working with federal clients, ensure all ICT (web, PDFs, apps) meet 508 standards.</li>
+    </ol>
+
+    <p><strong>Pro Tip:</strong> Try adding alt text to one image and test it with a screen reader like NVDA or VoiceOver. Small steps make a big difference!</p>
+  </div>
+  <div class="col-5 ps-3 ">
+    <!-- infographic -->
+    <aside class="infograph">
+      <!--[infographic]-->
+        <img src="{{site.baseurl}}/{{page.infographic}}" alt="" width="81%" class="img-thumbnail">
+    </aside>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+      <blockquote class="blockquote my-4 fs-4">
+        <div class="row bg-orange text-white rounded-5 p-4">
+          <div class="col-6 align-self-center">
+            <h3><strong>Get Your Accessibility Checklist</strong></h3>
+            <p>Want a practical checklist to kickstart your WCAG and Section 508 compliance? Sign up for Kaffeinated
+            Kodemonkey’s newsletter or schedule a free consultation to access our exclusive 5-step checklist.</p>
+          </div>
+          <div class="col-6">
+            <img src="https://strategylaw.com/wp-content/uploads/2024/05/liability.png">
+            <p>Join newsletter to receive the full A11y Checklist and start making your site inclusive today or Chat with a SME!</p>
+            <p><a href="{{ site.baseurl}}/newsletter" class="btn btn-lg btn-primary">Join now</a> <a href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank" class="btn btn-lg btn-primary">Schedule Free A11y Consultation</a></p>
+          </div>
+        </div>
+      </blockquote>
+
+
+
+    <h2>What’s Next?</h2>
+    <p>This series will explore WCAG 2.1 and 2.2, which build on 2.0 (used by Section 508) with mobile and cognitive
+    enhancements. Our next post dives into the Perceivable principle, covering tips like adding alt text and captions.
+    Run an accessibility checker on your site today to see where you stand, and stay tuned for practical steps to make
+    your content inclusive!</p>
+  </div>
+</div>

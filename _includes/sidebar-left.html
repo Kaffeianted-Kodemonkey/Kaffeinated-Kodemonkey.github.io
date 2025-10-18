@@ -4,17 +4,15 @@
 <!--<h2>{{pcat}}</h2>-->
 
 <ul>
-  {% if pcat == "ChatterRoom" %}
+  {% if pcat == "Monkeyroom" %}
     {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
-      <div id="#{{ category_name | slugize }}"></div>
-      <p></p>
 
-      <h3 class="fs-4">Current - {{ category_name }}</h3>
-      <a name="{{ category_name | slugize }}"></a>
-      <ul class="list-unstyled fs-5">
-      {% for post in site.categories[category_name] %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a></li>
+      <h3 class="fs-4">{{ category_name }}</h3>
+      <!--<a name="{{ category_name | slugize }}">...</a>-->
+      <ul class="fs-5">
+      {% for post in site.categories[category_name] reversed %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">Post {{ forloop.index }}: {{post.title}} </a></li>
       {% endfor %}
       </ul>
     {% endfor %}
