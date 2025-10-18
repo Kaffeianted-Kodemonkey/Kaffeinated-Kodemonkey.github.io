@@ -39,8 +39,8 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
   const lname = document.getElementById('lname').value.trim();
   const email = document.getElementById('inputEmail3').value.trim();
   const cname = document.getElementById('cname').value.trim();
-  const subject = document.getElementById('subject').value;
-  let message = document.getElementById('message').value;
+  //const subject = document.getElementById('subject').value;
+  //let message = document.getElementById('message').value;
   message += `\n\nCompany: ${cname}\nFull Name: ${fname} ${lname}\nEmail: ${email}`;
 
   if (!fname || !lname || !email || !cname) {
@@ -49,10 +49,11 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
   }
 
   const payload = {
+    company: `${cname}`,
     name: `${fname} ${lname}`,
     email: email,
-    subject: subject,
-    message: message
+    //subject: subject,
+    //message: message
     // Add custom field if needed: c[1]: cname  (uncomment and adjust)
     // e.g., if company is custom field 1: , c: { '1': cname }
   };
@@ -62,7 +63,7 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C '  // Replace with your actual API key
+        'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C'  // Replace with your actual API key
       },
       body: JSON.stringify(payload)
     });
