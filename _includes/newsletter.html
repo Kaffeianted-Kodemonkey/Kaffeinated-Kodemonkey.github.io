@@ -23,39 +23,43 @@
       <input type="email" class="form-control" id="inputEmail3" name="email" required>
     </div>
   </div>
-  <!-- Hidden fields for osTicket -->
   <input type="hidden" id="subject" value="Newsletter Signup Request">
   <input type="hidden" id="message" value="New signup from website.">
 
   <button type="submit" class="btn btn-primary">Join Newsletter</button>
+  <div class="alert alert-success d-none mt-3" id="success-message" role="alert"></div>
+  <div class="alert alert-danger d-none mt-3" id="error-message" role="alert"></div>
 </form>
 
 <script>
 document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
   e.preventDefault();
 
-  // Gather form data
+  const successMsg = document.getElementById('success-message');
+  const errorMsg = document.getElementById('error-message');
+  successMsg.classList.add('d-none');
+  errorMsg.classList.add('d-none');
+
   const fname = document.getElementById('fname').value.trim();
   const lname = document.getElementById('lname').value.trim();
   const email = document.getElementById('inputEmail3').value.trim();
   const cname = document.getElementById('cname').value.trim();
-  //const subject = document.getElementById('subject').value;
-  //let message = document.getElementById('message').value;
+  const subject = document.getElementById('subject').value;
+  let message = document.getElementById('message').value;
   message += `\n\nCompany: ${cname}\nFull Name: ${fname} ${lname}\nEmail: ${email}`;
 
   if (!fname || !lname || !email || !cname) {
-    alert('Please fill in all required fields.');
+    errorMsg.textContent = 'Please fill in all required fields.';
+    errorMsg.classList.remove('d-none');
     return;
   }
 
   const payload = {
-    company: `${cname}`,
     name: `${fname} ${lname}`,
     email: email,
-    //subject: subject,
-    //message: message
-    // Add custom field if needed: c[1]: cname  (uncomment and adjust)
-    // e.g., if company is custom field 1: , c: { '1': cname }
+    subject: subject,
+    message: message
+    // Add custom field if needed: c: { '1': cname } (replace '1' with field ID)
   };
 
   try {
@@ -63,27 +67,23 @@ document.getElementById('newsletter-form').addEventListener('submit', async func
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        //'X-API-Key': 'B7567C82F14AB005E787B2A9C5C08C8C'  // Local - Replace with your actual API key
-        'X-API-Key': 'AE84CD30E08CF3D22AC40C8AAA56655B'  // Live - Replace with your actual API key
+        'X-API-Key': '16168D2EBFF8DF1D2A504D1C148A0B35' // Replace with valid key
       },
       body: JSON.stringify(payload)
     });
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-    }
-
     const data = await response.json();
-    if (data.id) {
-      alert(`Success! Ticket created with ID: ${data.id}. Check your email for confirmation.`);
-      // Optional: Reset form or redirect
+    if (response.ok && data.id) {
+      successMsg.textContent = `Success! Ticket ID: ${data.id}. Check your email.`;
+      successMsg.classList.remove('d-none');
       this.reset();
     } else {
-      throw new Error('Unexpected response from server.');
+      throw new Error(data.error || `HTTP ${response.status}: ${response.statusText}`);
     }
   } catch (error) {
-    console.error('Submission error:', error);
-    alert(`Error submitting ticket: ${error.message}. Please try again or contact support.`);
+    console.error('Fetch Error:', error);
+    errorMsg.textContent = `Failed to submit ticket: ${error.message}. Try again or contact support.`;
+    errorMsg.classList.remove('d-none');
   }
 });
 </script>
