@@ -1,0 +1,20 @@
+name: Proxy Form to osTicket
+
+on:
+  repository_dispatch:
+    types: [newsletter-signup]
+
+jobs:
+  proxy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract form data
+        id: data
+        run: echo "payload=${{ github.event.client_payload }}" >> $GITHUB_OUTPUT
+
+      - name: Submit to osTicket
+        run: |
+          curl -X POST https://caffeinatedcodemonkey.com/client-tracking/api/tickets.json \
+          -H "X-API-Key: ${{ secrets.OSTICKET_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '${{ github.event.client_payload }}'
