@@ -1,97 +1,29 @@
-<form id="newsletter-form" class="mt-5">
+<form action="https://kaffeinatedkodemonkey.com/suport/api/tickets.json" method="post" class="mt-5">
   <div class="row mb-3">
-    <label for="cname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Company Name:</label>
+    <label for="cname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Company Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="cname" name="cname" required>
+      <input type="text" class="form-control" id="cname">
     </div>
   </div>
   <div class="row mb-3">
-    <label for="fname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>First Name:</label>
+    <label for="fname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>First Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="fname" name="fname" required>
+      <input type="text" class="form-control" id="fname">
     </div>
   </div>
   <div class="row mb-3">
-    <label for="lname" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Last Name:</label>
+    <label for="lname" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Last Name:</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="lname" name="lname" required>
+      <input type="text" class="form-control" id="lname">
     </div>
   </div>
+
   <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label"><span class="text-danger">* </span>Email</label>
+    <label for="inputEmail3" class="col-sm-2 col-form-label" requires><span class="text-danger">* </span>Email</label>
     <div class="col-sm-6">
-      <input type="email" class="form-control" id="inputEmail3" name="email" required>
+      <input type="email" class="form-control" id="inputEmail3">
     </div>
   </div>
-  <input type="hidden" id="subject" value="Newsletter Signup Request">
-  <input type="hidden" id="message" value="New signup from website.">
 
   <button type="submit" class="btn btn-primary">Join Newsletter</button>
-  <div class="alert alert-success d-none mt-3" id="success-message" role="alert"></div>
-  <div class="alert alert-danger d-none mt-3" id="error-message" role="alert"></div>
-</form]
-
-<script>
-const GITHUB_REPO = 'kfn8dkodemonkey/Kaffeinated-Kodemonkey.github.io';  // e.g., 'web:6' Replace with your GitHub username/repo
-const GITHUB_TOKEN = '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';  // Replace with your PAT (keep secret; use env vars in production)
-const EVENT_TYPE = 'newsletter-signup';
-
-document.getElementById('newsletter-form'].addEventListener('submit', async function(e) {
-  e.preventDefault();
-
-  const successMsg = document.getElementById('success-message');
-  const errorMsg = document.getElementById('error-message');
-  successMsg.classList.add('d-none');
-  errorMsg.classList.add('d-none');
-
-  const fname = document.getElementById('fname').value.trim();
-  const lname = document.getElementById('lname').value.trim();
-  const email = document.getElementById('inputEmail3').value.trim();
-  const cname = document.getElementById('cname').value.trim();
-  const subject = document.getElementById('subject').value;
-  let message = document.getElementById('message').value;
-  message += `\n\nCompany: ${cname}\nFull Name: ${fname] ${lname}\nEmail: ${email}`;
-
-  if (!fname || !lname || !email || !cname) {
-    errorMsg.textContent = 'Please fill in all required fields.';
-    errorMsg.classList.remove('d-none');
-    return;
-  }
-
-  const payload = {
-    name: `${fname} ${lname}`,
-    email: email,
-    subject: subject,
-    message: message
-    // Add custom field: c: { '1': cname } (web:1] replace '1' with osTicket field ID)
-  };
-
-  try {
-    const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/dispatches`, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/vnd.github.v3+json',
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        event_type: EVENT_TYPE,
-        client_payload: payload  // This passes form data to the workflow
-      })
-    });
-
-    if (response.ok) {
-      successMsg.textContent = 'Success! Signup submitted. Check your email for confirmation.';
-      successMsg.classList.remove('d-none');
-      this.reset();
-    } else {
-      const data = await response.json();
-      throw new Error(data.message || `HTTP ${response.status}`);
-    }
-  } catch (error) {
-    console.error('Dispatch Error:', error);
-    errorMsg.textContent = `Failed to submit: ${error.message}. Try again or contact support.`;
-    errorMsg.classList.remove('d-none');
-  }
-});
-</script>
+</form>
