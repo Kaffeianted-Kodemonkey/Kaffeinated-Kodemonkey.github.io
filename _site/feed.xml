@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-21T23:04:23-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">Who WCAG &amp;amp; Section 508 Are For</title><link href="http://localhost:4000/wcag_series/wcag-508/" rel="alternate" type="text/html" title="Who WCAG &amp;amp; Section 508 Are For" /><published>2025-10-20T06:00:00-06:00</published><updated>2025-10-20T06:00:00-06:00</updated><id>http://localhost:4000/wcag_series/wcag-508</id><content type="html" xml:base="http://localhost:4000/wcag_series/wcag-508/"><![CDATA[<h2>Your Role in Accessibility</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-22T00:42:49-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">Who WCAG &amp;amp; Section 508 Is For</title><link href="http://localhost:4000/wcag_series/wcag-508/" rel="alternate" type="text/html" title="Who WCAG &amp;amp; Section 508 Is For" /><published>2025-10-21T06:00:00-06:00</published><updated>2025-10-21T06:00:00-06:00</updated><id>http://localhost:4000/wcag_series/wcag-508</id><content type="html" xml:base="http://localhost:4000/wcag_series/wcag-508/"><![CDATA[<h2>Your Role in Accessibility</h2>
 <p>Welcome to the fourth post in our WCAG for Beginners series at Kaffeinated Kodemonkey! We’ve covered the basics of
 WCAG and Section 508, their historical evolution, and the updates in WCAG 2.1 and 2.2. Now, let’s explore who these
 standards are for and how you fit into the accessibility puzzle. Whether you’re a developer, designer, or federal
@@ -84,7 +84,146 @@ involved.</p>
     <p>In our next post on November 3, 2025, we’ll dive into WCAG’s POUR principles—the foundation of accessible design.</p>
 
     <!-- <p>Join our newsletter to be notified of the next post and receive an extened checklist & worksheet to help you with compliance.</p>
-    <p><a href="#" class="btn btn-md btn-success">Join Newsletter</a></p> -->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[Your Role in Accessibility Welcome to the fourth post in our WCAG for Beginners series at Kaffeinated Kodemonkey! We’ve covered the basics of WCAG and Section 508, their historical evolution, and the updates in WCAG 2.1 and 2.2. Now, let’s explore who these standards are for and how you fit into the accessibility puzzle. Whether you’re a developer, designer, or federal contractor, understanding your role is the first step to building inclusive digital experiences.]]></summary></entry><entry><title type="html">The Evolution of Web A11y</title><link href="http://localhost:4000/wcag_series/Evolution-A11y/" rel="alternate" type="text/html" title="The Evolution of Web A11y" /><published>2024-10-13T02:04:14-06:00</published><updated>2024-10-13T02:04:14-06:00</updated><id>http://localhost:4000/wcag_series/Evolution-A11y</id><content type="html" xml:base="http://localhost:4000/wcag_series/Evolution-A11y/"><![CDATA[<div class="row">
+    <p><a href="#" class="btn btn-md btn-success">Join Newsletter</a></p> -->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[Your Role in Accessibility Welcome to the fourth post in our WCAG for Beginners series at Kaffeinated Kodemonkey! We’ve covered the basics of WCAG and Section 508, their historical evolution, and the updates in WCAG 2.1 and 2.2. Now, let’s explore who these standards are for and how you fit into the accessibility puzzle. Whether you’re a developer, designer, or federal contractor, understanding your role is the first step to building inclusive digital experiences.]]></summary></entry><entry><title type="html">Essential Guidelines for Web A11y</title><link href="http://localhost:4000/wcag_series/Guidelines/" rel="alternate" type="text/html" title="Essential Guidelines for Web A11y" /><published>2025-10-20T09:04:14-06:00</published><updated>2025-10-20T09:04:14-06:00</updated><id>http://localhost:4000/wcag_series/Guidelines</id><content type="html" xml:base="http://localhost:4000/wcag_series/Guidelines/"><![CDATA[<div class="row">
+  <div class="col-12">
+    <h2>A11y Overview</h2>
+    <p>In today’s digital age, designing an inclusive online experience is not only a best practice but a responsibility. Many small and medium-sized
+    enterprises (SMEs) are focusing on the latest <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong> standards, yet understanding
+    earlier guidelines, such as WCAG 2.0, is essential to fully grasp the evolution and importance of accessibility. In our previous post, we
+    explored the history of <strong>web accessibility;</strong> today, we’ll dive into <strong>WCAG 2.0,</strong> the foundational guidelines
+    that shaped current standards.</p>
+
+    <p>Whether you’re a <strong>business owner, developer,</strong> or <strong>content creator,</strong> understanding <strong>WCAG 2.0 principles</strong>
+    is crucial for creating compliant, accessible websites. This post provides an overview of each <strong>WCAG 2.0 principle</strong> and offers
+    tips to help you start building an inclusive web experience.</p>
+
+    <hr />
+
+    <h2>WCAG 2.0: The Foundational Principles for Accessibility</h2>
+    <p>Published by the World Wide Web Consortium (W3C) in 2008, <strong>WCAG 2.0</strong> set the global standard for making web content
+    accessible to a diverse range of users, including individuals with <strong>visual, auditory, physical, cognitive, and neurological
+    disabilities</strong>. WCAG 2.0 is organized around four guiding principles, commonly referred to as <strong>POUR:</strong></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-7">
+    <dl>
+      <dt><h3>Perceivable</h3></dt>
+      <dd>
+        <p>Content must be presented in ways that users can perceive, especially those with sensory disabilities such as vision or hearing
+        impairments. <strong>Perceivable</strong> content means users can see, hear, or otherwise access the information.</p>
+
+        <p><strong>Key Success Criteria:</strong></p>
+        <ul>
+          <li><strong>Text Alternatives:</strong> Provide text for all non-text content, such as alt text for images, captions for videos, and transcripts for audio files.</li>
+          <li><strong>Adaptable Content:</strong> Ensure content can be displayed in various ways without losing meaning (e.g., adjustable text size and high-contrast options).</li>
+          <li><strong>Distinguishable Content:</strong> Use sufficient contrast between text and backgrounds, and provide clear audio controls to assist users with visual or auditory needs.</li>
+        </ul>
+      </dd>
+
+      <dt><h3>Operable</h3></dt>
+      <dd>
+        <p>Users should be able to navigate and operate the interface using various tools, including <strong>assistive technologies</strong>.
+        Ensuring content is <strong>operable</strong> helps users interact effectively, regardless of their preferred navigation method.</p>
+
+        <p><strong>Key Success Criteria:</strong></p>
+        <ul>
+          <li><strong>Time to Interact:</strong> Ensure all functionality is accessible via keyboard navigation.</li>
+          <li><strong>Adequate Interaction Time:</strong> Allow users enough time to read and interact with content.</li>
+          <li><strong>Seizure Prevention:</strong> Avoid flashing images or animations that could trigger seizures.</li>
+          <li><strong>Navigation Aids:</strong> Provide intuitive navigation elements, such as breadcrumbs or consistent menus, to help users find what they need quickly.</li>
+        </ul>
+      </dd>
+
+      <dt><h3>Understandable</h3></dt>
+      <dd>
+        <p>Content should be easy to comprehend and predict in terms of function and layout. This principle ensures understandable and predictable
+        interactions for users of all abilities.</p>
+
+        <p><strong>Key Success Criteria:</strong></p>
+        <ul>
+          <li><strong>Simple Language:</strong> Use plain language that’s easy to understand.</li>
+          <li><strong>Predictable Layouts:</strong> Keep navigation elements consistent across pages.</li>
+          <li><strong>Error Assistance:</strong> Provide helpful error messages and validation cues.</li>
+        </ul>
+      </dd>
+
+      <dt><h3>Robust</h3></dt>
+      <dd>
+        <p>Content should work well across various devices and assistive technologies, both now and in the future. Ensuring your content is
+        robust means it can adapt to evolving tools and accessibility features.</p>
+
+        <p><strong>Key Success Criteria:</strong></p>
+        <ul>
+          <li><strong>Compatible Code:</strong> Ensure that HTML and other coding languages adhere to standards, facilitating interaction with screen readers and other adaptive devices.</li>
+          <li><strong>Assistive Technology Testing:</strong> Test your website with different assistive devices and software to ensure full accessibility.</li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+
+  <div class="col-md-12 col-lg-5 mt-5">
+    <!-- infographic -->
+    <aside class="infograph">
+      <div class="row">
+        <div class="col-md-12 d-none d-md-none d-lg-block">
+            <!--[infographic]-->
+            <img src="/Kaffeinated-Kodemonkey.github.io/assets/img/Blog-Series/WCAG_Week2_Infograph.jpg" alt="" width="100%" class="img-thumbnail">
+        </div>
+      </div>
+      <!-- [Buttons]-->
+      <div class="row chat-buttons">
+        <div class="col-12">
+          <!--<p class="text-center mt-2"><a href="/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->
+          <!--<a href="localhost:4567" class="btn btn-md btn-danger ms-4">Join The MonkeyHub</a></p>-->
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-md-10 col-lg-12">
+    <h2>Why WCAG 2.0 Compliance Matters</h2>
+    <p>Following <strong>WCAG 2.0 standards</strong> isn’t only about meeting legal requirements; it’s about creating a positive, inclusive user
+    experience. In many regions, non-compliance with accessibility laws, such as the Americans with Disabilities Act (ADA) and the European
+    Accessibility Act, can lead to legal repercussions.</p>
+
+    <p>Accessible websites are also generally more <strong>user-friendly</strong>, which can improve <strong>SEO</strong> and enhance your brand’s
+    reputation. Meeting <strong>WCAG 2.0 requirements</strong> not only helps avoid legal risks but opens your website to a broader audience,
+    including users who may otherwise struggle with access.</p>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-12">
+    <h2>Key Takeaways for WCAG 2.0 Compliance</h2>
+    <p>Following WCAG 2.0 is a step toward creating a more inclusive web experience for everyone. Here’s a quick summary of each principle:</p>
+    <ul>
+      <li><strong>Perceivable:</strong> Ensure your site’s information is accessible to everyone.</li>
+      <li><strong>Operable:</strong> Make the site navigable with a keyboard and provide clear, intuitive navigation.</li>
+      <li><strong>Understandable:</strong> Use clear language, maintain consistent layouts, and offer error assistance.</li>
+      <li><strong>Robust:</strong> Ensure your code is compatible with assistive devices and accessible across platforms.</li>
+    </ul>
+
+    <p>By adhering to these principles, you contribute to a more equitable digital world. Web accessibility isn’t just a trend—it’s a key
+    component of a responsible and user-centered web experience.</p>
+
+  </div>
+</div>
+
+<!--<div class="row text-center">
+  <div class="col-1"></div>
+ <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
+   <h3 class="fs-4"><a href="/newsletter">Get a Free Guide & Stay Updated on Web Accessibility!</a></h3>
+   <p>Stay informed about the latest in web accessibility? Join our newsletter today and receive a free Web Accessibility Checklist to help you get started on making your site WCAG-compliant. Don't miss out on expert tips, updates, and exclusive resources—sign up now!!</p>
+ </div>
+</div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[A11y Overview In today’s digital age, designing an inclusive online experience is not only a best practice but a responsibility. Many small and medium-sized enterprises (SMEs) are focusing on the latest Web Content Accessibility Guidelines (WCAG) 2.2 standards, yet understanding earlier guidelines, such as WCAG 2.0, is essential to fully grasp the evolution and importance of accessibility. In our previous post, we explored the history of web accessibility; today, we’ll dive into WCAG 2.0, the foundational guidelines that shaped current standards.]]></summary></entry><entry><title type="html">The Evolution of Web A11y</title><link href="http://localhost:4000/wcag_series/Evolution-A11y/" rel="alternate" type="text/html" title="The Evolution of Web A11y" /><published>2024-10-13T02:04:14-06:00</published><updated>2024-10-13T02:04:14-06:00</updated><id>http://localhost:4000/wcag_series/Evolution-A11y</id><content type="html" xml:base="http://localhost:4000/wcag_series/Evolution-A11y/"><![CDATA[<div class="row">
   <div class="col-12">
     <h2>A Journey Through WCAG</h2>
     <p>In today’s digital-first world, accessibility is more than a feature—it’s a core principle of web design that ensures everyone can connect,
@@ -176,7 +315,7 @@ involved.</p>
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-              <img src="/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" class="img-thumbnail">
+              <img src="/assets/img/Blog-Series/WCAG_Week1_Infograph.jpg" alt="" class="img-thumbnail">
         </div>
       </div>
       <div class="row mx-1 mt-3">
@@ -208,7 +347,7 @@ involved.</p>
       <li><strong>User Experience Focus:</strong> A shift towards UX-focused guidelines that prioritize user interaction quality for all abilities.</li>
     </ul>
 
-    <hr />    
+    <hr />
 
     <h2>The Real-World Impact of Accessibility</h2>
     <p>Accessible design doesn’t just help people with disabilities—it improves the user experience for all. For example, captions benefit those
@@ -406,7 +545,7 @@ involved.</p>
     <!-- infographic -->
     <aside class="infograph">
       <!--[infographic]-->
-        <img src="/assets/img/blog-series/WCAG_Week1_Infograph.jpg" alt="" width="81%" class="img-thumbnail">
+        <img src="/assets/img/Blog-Series/WCAG_Week1_Infograph.jpg" alt="" width="81%" class="img-thumbnail">
     </aside>
   </div>
 </div>

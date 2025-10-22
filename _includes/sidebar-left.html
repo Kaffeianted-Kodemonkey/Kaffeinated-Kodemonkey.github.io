@@ -2,12 +2,16 @@
 {% assign url = page.url %}
 {% assign pcat = page.categories %}
 <!--<h2>{{pcat}}</h2>-->
+<hr>
 
-<ul class="fs-5">
+{% if page.categories != "MonkeyHub" %}
+  <ul class="fs-5">
+      {% for page in site.pages %}
+        {% if page.categories contains pcat %}
+          <li><a href="{{site.baseurl}}{{page.url}}" {% if page.url == url %} class="isDisabled" {% endif %}>{{page.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+  </ul>
 
-    {% for page in site.pages %}
-      {% if page.categories contains pcat %}
-        <li><a href="{{site.baseurl}}{{page.url}}" {% if page.url == url %} class="isDisabled" {% endif %}>{{page.title}}</a></li>
-      {% endif %}
-    {% endfor %}
-</ul>
+  <hr />
+{% endif %}
