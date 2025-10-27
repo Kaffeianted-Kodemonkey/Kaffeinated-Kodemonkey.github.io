@@ -11,32 +11,32 @@
     {% include breadcrumbs.html %}
 
     <div class="container-fluid">
-      <div class="row mx-3 my-3">
+      <div class="row">
         <div class="col-md-12 col-lg-3 order-md-last col-lg-first">
           <!-- Series links -->
           <hr class="border border-success border-1 opacity-25">
           <h2 class="text-orange ps-4">{{ page.series_title | upcase }}</h2>
-          <hr class="border border-success border-1 opacity-25 mt-3">
+          <hr class="border border-success border-1 opacity-25">
 
           {% assign posts = site.posts | where: "is_series", true | where: "series_title", page.series_title | sort: 'date' %}
 
           {% for post in posts %}
             {% if post.title == page.title %}
-              <p class="nav-link text-secondary fs-5 ps-4 mb-0">Post {{ forloop.index }}: {{ post.title }}</p>
+              <p class="nav-link text-secondary fs-5 ps-4">Post {{ forloop.index }}: {{ post.title }}</p>
             {% else %}
               <a class="nav-link text-primary fs-5 ps-4" href="{{ post.url }}">Post {{ forloop.index }}: {{ post.title }}</a>
             {% endif %}
           {% endfor %}
 
         </div>
-        <div class="col-md-12 col-lg-9 mt-0 order-md-first order-lg-last">
+        <div class="col-md-12 col-lg-9 order-md-first order-lg-last">
           <!-- title bar -->
-          <hr class="border border-success border-1 opacity-25 mt-3">
+          <hr class="border border-success border-1 opacity-25">
           <div class="row">
             <div class="col-10">
               <h1 class="fs-1">{{ page.title }}</h1>
             </div>
-            <div class="col-2 pt-1">
+            <div class="col-2">
               <small><em>{{ page.date }}</em></small>
               <!--<p class="mt-3"><a href="{{site.baseurl}}/newsletter" class="btn btn-md btn-danger">Join Our Newsletter</a>-->
               <!--<a href="#" class="btn btn-md btn-danger ms-5">Join The Discussion</a></p>-->
@@ -44,7 +44,7 @@
 
           </div>
 
-          <hr class="border border-success border-1 opacity-25 mt-2">
+          <hr class="border border-success border-1 opacity-25">
           <!-- Content -->
             {{ content }}
         </div>
