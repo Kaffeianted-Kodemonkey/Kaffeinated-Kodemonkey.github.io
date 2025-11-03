@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-02T21:41:04-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">Pour Web Design</title><link href="http://localhost:4000/wcag_series/POUR/" rel="alternate" type="text/html" title="Pour Web Design" /><published>2025-10-27T05:00:00-06:00</published><updated>2025-10-27T05:00:00-06:00</updated><id>http://localhost:4000/wcag_series/POUR</id><content type="html" xml:base="http://localhost:4000/wcag_series/POUR/"><![CDATA[<h2>Unpacking WCAG’s Principles, Guidelines, and Success Criteria</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-03T06:57:56-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">WCAG’s &amp;amp; Section 508’s Focus</title><link href="http://localhost:4000/wcag_series/WCAG-508-Focus/" rel="alternate" type="text/html" title="WCAG’s &amp;amp; Section 508’s Focus" /><published>2025-11-03T05:00:00-07:00</published><updated>2025-11-03T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series/WCAG-508-Focus</id><content type="html" xml:base="http://localhost:4000/wcag_series/WCAG-508-Focus/"><![CDATA[<h2>Unpacking WCAG’s Principles, Guidelines, and Success Criteria</h2>
+<p>Understanding the scope of accessibility standards is crucial for creating inclusive websites. The Web Content Accessibility Guidelines (WCAG) provide a global framework to ensure digital content is accessible to all, while Section 508 enforces specific requirements for U.S. federal projects. This post explores WCAG’s worldwide impact, Section 508’s U.S.-focused compliance, and how foundational Level A criteria, such as alt text for images, support both. Whether you’re a developer or a federal contractor, these insights will help you navigate accessibility compliance.</p>
+
+<hr />
+
+<h2>WCAG: A Global Standard for Accessibility</h2>
+<p>WCAG, developed by the World Wide Web Consortium (W3C), sets international guidelines to make web content accessible to people with disabilities, such as visual or motor impairments. Recognized as ISO/IEC 40500 (October 2025), WCAG 2.2 is translated into over 20 languages, including Spanish, French, and Japanese, making it a cornerstone for global accessibility. Level A criteria, like 1.1.1 (non-text content), require alt text for images, ensuring screen readers can describe visuals to users. This baseline supports universal access across regions like the EU and Canada, benefiting 26% of adults with disabilities in the U.S. alone (CDC).</p>
+
+<hr />
+<h2>Section 508: U.S. Federal Compliance</h2>
+<p>Section 508, part of the U.S. Rehabilitation Act (1998, updated 2017), mandates that federal information and communication technology (ICT), including websites, software, and PDFs, meet WCAG 2.0 Level A/AA standards. For example, Level A criterion 1.1.1 ensures alt text for images, while 1.2.2 requires captions for videos. Federal agencies and contractors must document compliance through Voluntary Product Accessibility Templates (VPATs). Unlike WCAG’s global reach, Section 508 focuses on U.S. federal requirements, making it essential for government-related projects.</p>
+
+<hr />
+
+<h2>Key Differences and Overlaps</h2>
+<p>WCAG applies to all web content worldwide, guiding developers and organizations to meet accessibility needs through Level A criteria like 1.3.1 (info and relationships) for semantic HTML. Section 508, specific to the U.S., extends WCAG 2.0 Level A/AA to non-web ICT, requiring VPATs for federal contracts. Both standards share Level A as a foundation, ensuring basic accessibility, but Section 508’s scope is narrower, focusing on federal compliance rather than global adoption.</p>
+
+<hr />
+
+<h2>Practical Steps to Get Started</h2>
+<p>To align with WCAG’s global standards and Section 508’s U.S. requirements, start with these steps:</p>
+
+<ul>
+  <li>Add alt text to all images (WCAG 1.1.1, Level A) to support screen readers.</li>
+  <li>Test your site with WAVE (wave.webaim.org) to identify Level A issues, such as missing alt text or captions.</li>
+  <li>Confirm if Section 508 applies to your project (e.g., federal contract).</li>
+  <li>If required, create a VPAT using templates from section508.gov/sell/vpat.</li>
+  <li>Test keyboard navigation with NVDA (nvaccess.org/download) to meet Level A criterion 2.1.1.</li>
+</ul>
+
+<p>These actions ensure your website meets both global WCAG standards and U.S. federal requirements, enhancing accessibility for all users.</p>
+
+<hr />
+
+<h2>Checklist for Compliance</h2>
+<ul>
+  <li>Check WCAG translations for your audience’s language (w3.org/Translations).</li>
+  <li>Verify Section 508 applicability (federal contract or agency).</li>
+  <li>Test WCAG 2.0 Level A compliance with WAVE (wave.webaim.org).</li>
+  <li>Prepare a VPAT for Section 508 projects (section508.gov/sell/vpat).</li>
+</ul>
+
+<hr />
+
+<h2>Quick Actions</h2>
+<ul>
+  <li>Use WAVE to verify Level A compliance, focusing on alt text and captions.</li>
+  <li>Review Section508.gov for federal compliance requirements.</li>
+  <li>Explore WCAG translations to support global users.?</li>
+</ul>
+
+<hr />
+
+<h2>Conclusion</h2>
+<p>WCAG’s global reach makes it the foundation for accessible web design, with Level A criteria like alt text ensuring inclusivity worldwide. Section 508, focused on U.S. federal ICT, aligns with WCAG 2.0 Level A/AA to meet legal requirements. By integrating these standards, you can create websites that serve diverse audiences and comply with federal mandates. For more guidance, check our Knowledgebase FAQ “WCAG’s Global Reach and Section 508’s U.S. Focus” or contact our accessibility team for support.</p>
+
+<p>Don't forget to checkout the <a href="https://kaffeinatedkodemonkey.com/MonkeyForum/index.php">MonekyForum</a> for more information about the WCAG and join others in the converstation.</p>
+
+<!-- <div class="row text-center">
+  <div class="col-1"></div>
+ <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
+   <h3 class="fs-4">Unlock Your Free WCAG 2.2 Integration Checklist!</h3>
+   <p><a href="/blog/Free-WCAG-2.2-Integration-Checklist.html"><strong><i>Join our newsletter today</i></strong></a>
+    and receive instant access to our comprehensive WCAG 2.2 Integration Checklist. Stay updated with the
+   latest web accessibility insights, tips, and best practices. Don't miss out—subscribe now and make your website accessible to all!</p>
+ </div>
+</div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series&quot;]" /><summary type="html"><![CDATA[Unpacking WCAG’s Principles, Guidelines, and Success Criteria Understanding the scope of accessibility standards is crucial for creating inclusive websites. The Web Content Accessibility Guidelines (WCAG) provide a global framework to ensure digital content is accessible to all, while Section 508 enforces specific requirements for U.S. federal projects. This post explores WCAG’s worldwide impact, Section 508’s U.S.-focused compliance, and how foundational Level A criteria, such as alt text for images, support both. Whether you’re a developer or a federal contractor, these insights will help you navigate accessibility compliance.]]></summary></entry><entry><title type="html">Pour Web Design</title><link href="http://localhost:4000/wcag_series/POUR/" rel="alternate" type="text/html" title="Pour Web Design" /><published>2025-10-27T05:00:00-06:00</published><updated>2025-10-27T05:00:00-06:00</updated><id>http://localhost:4000/wcag_series/POUR</id><content type="html" xml:base="http://localhost:4000/wcag_series/POUR/"><![CDATA[<h2>Unpacking WCAG’s Principles, Guidelines, and Success Criteria</h2>
 <p>Welcome to the next chapter of Kaffeinated Kodemonkey’s WCAG series! In our first post, we traced the origins of the Web Content Accessibility Guidelines (WCAG). The second post explored the evolution of web accessibility, and our third post introduced WCAG and Section 508, highlighting their conformance levels. Now, we’re diving into the heart of WCAG: its four POUR principles, 13 guidelines, and success criteria (A, AA, AAA). Think of POUR as the foundation of an accessible digital house, supporting inclusive design for everyone, including the 26% of U.S. adults with disabilities (per the CDC). Let’s explore how these components work together and connect to Section 508 compliance!</p>
 
 <hr />
