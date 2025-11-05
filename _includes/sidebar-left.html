@@ -4,7 +4,7 @@
 <!--<h2>{{pcat}}</h2>-->
 <hr>
 
-{% if page.categories != "MonkeyHub" %}
+{% if pcat != "MonkeyHub" and pcat != "series" %}
   <ul class="fs-5">
       {% for page in site.pages %}
         {% if page.categories contains pcat %}
@@ -12,6 +12,5 @@
         {% endif %}
       {% endfor %}
   </ul>
-
   <hr />
 {% endif %}

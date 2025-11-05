@@ -1,0 +1,50 @@
+---
+layout: inner-pages
+title: Blog Series
+permalink: Series
+categories: series
+---
+<h1>Welcome to Kaffeinated Kodemonkey’s Accessibility Blog Series</h1>
+<hr />
+
+<p>Discover expert insights on digital accessibility with Kaffeinated Kodemonkey’s blog series, crafted by DHS Certified
+Trusted Testers. Our posts simplify <strong>ADA, WCAG 2.1/2.2, and Section 508</strong> compliance, offering practical
+tips for small businesses, government agencies, schools, federal contractors, and nonprofits. With 8,800 ADA lawsuits
+targeting websites in 2024 and global laws like the European Accessibility Act now in effect (enforcement June 2025),
+our content helps you avoid fines and boost SEO to reach people with disabilities through web
+accessibility audit best practices.</p>
+
+<p>Explore our <strong>A11y Series</strong> below and grow your digital presence with a <strong>WCAG compliance</strong>.</p>
+
+<p><strong>Talk to an A11y SME Today! <a href="https://kaffeinatedkodemonkey.youcanbook.me/" target="_blank">Book a Free Consultation</a></strong></p>
+
+<hr />
+
+<div class="row">
+  <!--<div class="col-4">
+    <div class="card">
+      <h5 class="card-header">Featured</h5>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>-->
+  {% for category in site.categories %}
+  {% assign stitle = page.series_title %}
+  <!--<h2>{{stitle}}sdss</h2>-->
+
+  <div class="col-4 mb-3">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="card" style="height: 12em;">
+      <h2 class="card-header">{{ category_name | replace: '_', ' '}}</h2>
+      <div class="card-body">
+      {% for post in site.categories[category_name] limit:3 %}
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
