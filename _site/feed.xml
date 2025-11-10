@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-06T15:31:05-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">WCAG’s &amp;amp; Section 508’s Focus</title><link href="http://localhost:4000/wcag_series_beginners/WCAG-508-Focus/" rel="alternate" type="text/html" title="WCAG’s &amp;amp; Section 508’s Focus" /><published>2025-11-03T05:00:00-07:00</published><updated>2025-11-03T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/WCAG-508-Focus</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/WCAG-508-Focus/"><![CDATA[<h2>Unpacking WCAG’s Principles, Guidelines, and Success Criteria</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-10T08:29:13-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">A11y Enforcement</title><link href="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/" rel="alternate" type="text/html" title="A11y Enforcement" /><published>2025-11-10T05:00:00-07:00</published><updated>2025-11-10T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/A11y-Enforcement</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/"><![CDATA[<img src="/assets/img/Blog-Series/A11yEnforcement.jpg" alt="A11y Enforcement" class="img-thumbnail ms-4 p-3" align= "right" width="45%">
+<h2>How Developers Can Shape Accessibility</h2>
+<p>Welcome to the sixth installment of the WCAG Series at Kaffeinated Kodemonkey! By now, you’ve learned the basics of WCAG and Section 508, explored the evolution of web accessibility, compared the two standards, dived into POUR design principles, and understood their focus on inclusive digital experiences. Today, we’re zooming in on how WCAG is developed by the Accessibility Guidelines Working Group (AG WG) under the Web Accessibility Initiative (WAI), how Section 508 is enforced by the U.S. Access Board, and—most excitingly—how you can contribute to accessibility as a developer. Let’s jump in!</p>
+
+<hr />
+
+<h2>WCAG Development: Who’s Building the Future of Accessibility?</h2>
+<p>The Web Content Accessibility Guidelines (WCAG) are crafted by the Accessibility Guidelines Working Group (AG WG), part of the Web Accessibility Initiative (WAI) under the World Wide Web Consortium (W3C). This group of accessibility experts, developers, and advocates collaborates to ensure WCAG evolves with technology and user needs. They’re currently working on WCAG 3.0, which aims to be more flexible for emerging tech like AI and AR/VR.</p>
+<p>The AG WG relies on community input to refine guidelines. This means developers like you can help shape the future of accessibility by sharing feedback or joining discussions.</p>
+
+<hr />
+<h2>Section 508 Enforcement: Accessibility in Action</h2>
+<p>Section 508, part of the U.S. Rehabilitation Act, ensures that federal agencies and their contractors make digital tools accessible. The U.S. Access Board enforces these rules, requiring compliance with WCAG 2.0 Level AA standards. Enforcement means audits, compliance checks, and consequences like lawsuits for non-compliant federal projects. For developers, this underscores the importance of building accessible solutions when working on government contracts.</p>
+
+<hr />
+
+<h2>Why Developers Should Get Involved</h2>
+<p>Contributing to WCAG or Section 508 efforts isn’t just about compliance—it’s about making the web work for everyone. Here’s why it matters:</p>
+<ul>
+  <li><strong>Impact:</strong> Your work can help millions with disabilities access digital content.</li>
+  <li><strong>Skills:</strong> Tackling accessibility sharpens your coding and problem-solving abilities.</li>
+  <li><strong>Career Boost:</strong> Expertise in WCAG and Section 508 is a standout skill in government or enterprise projects.</li>
+</ul>
+
+<hr />
+
+<h2>How to Contribute to Accessibility</h2>
+<p>To align with WCAG’s global standards and Section 508’s U.S. requirements, start with these steps:</p>
+
+<table>
+  <tr>
+    <td class="pe-4" style="vertical-align: top;" width="45%">
+      <h3>Engage with the AG WG</h3>
+      <ul>
+        <li><strong>Follow WAI Updates:</strong> Join the WAI mailing list for news on WCAG drafts and meetings.</li>
+        <li><strong>Comment on WCAG 3.0:</strong> Review drafts on the W3C website and share feedback via GitHub.</li>
+        <li><strong>Join Discussions:</strong> Attend AG WG virtual meetings as an observer to learn and contribute.</li>
+      </ul>
+
+      <h3>Support Open-Source Accessibility</h3>
+      <ul>
+        <li>Contribute to tools like screen readers (e.g., NVDA) or frameworks (e.g., React, Vue) to improve their accessibility.</li>
+        <li>Check out A11y Project for beginner-friendly tasks.</li>
+      </ul>
+    </td>
+    <td style="vertical-align: top;" class="ps-4">
+      <h3>Advocate in Your Projects</h3>
+      <ul>
+        <li>Use tools like axe or WAVE to test for WCAG compliance.</li>
+        <li>Push for accessibility in team workflows, like including keyboard testing in QA.</li>
+        <li>Share resources from the WAI or U.S. Access Board with colleagues.</li>
+      </ul>
+      <h3>Stay Connected</h3>
+      <ul>
+        <li>Follow accessibility discussions on X (@W3C_WAI, @a11y) for real-time insights.</li>
+        <li>Join communities like the A11y Slack to network with other developers.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<h2>What’s Next?</h2>
+<p>WCAG and Section 508 are living standards, evolving through community efforts and enforcement.
+By contributing, you’re not just coding—you’re building a more inclusive web. Want to share your
+accessibility journey or ask a question? Drop a comment below or connect with us on X
+<a href="https://x.com/kfn8dKodeMonkey" target="_blank">(@KaffeinatedKode)</a>!</p>
+
+<p>In our next post, we’ll explore practical tools and techniques to implement WCAG and Section 508 in your projects. Until then, keep coding for accessibility!</p>
+
+<!-- <div class="row text-center">
+  <div class="col-1"></div>
+ <div class="col-8 justify-content-center bg-success-subtle text-success-emphasis border border-success-subtle p-3 mb-5 mt-4 shadow rounded">
+   <h3 class="fs-4">Unlock Your Free WCAG 2.2 Integration Checklist!</h3>
+   <p><a href="/blog/Free-WCAG-2.2-Integration-Checklist.html"><strong><i>Join our newsletter today</i></strong></a>
+    and receive instant access to our comprehensive WCAG 2.2 Integration Checklist. Stay updated with the
+   latest web accessibility insights, tips, and best practices. Don't miss out—subscribe now and make your website accessible to all!</p>
+ </div>
+</div>-->]]></content><author><name></name></author><category term="[&quot;WCAG_Series_Beginners&quot;]" /><summary type="html"><![CDATA[How Developers Can Shape Accessibility Welcome to the sixth installment of the WCAG Series at Kaffeinated Kodemonkey! By now, you’ve learned the basics of WCAG and Section 508, explored the evolution of web accessibility, compared the two standards, dived into POUR design principles, and understood their focus on inclusive digital experiences. Today, we’re zooming in on how WCAG is developed by the Accessibility Guidelines Working Group (AG WG) under the Web Accessibility Initiative (WAI), how Section 508 is enforced by the U.S. Access Board, and—most excitingly—how you can contribute to accessibility as a developer. Let’s jump in!]]></summary></entry><entry><title type="html">WCAG’s &amp;amp; Section 508’s Focus</title><link href="http://localhost:4000/wcag_series_beginners/WCAG-508-Focus/" rel="alternate" type="text/html" title="WCAG’s &amp;amp; Section 508’s Focus" /><published>2025-11-03T05:00:00-07:00</published><updated>2025-11-03T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/WCAG-508-Focus</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/WCAG-508-Focus/"><![CDATA[<h2>Unpacking WCAG’s Principles, Guidelines, and Success Criteria</h2>
 <p>Understanding the scope of accessibility standards is crucial for creating inclusive websites. The Web Content Accessibility Guidelines (WCAG) provide a global framework to ensure digital content is accessible to all, while Section 508 enforces specific requirements for U.S. federal projects. This post explores WCAG’s worldwide impact, Section 508’s U.S.-focused compliance, and how foundational Level A criteria, such as alt text for images, support both. Whether you’re a developer or a federal contractor, these insights will help you navigate accessibility compliance.</p>
 
 <hr />
@@ -394,7 +473,7 @@ involved.</p>
       <div class="row">
         <div class="col-md-12 d-none d-md-none d-lg-block">
             <!--[infographic]-->
-              <img src="/assets/img/Blog-Series/WCAG_Week1_Infograph.jpg" alt="" class="img-thumbnail">
+            <img src="/assets/img/Blog-Series/WCAG_Week1_Infograph.jpg" alt="" class="img-thumbnail">
         </div>
       </div>
       <div class="row mx-1 mt-3">
