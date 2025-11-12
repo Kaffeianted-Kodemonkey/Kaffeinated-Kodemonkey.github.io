@@ -1,3 +1,5 @@
 User-agent: *
+Allow: /
+Disallow: /private/  # Block any sensitive subfolders
 Disallow: /support/scp/
 Disallow: /MonkeyForum/ucp.php?mode=login&redirect=app.php/user/
