@@ -1,4 +1,205 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-12T17:07:05-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">A11y Enforcement</title><link href="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/" rel="alternate" type="text/html" title="A11y Enforcement" /><published>2025-11-10T05:00:00-07:00</published><updated>2025-11-10T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/A11y-Enforcement</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/"><![CDATA[<img src="/assets/img/Blog-Series/A11yEnforcement.jpg" alt="A11y Enforcement" class="img-thumbnail ms-4 p-3" align= "right" width="45%">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-11-17T13:42:10-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kaffeinated Kodemonkey</title><subtitle>HB21-1110 &amp; ADA compliance audits for CO gov &amp; edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!</subtitle><entry><title type="html">WCAG &amp;amp; Section 508 Toolkit</title><link href="http://localhost:4000/wcag_series_beginners/WCAG-Toolkit/" rel="alternate" type="text/html" title="WCAG &amp;amp; Section 508 Toolkit" /><published>2025-11-17T05:00:00-07:00</published><updated>2025-11-17T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/WCAG-Toolkit</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/WCAG-Toolkit/"><![CDATA[<h2>The Free Tools That Actually Catch the Bugs</h2>
+<p>You’ve sat through the history lessons, survived the POUR deep dive, and even peeked behind the curtain of enforcement. Great. Now it’s time to stop nodding along and actually do something before the auditors (or angry users) show up with torches.</p>
+
+<p>Welcome to the post I wish existed when I was a junior dev crying over my first 508 audit.</p>
+
+<p>This is your no-BS, caffeine-approved toolkit for WCAG 2.2 and Section 508 compliance. These are the exact tools I still reach for every single week in 2025—most of them free, all of them battle-tested.
+Let’s stop guessing and start scanning.</p>
+
+<hr />
+
+<img src="/assets/img/Blog-Series/WCAG-Toolkit.jpg" alt="A11y Enforcement" class="img-thumbnail ms-4 p-3" align= "right" width="45%">
+<h2>The Nightmare That Finally Broke Me</h2>
+<p><strong>Picture this:</strong> 8 a.m, pullin up to our vacation resort on christmas eve. "This should only take a sec.
+Let me login to wifi and set my auto-scan to run while we unpack." 10 a.m ralizing wifi not stable and I have to do a full
+manuale evaluation on appox 1k page website. Client is worried we will not meet the compliance deadline for the end of the
+year. I assuer them I got this. </p>
+
+<p>Resolution: As promeised, I worked most the day and throught the night using the tools I'll list below and coffee on
+demand combing through the site verifying and cross checking all images, content, video, forms etc woked on desktop, mobile,
+and with assistive technologies. This experieance taugh me how to quickly spot templates, plugins or auto generated content
+from thrid party pug-n-play widgets.</p>
+
+<hr />
+<h2>Section 508 Enforcement: Accessibility in Action</h2>
+<p>Section 508, part of the U.S. Rehabilitation Act, ensures that federal agencies and their contractors make digital tools accessible. The U.S. Access Board enforces these rules, requiring compliance with WCAG 2.0 Level AA standards. Enforcement means audits, compliance checks, and consequences like lawsuits for non-compliant federal projects. For developers, this underscores the importance of building accessible solutions when working on government contracts.</p>
+
+<hr />
+<h2>Quick Recaps <span class="fs-5"><i>(Because You Skimmed the Last Six Posts)</i></span></h2>
+<p>We’ve covered:</p>
+<ul>
+  <li>What WCAG actually is (and how 508 borrows most of it)</li>
+  <li>POUR principles</li>
+  <li>Success criteria structure</li>
+  <li>Who enforces this stuff and how scared you should be</li>
+</ul>
+
+<p>Now we arm you. Because theory without tools is just expensive philosophy.</p>
+
+<hr />
+
+<h2>The Ugly Truth About “Manual Testing Only”</h2>
+<p>Yes, WCAG demands manual testing. Yes, real humans with real disabilities are the gold standard.</p>
+
+<p>But here’s the part nobody says out loud: you can catch 30–50% of violations in seconds with automation, then spend
+your actual brainpower on the nuanced stuff tools will never understand (like whether “Click here” is a useful link—looking
+at you, government sites).</p>
+
+<p>Think of tools as the caffeine in your accessibility workflow: they don’t replace sleep, but they sure help make manual
+testing do able expecaly when you have a large site.</p>
+
+<hr />
+
+<h2>The 508-Specific Gotchas</h2>
+<ul>
+  <li>Missing language attributes (508 loves rejecting entire sites for this)</li>
+  <li>Color contrast below 4.5:1 on “large” text that’s actually 18.5px bold (yes, that fails)</li>
+  <li>Documents (PDFs) that aren’t tagged—Lighthouse now flags these in 2025</li>
+  <li>Custom widgets missing Name/Role/Value (axe + ANDI catch 99% of these)</li>
+</ul>
+
+<hr />
+<h2>The 2025 Toolkit – Six Tools I’d Fight You Over</h2>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        DHS Truster Tester Process
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>If you are a DHS Trusted Tester you already know how valuable this tool is as a browser-based standalone application
+        for recording accessibility test results from Trusted Testers.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Axe DevTools (Deque) – The King
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li><strong>What it is:</strong> Browser extension + CLI + CI integration</li>
+          <li><strong>Free tier:</strong> Yes, forever (with generous limits)</li>
+          <li><strong>Catches:</strong> ~57% of WCAG issues automatically (their 2024 data)</li>
+          <li><strong>508 superpower:</strong> Exports clean VPAT-ready reports</li>
+          <li><strong>My favorite trick:</strong> The “Intelligent Guided Tests” that walk you through manual checks without making you feel stupid</li>
+          <li><strong>Install:</strong> Chrome/Edge/Firefox extension or npm install @axe-core/react</li>
+        </ul>
+
+        <p><strong>Pro tip:</strong> Run the free scanner on your homepage right now. I’ll wait. (No really—open a new tab and do it. I dare you.)</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        WAVE by WebAIM – The Visual Truth Serum
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li>What it is: Injects icons and contrast overlays directly on your page</li>
+          <li>Best for: Instantly spotting contrast crimes, missing labels, and “why is this heading a div?!”</li>
+          <li>508 bonus: Shows ARIA usage errors that make reviewers weep</li>
+          <li>Secret weapon: The “Styles Off” view that reveals your terrible semantic sins</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Lighthouse (built into Chrome DevTools)
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li><strong>What it is:</strong> Google’s audit tab on steroids</li>
+          <li><strong>Free:</strong> 100%</li>
+          <li><strong>New in 2025:</strong> Full WCAG 2.2 coverage + Section 508 export checkbox (yes, really)</li>
+          <li><strong>Pair it with:</strong> Lighthouse CI on GitHub Actions so your PRs fail when you regress</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        ANDI (Accessibility Names & Descriptions Inspector) – SSA’s Favorite Child
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li><strong>What it is:</strong> One-click bookmarklet from the U.S. government (yes, it’s actually good)</li>
+          <li><strong>Superpower:</strong> Instantly shows what screen readers actually announce for every element</li>
+          <li><strong>Perfect for:</strong> Catching 4.1.2 Name, Role, Value failures before they reach production</li>
+          <li><strong>Bonus:</strong> Works on password-protected staging environments (axe sometimes gets blocked)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        NVDA Screen Reader – The Free Truth Machine
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li><strong>Download:</strong> nvaccess.org (100% free, open source, updated quarterly)</li>
+          <li><strong>Learning curve:</strong> 20 minutes to be dangerous, 2 hours to be deadly</li>
+          <li><strong>Use it for:</strong> Confirming that your beautiful custom dropdown actually works when someone can’t use a mouse</li>
+          <li><strong>2025 hotkey I live by:</strong> NVDA + F7 = elements list (your new best friend)</li>
+        </ul>
+
+        <p>Yes, you still need to test with real screen readers. No, it’s not optional.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Pa11y – The CI/CD Gatekeeper
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+          <li><strong>What it is:</strong> Open-source automated testing that screams when your deploy breaks accessibility</li>
+          <li><strong>Setup time:</strong> 5 minutes</li>
+        </ul>
+
+        <p>If your build goes red because you removed a focus indicator, congratulations—you’re growing as a human.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Your Mission This Week </h2>
+<ol>
+  <li>Install axe DevTools browser extension RIGHT NOW.</li>
+  <li>Run it on your current project or favorite government website.</li>
+  <li>Fix exactly one issue it finds.</li>
+  <li>Screenshot your most horrifying discovery and post it on X with #KaffeinatedA11y and tag @kfn8dKodeMonkey.</li>
+</ol>
+
+<p>I will personally retweet the funniest tragedies with commentary.</p>]]></content><author><name></name></author><category term="[&quot;WCAG_Series_Beginners&quot;]" /><summary type="html"><![CDATA[WCAG & Section 508 Toolkit - using free tools.]]></summary></entry><entry><title type="html">A11y Enforcement</title><link href="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/" rel="alternate" type="text/html" title="A11y Enforcement" /><published>2025-11-10T05:00:00-07:00</published><updated>2025-11-10T05:00:00-07:00</updated><id>http://localhost:4000/wcag_series_beginners/A11y-Enforcement</id><content type="html" xml:base="http://localhost:4000/wcag_series_beginners/A11y-Enforcement/"><![CDATA[<img src="/assets/img/Blog-Series/A11yEnforcement.jpg" alt="A11y Enforcement" class="img-thumbnail ms-4 p-3" align= "right" width="45%">
 <h2>How Developers Can Shape Accessibility</h2>
 <p>Welcome to the sixth installment of the WCAG Series at Kaffeinated Kodemonkey! By now, you’ve learned the basics of WCAG and Section 508, explored the evolution of web accessibility, compared the two standards, dived into POUR design principles, and understood their focus on inclusive digital experiences. Today, we’re zooming in on how WCAG is developed by the Accessibility Guidelines Working Group (AG WG) under the Web Accessibility Initiative (WAI), how Section 508 is enforced by the U.S. Access Board, and—most excitingly—how you can contribute to accessibility as a developer. Let’s jump in!</p>
 
