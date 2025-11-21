@@ -165,6 +165,20 @@ p {
   background-color: /*#f57600*/ #d85420 !important;
 }
 
+.table-orange {
+    --bs-table-color: #fff;
+    --bs-table-bg: #d85419;
+    --bs-table-border-color: #4d5154;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+
 .text-success {
   color: #64E3A7 !important;
 }
