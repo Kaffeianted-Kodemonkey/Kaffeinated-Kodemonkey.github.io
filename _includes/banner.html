@@ -1,11 +1,18 @@
-<banner>
+{% assign pt = page.title %}
+{% assign pcat = page.categories %}
+
+{% if pt != "The MonkeyHub" %}
+  <banner>
   <table>
     <tr>
       <td width="50%"><img src="{{site.baseurl}}{{ page.banner }}" class="img-thumbnail" width="95%" alt=" Section 508"></td>
-      <td class="align-middle"><p class="fs-3"><strong>Ready to stop stressing about lawsuits?</strong><br />
-      Start looking like the accessibility hero and talk to a Trusted Tester Today! <br />
+      <td class="align-middle"><p class="fs-3"><strong>Don't stress about ADA Title II, 2026 Deadline</strong> <br />
+      We have you back talk to a Trusted Tester Today! <br />
+      Find out your steps to meeting full compliance.</p>
 
       <p><a href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" class="btn btn-info text-dark" aria-label="Schedule Free A11y Consultation"><strong>Schedule Free A11y Consultation</strong></a></p></p></td>
     </tr>
   </table>
-</banner>
+  </banner>
+  <hr />
+{% endif %}
