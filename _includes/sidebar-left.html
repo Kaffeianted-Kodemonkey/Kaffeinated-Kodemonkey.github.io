@@ -1,16 +1,20 @@
-
 {% assign url = page.url %}
 {% assign pcat = page.categories %}
 <!--<h2>{{pcat}}</h2>-->
 <hr>
 
 {% if pcat != "MonkeyHub" and pcat != "series" %}
-  <ul class="fs-5">
-      {% for page in site.pages %}
-        {% if page.categories contains pcat %}
-          <li><a href="{{page.url}}" {% if page.url == url %} class="isDisabled" {% endif %}>{{page.title}}</a></li>
-        {% endif %}
-      {% endfor %}
-  </ul>
-  <hr />
+<ul class="fs-5">
+  {% assign sort_pages = site.pages | sort: "nav_order" %}
+  {% for p in sort_pages %}
+    {% if p.categories contains pcat %}
+      <li>
+        <a href="{{ p.url }}" {% if p.url == url %}class="isDisabled"{% endif %}>
+          {{ p.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<hr />
 {% endif %}

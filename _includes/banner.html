@@ -2,21 +2,29 @@
 {% assign pcat = page.categories %}
 
 {% if pt != "The MonkeyHub" %}
-  <banner>
-    <div class="row">
-      <div class="col-5">
-        <img src="{{site.baseurl}}{{ page.banner }}" class="img-thumbnail mb-3" width="90%" alt=" Section 508">
-        <p><a href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" class="btn btn-md btn-warning text-white" ara-label="Schedule Free A11y Consultation"><strong>Schedule Free A11y Consultation</strong></a></p>
+  <section class="site-overall-banner" aria-label="Regulatory Compliance Alert Banner">
+    <div class="row align-items-center">
+      <!-- Left Column: Branding and Call to Action -->
+      <div class="col-12 col-md-4 text-center text-md-start">
+        {% if page.banner %}
+          <img src="{{ site.baseurl }}{{ page.banner }}" class="img-thumbnail mb-3 img-fluid" width="50%" alt="Kaffeinated Kodemonkey: DHS Certified Trusted Tester Web Compliance Frameworks.">
+        {% else %}
+          <img src="{{ site.baseurl }}/assets/img/KKM-Banner.png" class="img-thumbnail mb-3 img-fluid" width="100%" alt="Kaffeinated Kodemonkey: DHS Certified Trusted Tester Web Compliance Frameworks.">
+        {% endif %}
+        <p class="mt-2">
+          <a href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="noopener" class="btn btn-md btn-warning text-white" aria-label="Schedule a free digital accessibility consultation with a compliance specialist">
+            <strong>Schedule Free Consultation</strong>
+          </a>
+        </p>
       </div>
-      <div class="col-7">
-        <p class="fs-4"><strong>Don't just achieve compliance — maintain it effortlessly and turn it into a business advantage.</strong></p>
+      
+      <!-- Right Column: Context and Value Proposition -->
+      <div class="col-12 col-md-8">
+        <p class="fs-4"><strong>Maintain Accessibility & turn it into a distinct business advantage.</strong></p>
           
-        <p>With the DOJ ADA Title II deadline <strong>now fully in effect</strong> for public entities serving 50,000+ people, 
-        and the <strong>April 26, 2027 deadline rapidly approaching</strong> for smaller municipalities and special districts,
-        the time to act is now. Kaffeinated Kodemonkey’s Accessibility Monitoring Platform keeps your digital platforms 
-        <strong>ADA, WCAG 2.1/2.2 AA, and Section 508 compliant</strong> long-term — without constant stress or rework.</p>
+        <p>With the DOJ ADA Title II mandates <strong>now fully in effect</strong> for public entities serving populations over 50,000, and the <strong>April 26, 2027 deadline rapidly approaching</strong> for smaller municipalities, public schools, and special districts, the window for guesswork has closed. Kaffeinated Kodemonkey’s Continuous Accessibility Monitoring Platform keeps your digital infrastructure <strong>ADA, WCAG 2.2 Level AA, and Section 508 compliant</strong> long-term — eliminating developer friction and protecting your organization from regulatory risk.</p>
       </div>
     </div>
-  </banner>
+  </section>
   <hr />
 {% endif %}
