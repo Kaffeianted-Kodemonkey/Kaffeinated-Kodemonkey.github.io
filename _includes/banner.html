@@ -2,10 +2,11 @@
 {% assign pcat = page.categories %}
 
 {% if pt != "The MonkeyHub" %}
-  <section class="site-overall-banner mt-1" aria-label="Regulatory Compliance Alert Banner">
+  <section class="site-overall-banner" aria-label="Regulatory Compliance Alert Banner">
     <div class="row align-items-center">
       <!-- Left Column: Branding and Call to Action -->
       <div class="col-12 col-md-4 text-center text-md-start">
+          <h1 class="mb-3 pb-3 title"><span class="text-orange">Monkey</span><span class="text-navy"><em>-Hub</em></span></h1>
         {% if page.banner %}
           <img src="{{ site.baseurl }}{{ page.banner }}" class="img-thumbnail mb-3 img-fluid" width="50%" alt="Kaffeinated Kodemonkey: DHS Certified Trusted Tester Web Compliance Frameworks.">
         {% else %}

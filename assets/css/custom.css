@@ -83,6 +83,14 @@ btn:first-child:hover, :not(.btn-check)+.btn:hover {
     --bs-btn-disabled-border-color: #ffc107;
     --bs-gradient: none;
 }
+.text-navy {
+    color:  #37517e;
+}
+
+h1 .title{
+    font-size: 5.0em;
+
+}
 /****** Main Content *********/
 .main{
     min-height: 500px;
