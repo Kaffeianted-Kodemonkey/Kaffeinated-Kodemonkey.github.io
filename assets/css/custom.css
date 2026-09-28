@@ -3,7 +3,6 @@
 /* These are designer added or mondifies styles from the main styles.
    Enter your custom style below */
 
-
 /* Skip link */
 .skip {
   position: absolute;
@@ -17,8 +16,8 @@
 /* blockquote background color */
 .bg-kkm-blue{
   background-color: #37517E;
-  margin: 40px 100px;
-  padding: 25px;
+  margin: 40px 10px;
+  padding: 5px;
 }
 
 /* disable url/nav link */
@@ -84,7 +83,11 @@ btn:first-child:hover, :not(.btn-check)+.btn:hover {
     --bs-btn-disabled-border-color: #ffc107;
     --bs-gradient: none;
 }
+/****** Main Content *********/
+.main{
+    min-height: 500px;
 
+}
 /****** FAQ links in accordion *****/
 .faq-link a {
   font-family: "Poppins", sans-serif;
@@ -187,4 +190,44 @@ section #audit-header, #EnvTerm, #report, #Score {
 
 element.style {
     background-color: #293C5D !important;
+}
+
+/* ==========================================================================
+   Static Accessible Client Grid Styles
+   ========================================================================== */
+
+.client-grid-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Reduces height constraint by 1/2 (Max 90px) & handles diverse logo bounds */
+.client-grid-logo {
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* Typography Hierarchy for Compliance Details */
+.client-grid-title {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.client-grid-meta {
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+/* Micro-Interactions: Smooth fade to full color on Hover and Keyboard Focus */
+.client-grid-card:hover .client-grid-logo,
+.client-grid-card a:focus .client-grid-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.client-grid-card:hover {
+  transform: translateY(-2px);
 }

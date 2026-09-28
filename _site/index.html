@@ -95,24 +95,26 @@
     <header id="header" class="fixed-top header-inner-pages">
   <a href="/#about" class="skip">Skip to main content</a>
 
-  <div class="container d-flex align-items-center">
+  <div class="container-fluid d-flex ms-3">
 
     <!-- <h1><a href="index.html">Kaffeinated Kodemonkey</a></h1> -->
     <!-- Uncomment below if you prefer to use an image logo -->
     <p class="mt-3"><a href="http://localhost:4000" class="img-thumbnail inf-fluid logo me-auto"><img src="/assets/img/KKM-Banner.png" alt="Kaffeinated Kodemonkey" class="img-fluid"></a></p>
 
     <nav id="navbar" class="navbar">
-      <ul>
-        <li><a class="nav-link " href="/About/">About</a></li>
-        <li><a class="nav-link" href="/#services">Services</a></li>
-        <!-- <li><a class="nav-link scrollto " href="/MonkeyHub">MonkeyHub</a></li> -->
-        <li><a class="nav-link" href="/#faq">FAQ</a></li>
-        <li><a class="nav-link scrollto " href="/MonkeyHub/">MonkeyHub</a></li>
-        <li><a class="nav-link" href="/#contact">Contact Us</a></li>
-        <!-- <li><a class="nav-link scrollto" href="https://caffeinatedcodemonkey.com/client-tracking" target="_blank" rel="nofollow">Client Support</a></li> -->
-        <li class="ms-5 me-5"><a class="nav-link btn btn-outline-orange text-white pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
+        <div class="container-fluid">
+            <ul>
+                <li><a class="nav-link " href="/about/">About</a></li>
+                <li><a class="nav-link" href="/#services">Services</a></li>
+                <!-- <li><a class="nav-link scrollto " href="/MonkeyHub">MonkeyHub</a></li> -->
+                <li><a class="nav-link" href="/#faq">FAQ</a></li>
+                <li><a class="nav-link scrollto " href="/series/">Articles & Series</a></li>
+                <li><a class="nav-link" href="/#contact">Contact Us</a></li>
+                <!-- <li><a class="nav-link scrollto" href="https://caffeinatedcodemonkey.com/client-tracking" target="_blank" rel="nofollow">Client Support</a></li> -->
+                <li class="ms-5"><a class="nav-link btn btn-outline-orange text-white" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </div>
     </nav><!-- .navbar -->
 
   </div>
@@ -128,8 +130,9 @@
     <div class="row align-items-center gy-4 gx-3 gx-lg-5 px-3 px-md-4 px-lg-5">
       <div class="col-12 col-lg-7 d-flex flex-column justify-content-center pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
         <h1 class="text-warning mb-2 text-lg-start text-center">Bulletproof Digital Accessibility &amp; ADA Compliance</h1>
-        <p class="fs-6 text-white text-lg-start text-center mb-4">Don't let inaccessible code expose your organization to lawsuits, federal penalties, or procurement blocks.
-        Kaffeinated Kodemonkey combines automated monitoring with elite human intelligence to guarantee long-term conformance with ADA, WCAG 2.2, and Section 508 mandates.</p>
+        <p class="fs-6 text-white text-lg-start text-center mb-4">Don't let inaccessible code expose your organization to lawsuits, federal penalties,
+        or procurement blocks. Kaffeinated Kodemonkey combines automated monitoring with elite human intelligence to guarantee long-term conformance
+        with ADA, WCAG 2.2, and Section 508 mandates.</p>
 
         <div class="hero-business-case bg-light rounded-1 border border-warning-subtle overflow-hidden">
           <div class="fs-5 bg-secondary text-light text-center py-2 px-3">
@@ -150,7 +153,10 @@
 
           <div class="row g-0 align-items-center">
             <div class="col-12 col-lg-8 p-3">
-              <p class="fs-6 text-start mb-0"><strong>Regulatory Update:</strong> The DOJ officially extended Title II web compliance deadlines to <strong>April 26, 2027</strong> (populations over 50k / public higher-ed) and <strong>April 26, 2028</strong> (smaller districts). Use this critical window to secure your certified Proof of Compliance Certificate (POCC) or formal Section 508 documentation.</p>
+              <p class="fs-6 text-start mb-0"><strong>Regulatory Update:</strong>
+                  The DOJ officially extended Title II web compliance deadlines to <strong>April 26, 2027</strong> (populations over 50k / public higher-ed)
+                  and <strong>April 26, 2028</strong> (smaller districts). Use this critical window to secure your certified Proof of Compliance Certificate (POCC)
+                  <br />or formal Section 508 documentation.</p>
             </div>
             <div class="col-12 col-lg-4 p-3 text-center">
               <div class="d-grid d-lg-block">
@@ -174,39 +180,81 @@
       <!-- ======= Clients Section ======= -->
 
       <!-- ======= Clients Section ======= -->
-<section id="clients" class="clients section-bg">
-  <div class="container d-flex align-items-center justify-content-center"">
+<section id="clients" class="clients section-bg py-4" aria-label="Our Certified Clients">
+  <div class="container-fluid px-md-5">
+    <!-- 6-Column Grid: Displays smoothly inline on desktop, wraps cleanly on mobile viewports -->
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-4 align-items-center justify-content-center">
 
-    <div class="row" data-aos="zoom-in">
-
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="https://cisc.colorado.gov/accessibility" target="_blank"><img src="assets/img/clients/CISC-Logo.png" class="img-fluid" alt="Colorado Information Sharing Consortium" rel="nofollow"></a>
+      <!-- Client 1: CISC -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://cisc.colorado.gov/" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://cisc.colorado.gov/sites/g/files/lrnvjt1776/files/2019-12/Logo-white.jpg" class="img-fluid mx-auto client-grid-logo" alt="Colorado Information Sharing Consortium">
+            <span class="client-grid-title d-block mt-2 fw-semibold">CISC</span>
+            <span class="client-grid-meta d-block text-muted">Gov Standards • Section 508</span>
+          </a>
+        </div>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="https://rioblancowatercd.colorado.gov/web-accessibility-compliance" target="_blank"><img src="assets/img/clients/RBWCD.png" class="img-fluid" alt="Rio Blanco Conservancy District" rel="nofollow"></a>
+      <!-- Client 2: RBWCD -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://rioblancowatercd.colorado.gov/" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://rioblancowatercd.colorado.gov/sites/g/files/lrnvjt2251/files/Rio_Blanco_WCD_Logo.png" class="img-fluid mx-auto client-grid-logo" alt="Rio Blanco Water Conservancy District">
+            <span class="client-grid-title d-block mt-2 fw-semibold">RBWCD</span>
+            <span class="client-grid-meta d-block text-muted">Gov Standards • Section 508</span>
+          </a>
+        </div>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="https://ace911.org/accessibility-compliance/" target="_blank"><img src="assets/img/clients/ACE911.jpg" class="img-fluid" alt="Arapahoe County Emergancy 911" rel="nofollow"></a>
+      <!-- Client 3: AC911A -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://ace911.org/" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://ace911.org/wp-content/uploads/2020/07/logo-e1699112422692.jpg" class="img-fluid mx-auto client-grid-logo" alt="Arapahoe County 911 Authority">
+            <span class="client-grid-title d-block mt-2 fw-semibold">AC911A</span>
+            <span class="client-grid-meta d-block text-muted">Gov Standards • Section 508</span>
+          </a>
+        </div>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="https://compliance.quickstart.com/accessibility/" target="_blank"><img src="assets/img/clients/QuickStart.png" class="img-fluid" alt="Quick Start" rel="nofollow"></a>
+      <!-- Client 4: CSI -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://coseaplanes.org" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://coseaplanes.org/wp-content/uploads/2024/06/cropped-CSPI-Logo.png" class="img-fluid mx-auto client-grid-logo" alt="Colorado Seaplane Initiative">
+            <span class="client-grid-title d-block mt-2 fw-semibold">CSI</span>
+            <span class="client-grid-meta d-block text-muted">Public Standards • WCAG 2.2</span>
+          </a>
+        </div>
       </div>
 
-      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="https://alamedawsd.colorado.gov/accessibility" target="_blank"><img src="https://alamedawsd.colorado.gov/sites/alamedawsd/files/styles/max_1920/public/jong-marshes-79mNMAvSORg-unsplash.jpg?h=33af85a3" class="img-fluid" alt="Alameda Water and Sanitation District" rel="nofollow"></a>
+      <!-- Client 5: AWSD -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://alamedawsd.colorado.gov" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://alamedawsd.colorado.gov/sites/g/files/lrnvjt2441/files/styles/featured_image/public/jong-marshes-79mNMAvSORg-unsplash.jpg?h=c6ab631f&itok=4YkZKmqH" class="img-fluid mx-auto client-grid-logo" alt="Alameda Water Sanitation District">
+            <span class="client-grid-title d-block mt-2 fw-semibold">AWSD</span>
+            <span class="client-grid-meta d-block text-muted">Gov Standards • Section 508</span>
+          </a>
+        </div>
       </div>
 
-      <!--<div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-        <a href="http://clevelandcordblood.org/" target="_blank"><img src="assets/img/clients/CCBC.jpg" class="img-fluid" alt="Cleveland Cord Blood Center" rel="nofollow"></a>
-      </div> -->
+      <!-- Client 6: GERWCD -->
+      <div class="col text-center">
+        <div class="client-grid-card">
+          <a href="https://gerwcd.colorado.gov/" target="_blank" rel="noopener" class="d-block text-decoration-none text-dark">
+            <img src="https://gerwcd.colorado.gov/sites/g/files/lrnvjt1521/files/GERWCD-Logo.png" class="img-fluid mx-auto client-grid-logo" alt="Grandview Estates Rural Water Conservation District">
+            <span class="client-grid-title d-block mt-2 fw-semibold">GERWCD</span>
+            <span class="client-grid-meta d-block text-muted">Gov Standards • Section 508</span>
+          </a>
+        </div>
+      </div>
 
     </div>
-
   </div>
-</section><!-- End Cliens Section -->
+</section>
+<!-- End Clients Section -->
 
 
       <!-- ======= About Section ======= -->
@@ -611,11 +659,11 @@
               <hr />
               <ul class="list-unstyled">
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/Services/Web-Accessibility-Audits">Web Accessibility Audits</a></li>
+                    href="/services/web-accessibility-audits">Web Accessibility Audits</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/Services/Accessibility-Monitoring">Accessibility Monitoring</a></li>
+                    href="/services/web-accessibility-audits">Accessibility Monitoring</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/Services/Accessibility-WebDesign">Accessible Web Design</a></li>
+                    href="/services/web-accessibility-audits">Accessible Web Design</a></li>
               </ul>
             </div>
             <!-- Policies -->
@@ -624,11 +672,11 @@
               <hr />
               <ul class="list-unstyled">
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/TOS">Terms of Service</a></li>
+                    href="/a11y-policy/tos">Terms of Service</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/Disclaimer">Disclaimer</a></li>
+                    href="/a11y-policy/disclaimer">Disclaimer</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/Privacy-Policy">Privacy Policy</a></li>
+                    href="/a11y-policy/privacy-policy">Privacy Policy</a></li>
               </ul>
             </div>
             <!-- ADA Compliance -->
@@ -637,11 +685,11 @@
               <hr />
               <ul class="list-unstyled mb-4">
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/ADA-Compliance">ADA Compliance</a></li>
+                    href="/a11y-policy/ada-compliance">ADA Compliance</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/A11y-Statement">Accessibility Statement</a></li>
+                    href="/a11y-policy/a11y-statement">Accessibility Statement</a></li>
                 <li><i class="bx bx-chevron-right" aria-hidden="true"></i> <a
-                    href="/A11y-Policy/WCAG-Report">WCAG Report</a></li>
+                    href="/a11y-policy/wcag-report">WCAG Report</a></li>
               </ul>
             </div>
           </div>
@@ -701,6 +749,7 @@
     </div>
   </div>
 </footer>
+
 
   </body>
 
