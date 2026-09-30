@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 Disallow: /private/  # Block any sensitive subfolders
 Disallow: /support/
-Disallow: /MonkeyForum/
