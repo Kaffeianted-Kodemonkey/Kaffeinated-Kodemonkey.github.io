@@ -83,6 +83,12 @@ btn:first-child:hover, :not(.btn-check)+.btn:hover {
     --bs-btn-disabled-border-color: #ffc107;
     --bs-gradient: none;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .text-navy {
     color:  #37517e;
 }
@@ -96,6 +102,27 @@ h1 .title{
     min-height: 500px;
 
 }
+/******* Call Out *******************/
+/* Base class */
+.callout {}
+
+/* Modifier classes */
+.callout-info {}
+.callout-warning {}
+.callout-danger {}
+.callout-orange {
+    margin: 25px;
+    padding: 20px;
+    width: 70%;
+    background-color: #37517e;
+    border-left: 6px solid darkorange;
+    border-top-right-radius:.5rem;
+    border-bottom-right-radius:.5rem;
+    padding:1rem;
+    text-align:center;
+    color: #fff;
+}
+
 /****** FAQ links in accordion *****/
 .faq-link a {
   font-family: "Poppins", sans-serif;
