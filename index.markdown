@@ -11,7 +11,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: homepage-template
-title: Kaffeinated Kodemonkey WCAG & ADA Compliance Audits
+title: Kaffeinated Kodemonkey
 description: DHS Certified Trusted Tester for accessibility audits, POCC, and WCAG/Section 508 compliance
 image: KKM-Logo.png
 url: https://www.kaffeinatedkodemonkey.com/
