@@ -36,7 +36,8 @@
  --bs-warning: #ffc107;
  --bs-danger: #dc3545;
  --bs-light: #f3f5fa;
- --bs-dark: #212529;
+ /*--bs-dark: #212529;*/
+ --bs-dark: #283A5A;
  --bs-primary-rgb: 13, 110, 253;
  --bs-secondary-rgb: 108, 117, 125;
  --bs-success-rgb: 25, 135, 84;
@@ -137,7 +138,7 @@ body {
 }
 
 a {
-  color: /*#000080 */ #176E97 /*#1A7EAD /*#C4C4C4 /*#47b2e4*/;
+  color:  #176E97;
   text-decoration: none;
 }
 
@@ -868,53 +869,53 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
-.why-us .content {
+.pocc .content {
   padding: 60px 100px 0 100px;
 }
 
-.why-us .content h3 {
+.pocc .content h3 {
   font-weight: 400;
   font-size: 34px;
   color: #37517e;
 }
 
-.why-us .content h4 {
+.pocc .content h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-/*.why-us .content p {
+/*.pocc .content p {
   font-size: 15px;
   color: #848484;
 }*/
 
-.why-us .img {
+.pocc .img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.why-us .accordion-list {
+.pocc .accordion-list {
   padding: 0 100px 60px 100px;
 }
 
-.why-us .accordion-list ul {
+.pocc .accordion-list ul {
   padding: 0;
   list-style: none;
 }
 
-.why-us .accordion-list li+li {
+.pocc .accordion-list li+li {
   margin-top: 18px;
 }
 
-.why-us .accordion-list li {
+.pocc .accordion-list li {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
 }
 
-.why-us .accordion-list a {
+.pocc .accordion-list a {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -926,70 +927,70 @@ section {
   cursor: pointer;
 }
 
-.why-us .accordion-list span {
+.pocc .accordion-list span {
   color: #47b2e4;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
 }
 
-.why-us .accordion-list i {
+.pocc .accordion-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.why-us .accordion-list p {
+.pocc .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.why-us .accordion-list .icon-show {
+.pocc .accordion-list .icon-show {
   display: none;
 }
 
-.why-us .accordion-list a.collapsed {
+.pocc .accordion-list a.collapsed {
   color: #343a40;
 }
 
-.why-us .accordion-list a.collapsed:hover {
+.pocc .accordion-list a.collapsed:hover {
   color: #47b2e4;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
+.pocc .accordion-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
+.pocc .accordion-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1024px) {
 
-  .why-us .content,
-  .why-us .accordion-list {
+  .pocc .content,
+  .pocc .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 992px) {
-  .why-us .img {
+  .pocc .img {
     min-height: 400px;
   }
 
-  .why-us .content {
+  .pocc .content {
     padding-top: 30px;
   }
 
-  .why-us .accordion-list {
+  .pocc .accordion-list {
     padding-bottom: 30px;
   }
 }
 
 @media (max-width: 575px) {
-  .why-us .img {
+  .pocc .img {
     min-height: 200px;
   }
 }
@@ -1865,9 +1866,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 16px;
-  background: #37517e;
+  font-size: 1.2rem;
+  /*background: #37517e;*/
+  background: /*#fff*/ var(--bs-light);
 }
+
 
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1923,12 +1926,13 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: /*#fff*/ var(--bs-light);
+    color:  #f3f5fa;
+  padding: 30px 0 10px 0;
+  background: /*#fff*/ var(--bs-dark);
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-contact h3 {
@@ -1938,7 +1942,8 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  /*color: #37517e;*/
+  color: #f3f5fa;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1946,20 +1951,16 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  /*color: #5e5e5e;*/
+  color: goldenrod;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  /*color: darkseagreen !important;*/
   position: relative;
   padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-  color: #000080;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1985,14 +1986,16 @@ section {
   padding-top: 0;
 }
 
-#footer .footer-top .footer-links ul a {
-  color: #176E97 /*#777777*/;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
+#footer .footer-top a {
+    color: #7AA3F0 !important;
 }
 
-#footer .footer-top .footer-links ul a:hover {
+#footer .footer-top a:hover{
+  margin-bottom: 30px;
+  color: steelblue !important;
+}
+
+#footer .footer-top .footer-links a:hover {
   text-decoration: none;
   color: #47b2e4;
 }
@@ -2019,8 +2022,8 @@ section {
 }
 
 #footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #fff;
 }
 
@@ -2039,8 +2042,8 @@ section {
 
 @media (max-width: 768px) {
   #footer .footer-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   #footer .copyright,
