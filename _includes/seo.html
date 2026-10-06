@@ -1,4 +1,18 @@
-<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
-<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<!-- Standard SEO Tags -->
+<title>{% if page.title %}{{ page.title }} | Kaffeinated Kodemonkey{% else %}Kaffeinated Kodemonkey | Digital Accessibility Compliance{% endif %}</title>
+<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting, ADA compliance audits, and Section 508 validation by a DHS Certified Trusted Tester.{% endif %}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<!-- Open Graph / Facebook Meta Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Kaffeinated Kodemonkey{% endif %}">
+<meta property="og:description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting and compliance audits.{% endif %}">
+<meta property="og:image" content="{{ '/assets/images/accessibility-testing.jpg' | absolute_url }}">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Kaffeinated Kodemonkey{% endif %}">
+<meta name="twitter:description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting and compliance audits.{% endif %}">
+<meta name="twitter:image" content="{{ '/assets/images/accessibility-testing.jpg' | absolute_url }}">

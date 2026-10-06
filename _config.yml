@@ -18,8 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kaffeinated Kodemonkey
-email: your-email@example.com
+# title: Web Accessibility Consulting & Compliance Services
+# company: Kaffeinated Kodemonkey
+email: support@kaffeinatedkodemonkey.com
 description: >- # this means to ignore newlines until "baseurl:"
   HB21-1110 & ADA compliance audits for CO gov & edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -1,13 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name ="description" content= '{{ page.description }}'>
   <meta name ="title" content= '{{ page.title }}'>
-  <title>{{ page.title }}</title>
+  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting, ADA compliance audits, and Section 508 validation by a DHS Certified Trusted Tester.{% endif %}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-    {% include seo.html %}
-
-
+      {% include seo.html %}
 
   <!-- Favicons -->
   <link href="{{ site.baseurl }}/assets/img/Kaffeinated_Kodemonkey_Favicon.png" rel="icon">
@@ -46,5 +44,78 @@
 
     gtag('config', 'G-BV1XS16GWB');
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Kaffeinated Kodemonkey",
+    "image": "https://kaffeinatedkodemonkey.com",
+    "@id": "https://kaffeinatedkodemonkey.com",
+    "url": "https://kaffeinatedkodemonkey.com",
+    "telephone": "+1-720-608-1444",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rangely",
+      "addressRegion": "CO",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.0875",
+      "longitude": "-108.7932"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00",
+      "description": "By Appointment Only"
+    },
+    "sameAs": [
+      "https://twitter.com",
+      "https://github.com",
+      "https://linkedin.com"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Accessibility Compliance Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Accessibility Audit",
+            "description": "Rigorous manual testing performed directly by a DHS Certified Trusted Tester providing formal Accessibility Conformance Reports (ACR / VPAT)."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Monitoring + Audit Platform",
+            "description": "Enterprise-grade continuous crawling infrastructure and automated pipeline pipeline scanning with manual compliance verification."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Accessible Web Design",
+            "description": "Custom website development built strictly on POUR accessibility architecture and semantic HTML."
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
 
 </head>
