@@ -11,14 +11,13 @@
         <div class="container-fluid">
             <ul>
                 <li><a class="nav-link {% if page.title == 'About' %} active {% endif %}" href="/about/">About</a></li>
-                <li><a class="nav-link" href="{{ site.baseurl }}/#services">Services</a></li>
-                <!-- <li><a class="nav-link scrollto {% if page.title == 'MonkeyHub' %} active {% endif %}" href="{{ site.baseurl }}/MonkeyHub">MonkeyHub</a></li> -->
-                <li><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></li>
-                <li><a class="nav-link scrollto {% if page.title == 'MonkeyHub' %} active {% endif %}" href="/series/">Articles & Series</a></li>
-                <li><a class="nav-link" href="{{ site.baseurl }}/#contact">Contact Us</a></li>
-                <!-- <li><a class="nav-link scrollto" href="https://caffeinatedcodemonkey.com/client-tracking" target="_blank" rel="nofollow">Client Support</a></li> -->
-                <li class="ms-5"><a class="nav-link btn btn-outline-orange text-white" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></li>
+                <li><a class="nav-link scrollto" href="{{ site.baseurl }}/#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="{{ site.baseurl }}/#faq">FAQ</a></li>
+                <li><a class="nav-link {% if page.title == 'MonkeyHub' %} active {% endif %}" href="/series/">Articles & Series</a></li>
+                <li><a class="nav-link scrollto" href="{{ site.baseurl }}/#contact">Contact Us</a></li>
             </ul>
+
+            <p><a class="btn btn-outline-orange text-white ms-5  mt-3 pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></p>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </div>
     </nav><!-- .navbar -->
