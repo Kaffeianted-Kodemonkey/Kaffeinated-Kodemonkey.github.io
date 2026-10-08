@@ -1,9 +1,18 @@
 {% assign url = page.url %}
 {% assign pcat = page.categories %}
 <!--<h2>{{pcat}}</h2>-->
-<hr>
 
-{% if pcat != "MonkeyHub" and pcat != "series" %}
+{% if pcat == "MonkeyHub" %}
+<hr>
+<ul class="fs-5">
+      <li>
+        <a href="{{ site.base}}/series/" class="{% if page.title == 'About Series' %} active {% endif %}">Blog Series</a>
+      </li>
+      <li><a href="{{ site.base}}/support-ticket/" class="{% if page.title == 'Support Ticket' %} active {% endif %}">Support Ticket</a></li>
+</ul>
+<hr />
+{% else %}
+<hr>
 <ul class="fs-5">
   {% assign sort_pages = site.pages | sort: "nav_order" %}
   {% for p in sort_pages %}
