@@ -6,9 +6,21 @@ permalink: /monkeyhub/learning-center/
 categories: [MonkeyHub, learning center]
 ---
 
+{% comment %}
+This month = the newest article in _posts/articles/ plus its companion guide.
+The companion is the guide that shares the article's `pair` value.
+If there is none, the newest post with series: criterion is used.
+Latest guides skips whatever This month already shows, so nothing appears twice.
+If your articles folder is spelled differently, change lc_articles_dir.
+{% endcomment %}
+
 {% assign lc_articles_dir = "articles" %}
 {% capture lc_needle %}_posts/{{ lc_articles_dir }}/{% endcapture %}
-{% assign lc_posts = site.posts | where_exp: "p", "p.categories contains 'wcag-learning' or p.categories contains 'learning_center'" %}
+
+{% comment %} Fix: Separated logic arrays to bypass the GitHub Pages where_exp parsing bug {% endcomment %}
+{% assign wcag_posts = site.posts | where_exp: "p", "p.categories contains 'wcag-learning'" %}
+{% assign lc_folder_posts = site.posts | where_exp: "p", "p.categories contains 'learning_center'" %}
+{% assign lc_posts = wcag_posts | concat: lc_folder_posts | uniq %}
 
 {% assign lc_article = nil %}
 {% for post in site.posts %}
@@ -27,6 +39,7 @@ categories: [MonkeyHub, learning center]
     {% endif %}
   {% endfor %}
 {% endif %}
+
 {% unless lc_guide %}
   {% assign lc_guide = site.posts | where: "series", "criterion" | first %}
 {% endunless %}
