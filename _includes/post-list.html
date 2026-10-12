@@ -1,0 +1,48 @@
+{% comment %}
+  One list for both landing pages.
+  Parameters:
+    type     "articles" (default) or "guides"
+    dir      folder under _posts/ that holds articles (default "articles")
+    limit    optional maximum number of posts
+    level    heading level for each title (default 2)
+    exclude  optional post URL to leave out (used to avoid duplicates)
+    empty    optional text shown when there are no posts
+  Articles = only posts inside _posts/<dir>/.
+  Guides   = posts in the wcag-learning category or in _posts/learning_center/.
+{% endcomment %}
+{% assign pl_level = include.level | default: 2 %}
+{% assign pl_dir = include.dir | default: "articles" %}
+{% capture pl_needle %}_posts/{{ pl_dir }}/{% endcapture %}
+{% assign pl_posts = "" | split: "" %}
+
+{% for p in site.posts %}
+  {% assign pl_match = false %}
+  {% if include.type == "guides" %}
+    {% if p.categories contains "wcag-learning" or p.categories contains "learning_center" %}{% assign pl_match = true %}{% endif %}
+  {% else %}
+    {% if p.path contains pl_needle %}{% assign pl_match = true %}{% endif %}
+  {% endif %}
+  {% if pl_match and p.url != include.exclude %}
+    {% assign pl_posts = pl_posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% if include.limit %}{% assign pl_posts = pl_posts | slice: 0, include.limit %}{% endif %}
+
+{% if pl_posts.size > 0 %}
+  <ul class="list-group list-group-flush mb-4">
+    {% for post in pl_posts %}
+      <li class="list-group-item px-0">
+        <article>
+          <h{{ pl_level }} class="h4"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h{{ pl_level }}>
+          <p class="mb-1 text-secondary">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          </p>
+          <p class="mb-0">{{ post.description | default: post.excerpt | strip_html | truncate: 160 }}</p>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>{{ include.empty | default: "Nothing here yet. Check back soon." }}</p>
+{% endif %}

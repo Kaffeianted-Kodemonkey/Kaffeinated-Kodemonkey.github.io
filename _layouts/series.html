@@ -27,6 +27,8 @@
               <a class="nav-link text-primary ps-4" href="{{ post.url }}">Post {{ forloop.index }}: {{ post.title }}</a>
             {% endif %}
           {% endfor %}
+          <hr />
+          <p class="ms-4"><a href="{{ site.baseurl }}/monkeyhub/articles"><i class="bi bi-skip-backward-fill"></i> Articles</a></p>
 
         </div>
         <div class="col col-md-9 order-md-first order-lg-last">
@@ -44,6 +46,10 @@
 
           <!-- Content -->
             {{ content }}
+
+          <hr />
+
+            {% include lc-related.html %}
         </div>
       </div>
     </div>

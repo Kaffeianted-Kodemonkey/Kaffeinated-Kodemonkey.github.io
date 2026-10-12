@@ -1,29 +1,66 @@
-{% assign url = page.url %}
-{% assign pcat = page.categories %}
-<!--<h2>{{pcat}}</h2>-->
+{% comment %}
+  Section navigation driven by _data/sidebar.yml.
+  1. page.nav_section (front matter) wins if set.
+  2. Otherwise the first section whose prefix matches page.url is used.
+  3. If nothing matches, fall back to pages that share the page's first category.
+{% endcomment %}
+{% assign current = nil %}
 
-{% if pcat == "MonkeyHub" %}
-<hr>
-<ul class="fs-5">
-      <li>
-        <a href="{{ site.base}}/series/" class="{% if page.title == 'About Series' %} active {% endif %}">Blog Series</a>
-      </li>
-      <li><a href="{{ site.base}}/support-ticket/" class="{% if page.title == 'Support Ticket' %} active {% endif %}">Support Ticket</a></li>
-</ul>
-<hr />
-{% else %}
-<hr>
-<ul class="fs-5">
-  {% assign sort_pages = site.pages | sort: "nav_order" %}
-  {% for p in sort_pages %}
-    {% if p.categories contains pcat %}
-      <li>
-        <a href="{{ p.url }}" {% if p.url == url %}class="isDisabled"{% endif %}>
-          {{ p.title }}
-        </a>
-      </li>
-    {% endif %}
+{% if page.nav_section %}
+  {% for section in site.data.sidebar.sections %}
+    {% if section.id == page.nav_section %}{% assign current = section %}{% endif %}
   {% endfor %}
-</ul>
-<hr />
+{% endif %}
+
+{% for section in site.data.sidebar.sections %}
+  {% unless current %}
+    {% for prefix in section.prefixes %}
+      {% assign head = page.url | slice: 0, prefix.size %}
+      {% if head == prefix %}{% assign current = section %}{% endif %}
+    {% endfor %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} Last resort for MonkeyHub pages that do not match a URL prefix. {% endcomment %}
+{% unless current %}
+  {% assign pcats = page.categories | join: "," %}
+  {% if pcats contains "MonkeyHub" %}
+    {% for section in site.data.sidebar.sections %}
+      {% if section.id == "monkeyhub" %}{% assign current = section %}{% endif %}
+    {% endfor %}
+  {% endif %}
+{% endunless %}
+
+{% if current %}
+  <nav aria-labelledby="sidebar-heading">
+    <h2 id="sidebar-heading" class="text-orange">{{ current.title }}</h2>
+    <hr>
+    <ul class="fs-5 list-group">
+      {% for link in current.links %}
+        <li class="list-group-item">
+          <a href="{{ link.url | relative_url }}"{% if link.url == page.url %} class="active" aria-current="page"{% endif %}>{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <hr />
+  </nav>
+{% else %}
+  {% assign pcat = page.categories | join: "," | split: "," | first %}
+  {% if pcat %}
+    <nav aria-labelledby="sidebar-heading">
+      <h2 id="sidebar-heading" class="text-orange">{{ pcat }}</h2>
+      <hr>
+      <ul class="fs-5">
+        {% assign sort_pages = site.pages | sort: "nav_order" %}
+        {% for p in sort_pages %}
+          {% if p.categories contains pcat %}
+            <li class="list-group-item">
+              <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="isDisabled" aria-current="page"{% endif %}>{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <hr />
+    </nav>
+  {% endif %}
 {% endif %}

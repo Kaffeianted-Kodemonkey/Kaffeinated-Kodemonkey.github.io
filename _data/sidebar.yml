@@ -1,0 +1,55 @@
+# Sidebar sections. The first section whose prefix matches the page URL is shown.
+# List the most specific sections first. To force a section on one page,
+# add  nav_section: <id>  to that page's front matter.
+sections:
+  - id: articles
+    title: Articles
+    prefixes: ["/monkeyhub/articles/", "/article/"]
+    links:
+      - { title: "All articles", url: "/monkeyhub/articles/" }
+      - { title: "WCAG Learning Center", url: "/monkeyhub/learning-center/" }
+      - { title: "Resources", url: "/monkeyhub/resources/" }
+      - { title: "Back to MonkeyHub", url: "/monkeyhub/" }
+
+  - id: learning-center
+    title: WCAG Learning Center
+    prefixes: ["/monkeyhub/learning-center/"]
+    links:
+      - { title: "Learning Center home", url: "/monkeyhub/learning-center/" }
+      - { title: "Start here", url: "/monkeyhub/learning-center/#start-here" }
+      - { title: "WCAG in plain language", url: "/monkeyhub/learning-center/wcag/" }
+      - { title: "Testing and audits", url: "/monkeyhub/learning-center/testing/" }
+      - { title: "Design and content", url: "/monkeyhub/learning-center/design/" }
+      - { title: "Development patterns", url: "/monkeyhub/learning-center/development/" }
+      - { title: "Law and compliance", url: "/monkeyhub/learning-center/compliance/" }
+      - { title: "Assistive technology", url: "/monkeyhub/learning-center/assistive-tech/" }
+      - { title: "Back to MonkeyHub", url: "/monkeyhub/" }
+
+  - id: monkeyhub
+    title: MonkeyHub
+    prefixes: ["/monkeyhub"]
+    links:
+      - { title: "MonkeyHub", url: "/monkeyhub/" }
+      - { title: "Articles", url: "/monkeyhub/articles/" }
+      - { title: "WCAG Learning Center", url: "/monkeyhub/learning-center/" }
+      - { title: "Resources", url: "/monkeyhub/resources/" }
+      - { title: "Support Ticket", url: "/support-ticket/" }
+
+  - id: services
+    title: Services
+    prefixes: ["/services/"]
+    links:
+      - { title: "Web Accessibility Audits", url: "/services/web-accessibility-audits/" }
+      - { title: "Accessibility Monitoring", url: "/services/accessibility-monitoring/" }
+      - { title: "Accessible Web Design", url: "/services/accessibility-web-design/" }
+
+  - id: policies
+    title: Accessibility and policies
+    prefixes: ["/a11y-policy/"]
+    links:
+      - { title: "ADA Compliance", url: "/a11y-policy/ada-compliance/" }
+      - { title: "Accessibility Statement", url: "/a11y-policy/a11y-statement/" }
+      - { title: "WCAG Report", url: "/a11y-policy/wcag-report/" }
+      - { title: "Terms of Service", url: "/a11y-policy/tos/" }
+      - { title: "Disclaimer", url: "/a11y-policy/disclaimer/" }
+      - { title: "Privacy Policy", url: "/a11y-policy/privacy-policy/" }

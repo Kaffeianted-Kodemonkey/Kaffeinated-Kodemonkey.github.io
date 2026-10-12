@@ -1,0 +1,134 @@
+---
+layout: inner-pages
+title: Learning Center
+description: Practical articles on digital accessibility, WCAG, and real-world compliance from Kaffeinated Kodemonkey.
+permalink: /monkeyhub/learning-center/
+categories: [MonkeyHub, learning center]
+---
+
+{% comment %}
+  This month = the newest article in _posts/articles/ plus its companion guide.
+  The companion is the guide that shares the article's `pair` value. If there is none,
+  the newest post with series: criterion is used. Latest guides skips whatever
+  This month already shows, so nothing appears twice.
+  If your articles folder is spelled differently, change lc_articles_dir.
+{% endcomment %}
+{% assign lc_articles_dir = "articles" %}
+{% capture lc_needle %}_posts/{{ lc_articles_dir }}/{% endcapture %}
+{% assign lc_posts = site.posts | where_exp: "p", "p.categories contains 'wcag-learning' or p.categories contains 'learning_center'" %}
+
+{% assign lc_article = nil %}
+{% for post in site.posts %}
+  {% if post.path contains lc_needle %}
+    {% assign lc_article = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% assign lc_guide = nil %}
+{% if lc_article.pair %}
+  {% for post in lc_posts %}
+    {% if post.pair == lc_article.pair %}
+      {% assign lc_guide = post %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% unless lc_guide %}
+  {% assign lc_guide = site.posts | where: "series", "criterion" | first %}
+{% endunless %}
+
+<section class="p-4 mb-5 rounded bg-dark text-white" aria-labelledby="lc-intro">
+  <h2 id="lc-intro" class="display-6 fw-bold">Accessibility, explained for people who ship things</h2>
+  <p class="lead">Practical guides on WCAG, testing, and compliance. Written by the team at Kaffeinated Kodemonkey, based on manual audits of real websites and apps.</p>
+  <div class="d-flex flex-wrap gap-2">
+    <a class="btn btn-primary" href="#latest">Read the latest guides</a>
+    <a class="btn btn-outline-light" href="#start-here">Start from the basics</a>
+  </div>
+</section>
+
+{% if lc_article or lc_guide %}
+<section class="mb-5" id="this-month" aria-labelledby="lc-month-title">
+  <h2 id="lc-month-title">This month</h2>
+  <p>Start with the article for the big picture. Use the guide to put it into practice.</p>
+  <div class="row row-cols-1 row-cols-lg-2 g-3">
+
+    {% if lc_article %}
+    <div class="col">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h6 text-secondary">This month's article</h3>
+          <p class="h4 card-title"><a href="{{ lc_article.url | relative_url }}">{{ lc_article.title }}</a></p>
+          <p class="text-secondary mb-2"><time datetime="{{ lc_article.date | date_to_xmlschema }}">{{ lc_article.date | date: "%B %-d, %Y" }}</time></p>
+          <p class="card-text">{{ lc_article.description | default: lc_article.excerpt | strip_html | truncatewords: 35 }}</p>
+          <a href="{{ '/monkeyhub/articles/' | relative_url }}">All articles</a>
+        </div>
+      </article>
+    </div>
+    {% endif %}
+
+    {% if lc_guide %}
+    <div class="col">
+      <article class="card h-100">
+        <div class="card-body">
+          <h3 class="h6 text-secondary">{% if lc_guide.series == "criterion" %}WCAG criterion of the month{% else %}Guide for this month's article{% endif %}</h3>
+          <p class="h4 card-title"><a href="{{ lc_guide.url | relative_url }}">{{ lc_guide.title }}</a></p>
+          {% if lc_guide.series == "criterion" %}
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><strong>Criterion:</strong> {{ lc_guide.criterion }}</li>
+            <li class="list-inline-item"><strong>Level:</strong> {{ lc_guide.level }}</li>
+            <li class="list-inline-item"><strong>Added in WCAG:</strong> {{ lc_guide.wcag_since }}</li>
+          </ul>
+          {% endif %}
+          <p class="card-text">{{ lc_guide.description | default: lc_guide.excerpt | strip_html | truncatewords: 35 }}</p>
+          <a href="{{ '/monkeyhub/learning-center/wcag/' | relative_url }}">See all WCAG explainers</a>
+        </div>
+      </article>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+{% endif %}
+
+<section class="mb-5" id="topics" aria-labelledby="lc-topics-title">
+  <h2 id="lc-topics-title">Browse by topic</h2>
+  <p>Pick the area you're working on. Each topic collects the guides that apply to it.</p>
+
+  {% assign lc_topics = "WCAG in plain language|What each success criterion asks for, with examples of passing and failing code.|wcag;Testing and audits|Manual checks, automated tools, and how to read an audit report.|testing;Design and content|Color contrast, focus states, headings, link text, and alt text decisions.|design;Development patterns|Accessible forms, modals, menus, and custom components.|development;Law and compliance|ADA, Section 508, the European Accessibility Act, and what they mean for your site.|compliance;Assistive technology|How people use screen readers, switch devices, and voice control.|assistive-tech" | split: ";" %}
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+    {% for t in lc_topics %}
+      {% assign parts = t | split: "|" %}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5 card-title"><a class="stretched-link" href="{{ page.url | append: parts[2] | append: '/' | relative_url }}">{{ parts[0] }}</a></h3>
+            <p class="card-text">{{ parts[1] }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="mb-5" id="start-here" aria-labelledby="lc-start-title">
+  <h2 id="lc-start-title">New to accessibility? Start with the WCAG Series for Beginners</h2>
+  <p>Eight posts, in order. Each one builds on the one before it.</p>
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/Understanding_WCAG508/' | relative_url }}">Understanding WCAG &amp; 508</a><br>The history of WCAG and Section 508, and why both matter.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/Evolution_A11y/' | relative_url }}">The Evolution of Web A11y</a><br>How accessibility on the web has changed over time.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/WCAG_Section508/' | relative_url }}">WCAG vs Section 508</a><br>How the two relate, and where they differ.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/Pour_Web_Design/' | relative_url }}">POUR Web Design</a><br>The four principles behind every WCAG success criterion.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/WCAG_Success_Criteria/' | relative_url }}">WCAG Success Criteria</a><br>How to read the criteria and what the conformance levels mean.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/A11y_Enforcement/' | relative_url }}">A11y Enforcement</a><br>How accessibility rules are enforced and what that means for your risk.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/Bringing_It_All_Together/' | relative_url }}">Bringing It All Together</a><br>A 30-day action plan for taking a small site to WCAG 2.1 AA.</li>
+    <li class="list-group-item"><a class="fw-bold" href="{{ '/WCAG_Series/WCAG_Section508_Toolkit/' | relative_url }}">WCAG &amp; Section 508 Toolkit</a><br>The tools used throughout the series for testing and reporting.</li>
+  </ol>
+</section>
+
+<section class="mb-5" id="latest" aria-labelledby="lc-latest-title">
+  <h2 id="lc-latest-title">Latest guides</h2>
+  {% include post-list.html type="guides" limit=6 level=3 exclude=lc_guide.url empty="Our first guides are on the way. In the meantime, send us your accessibility question through MonkeySupport and we may write it up first." %}
+  <p><a href="{{ '/monkeyhub/resources/' | relative_url }}">Looking for checklists and tools? Browse Resources.</a></p>
+</section>

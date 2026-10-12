@@ -1,0 +1,18 @@
+{% comment %}
+  Lists Learning Center posts whose front matter has topic: <slug>.
+  Usage: {% include lc-topic.html slug="wcag" intro="..." %}
+{% endcomment %}
+{% assign topic_posts = site.posts | where: "topic", include.slug | uniq: "url" %}
+<p class="lead">{{ include.intro }}</p>
+{% if topic_posts.size > 0 %}
+  <ul class="list-group list-group-flush mb-4">
+    {% for post in topic_posts %}
+      <li class="list-group-item px-0">
+        <h2 class="h4"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="mb-0 text-secondary"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No guides in this topic yet. Check back soon.</p>
+{% endif %}

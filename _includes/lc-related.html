@@ -1,0 +1,22 @@
+{% comment %}
+  Shows the other post(s) that share this post's `pair` value.
+  Works from both the article and the Learning Center post.
+  Renders nothing if there is no pair or the partner is not published yet,
+  so it never produces a broken link.
+{% endcomment %}
+{% if page.pair %}
+  {% assign lc_related = site.posts | where: "pair", page.pair | where_exp: "p", "p.url != page.url" %}
+  {% if lc_related.size > 0 %}
+    <aside class="lc-related" aria-labelledby="lc-related-title">
+      <h2 id="lc-related-title">Related reading</h2>
+      <ul>
+        {% for p in lc_related %}
+          <li>
+            <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            ({% if p.categories contains "wcag-learning" %}Learning Center guide{% else %}Article{% endif %})
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  {% endif %}
+{% endif %}
