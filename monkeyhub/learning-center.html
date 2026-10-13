@@ -44,61 +44,70 @@ If your articles folder is spelled differently, change lc_articles_dir.
   {% assign lc_guide = site.posts | where: "series", "criterion" | first %}
 {% endunless %}
 
-<section class="p-4 mb-5 rounded bg-dark text-white" aria-labelledby="lc-intro">
-  <h2 id="lc-intro" class="display-6 fw-bold">Accessibility, explained for people who ship things</h2>
+<div class="p-4 mb-5 rounded bg-dark text-white">
+  <h1 class="display-6 fw-bold">Accessibility, explained for people who ship things</h1>
   <p class="lead">Practical guides on WCAG, testing, and compliance. Written by the team at Kaffeinated Kodemonkey, based on manual audits of real websites and apps.</p>
   <div class="d-flex flex-wrap gap-2">
-    <a class="btn btn-primary" href="#latest">Read the latest guides</a>
-    <a class="btn btn-outline-light" href="#start-here">Start from the basics</a>
+    <a class="btn btn-primary" href="#topics">Browse by topic</a>
+    <a class="btn btn-outline-light" href="{{ '/monkeyhub/learning_center/wcag_series/' | relative_url }}">Start from the basics</a>
   </div>
-</section>
+</div>
 
-{% if lc_article or lc_guide %}
-<section class="mb-5" id="this-month" aria-labelledby="lc-month-title">
-  <h2 id="lc-month-title">This month</h2>
-  <p>Start with the article for the big picture. Use the guide to put it into practice.</p>
-  <div class="row row-cols-1 row-cols-lg-2 g-3">
-
-    {% if lc_article %}
-    <div class="col">
-      <article class="card h-100">
-        <div class="card-body">
-          <h3 class="h6 text-secondary">This month's article</h3>
-          <p class="h4 card-title"><a href="{{ lc_article.url | relative_url }}">{{ lc_article.title }}</a></p>
-          <p class="text-secondary mb-2"><time datetime="{{ lc_article.date | date_to_xmlschema }}">{{ lc_article.date | date: "%B %-d, %Y" }}</time></p>
-          <p class="card-text">{{ lc_article.description | default: lc_article.excerpt | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ '/monkeyhub/articles/' | relative_url }}">All articles</a>
-        </div>
-      </article>
-    </div>
-    {% endif %}
-
-    {% if lc_guide %}
-    <div class="col">
-      <article class="card h-100">
-        <div class="card-body">
-          <h3 class="h6 text-secondary">{% if lc_guide.series == "criterion" %}WCAG criterion of the month{% else %}Guide for this month's article{% endif %}</h3>
-          <p class="h4 card-title"><a href="{{ lc_guide.url | relative_url }}">{{ lc_guide.title }}</a></p>
-          {% if lc_guide.series == "criterion" %}
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item"><strong>Criterion:</strong> {{ lc_guide.criterion }}</li>
-            <li class="list-inline-item"><strong>Level:</strong> {{ lc_guide.level }}</li>
-            <li class="list-inline-item"><strong>Added in WCAG:</strong> {{ lc_guide.wcag_since }}</li>
-          </ul>
+<div class="row row-cols-1 row-cols-lg-2 g-4 mb-5" id="featured-sections">
+  {% if lc_article or lc_guide %}
+  <div class="col">
+    <section class="card h-100" id="this-month">
+      <div class="card-body">
+        <h2 class="text-orange">This month</h2>
+        <div class="row row-cols-1 g-3">
+          {% if lc_article %}
+          <div class="col">
+            <article class="h-100">
+              <h3 class="h6 text-secondary">This month's article</h3>
+              <p class="h4"><a href="{{ lc_article.url | relative_url }}">{{ lc_article.title }}</a></p>
+              <p class="text-secondary mb-2"><time datetime="{{ lc_article.date | date_to_xmlschema }}">{{ lc_article.date | date: "%B %-d, %Y" }}</time></p>
+              <p>{{ lc_article.description | default: lc_article.excerpt | strip_html | truncatewords: 35 }}</p>
+              <a href="{{ '/monkeyhub/articles_news/' | relative_url }}">All articles</a>
+            </article>
+          </div>
           {% endif %}
-          <p class="card-text">{{ lc_guide.description | default: lc_guide.excerpt | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ '/monkeyhub/learning-center/wcag/' | relative_url }}">See all WCAG explainers</a>
+
+          {% if lc_guide %}
+          <div class="col">
+            <article class="h-100">
+              <h3 class="h6 text-secondary">{% if lc_guide.series == "criterion" %}WCAG criterion of the month{% else %}Guide for this month's article{% endif %}</h3>
+              <p class="h4"><a href="{{ lc_guide.url | relative_url }}">{{ lc_guide.title }}</a></p>
+              {% if lc_guide.series == "criterion" %}
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item"><strong>Criterion:</strong> {{ lc_guide.criterion }}</li>
+                <li class="list-inline-item"><strong>Level:</strong> {{ lc_guide.level }}</li>
+                <li class="list-inline-item"><strong>Added in WCAG:</strong> {{ lc_guide.wcag_since }}</li>
+              </ul>
+              {% endif %}
+              <p>{{ lc_guide.description | default: lc_guide.excerpt | strip_html | truncatewords: 35 }}</p>
+              <a href="{{ '/monkeyhub/learning-center/wcag/' | relative_url }}">See all WCAG explainers</a>
+            </article>
+          </div>
+          {% endif %}
         </div>
-      </article>
-    </div>
-    {% endif %}
-
+      </div>
+    </section>
   </div>
-</section>
-{% endif %}
+  {% endif %}
 
-<section class="mb-5" id="topics" aria-labelledby="lc-topics-title">
-  <h2 id="lc-topics-title">Browse by topic</h2>
+  <div class="col">
+    <section class="card h-100" id="latest">
+      <div class="card-body">
+        <h2 class="text-orange">Latest guides</h2>
+        {% include post-list.html type="guides" limit=6 level=3 exclude=lc_guide.url empty="Our first guides are on the way. In the meantime, send us your accessibility question through MonkeySupport and we may write it up first." %}
+        <p class="mt-3"><a href="{{ '/monkeyhub/resources/' | relative_url }}">Looking for checklists and tools? Browse Resources.</a></p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="mb-5" id="topics">
+  <h2 class="text-orange">Browse by topic</h2>
   <p>Pick the area you're working on. Each topic collects the guides that apply to it.</p>
 
   {% assign lc_topics = "WCAG in plain language|What each success criterion asks for, with examples of passing and failing code.|wcag;Testing and audits|Manual checks, automated tools, and how to read an audit report.|testing;Design and content|Color contrast, focus states, headings, link text, and alt text decisions.|design;Development patterns|Accessible forms, modals, menus, and custom components.|development;Law and compliance|ADA, Section 508, the European Accessibility Act, and what they mean for your site.|compliance;Assistive technology|How people use screen readers, switch devices, and voice control.|assistive-tech" | split: ";" %}
@@ -116,25 +125,11 @@ If your articles folder is spelled differently, change lc_articles_dir.
       </div>
     {% endfor %}
   </div>
-</section>
+</div>
 
-<section class="mb-5" id="start-here" aria-labelledby="lc-start-title">
-  <h2 id="lc-start-title">New to accessibility? Start with the WCAG Series for Beginners</h2>
-  <p>Eight posts, in order. Each one builds on the one before it.</p>
-  <ol class="list-group list-group-numbered">
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/' | relative_url }}">WCAG &amp; 508 Introduction</a><br>The history of WCAG and Section 508, and why both matter.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/02_evolution_a11y/' | relative_url }}">The Evolution of Web A11y</a><br>How accessibility on the web has changed over time.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/03_wcag_508/' | relative_url }}">WCAG & Section 508</a><br>How the two relate, and where they differ.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/04_pour_principles/' | relative_url }}">POUR Principles</a><br>The four principles behind every WCAG success criterion.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/05_success_criteria/' | relative_url }}">Success Criteria</a><br>How to read the criteria and what the conformance levels mean.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/06_enforcement/' | relative_url }}">Accessibility Enforcement</a><br>How accessibility rules are enforced and what that means for your risk.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/07_30_day_action_plan/' | relative_url }}">Bringing It All Together</a><br>A 30-day action plan for taking a small site to WCAG 2.1 AA.</li>
-    <li class="list-group-item"><a class="fw-bold" href="{{ '/monkeyhub/learning_center/wcag_series/08_toolkit/' | relative_url }}">WCAG &amp; Section 508 Toolkit</a><br>The tools used throughout the series for testing and reporting.</li>
-  </ol>
-</section>
-
-<section class="mb-5" id="latest" aria-labelledby="lc-latest-title">
-  <h2 id="lc-latest-title">Latest guides</h2>
-  {% include post-list.html type="guides" limit=6 level=3 exclude=lc_guide.url empty="Our first guides are on the way. In the meantime, send us your accessibility question through MonkeySupport and we may write it up first." %}
-  <p><a href="{{ '/monkeyhub/resources/' | relative_url }}">Looking for checklists and tools? Browse Resources.</a></p>
-</section>
+<!-- Beginner path: single doorway instead of full 8-post list -->
+<div class="border border-4 border-second mb-5 p-4 bg-light rounded-3" id="start-here">
+  <h2 class="text-orange h4">New to accessibility?</h2>
+  <p class="mb-3">Start with the <strong>WCAG Series for Beginners</strong> — eight short posts that build a solid foundation, from the basics of WCAG and Section 508 through a practical 30-day action plan and toolkit.</p>
+  <a href="{{ '/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/' | relative_url }}" class="btn btn-primary">Start the WCAG Series for Beginners →</a>
+</div>
