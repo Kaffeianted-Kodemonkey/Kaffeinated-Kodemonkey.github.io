@@ -1,0 +1,147 @@
+---
+layout: series
+title: "WCAG & Section 508"
+subtitle: "How the international standard and the U.S. federal law relate — and where they differ"
+description: "A clear side-by-side comparison of WCAG and Section 508: what each covers, who must follow them, and what documentation is expected."
+date: '2025-10-08 06:00 -0600'
+category: [WCAG_Series_Beginners, Learning Center]
+subcategories: [wcag-series, beginners]
+tags: [wcag, section-508, comparison, vpat, acr, accessibility-law]
+is_series: true
+series_title: WCAG Series Beginners
+series: "WCAG Series for Beginners"
+series_order: 3
+permalink: /monkeyhub/learning_center/wcag_series/03_wcag_508/
+---
+
+<p>Many people treat “WCAG” and “Section 508” as interchangeable terms. They are closely related, but they are not the same thing. Understanding the difference helps you choose the right target, produce the right documentation, and avoid common compliance mistakes.</p>
+
+<div class="row">
+  <div class="col">
+      <h2>What is WCAG?</h2>
+
+      <p>The <strong>Web Content Accessibility Guidelines (WCAG)</strong> are an international technical standard published by the World Wide Web Consortium (W3C). They define how to make web content more accessible to people with disabilities.</p>
+
+      <p>Key characteristics:</p>
+      <ul>
+        <li>Technology-neutral (can be applied to HTML, PDFs, mobile apps, etc.)</li>
+        <li>Organized around the four POUR principles</li>
+        <li>Contains testable success criteria at three levels: A, AA, and AAA</li>
+        <li>Current recommended versions for most organizations: WCAG 2.1 or 2.2 Level AA</li>
+      </ul>
+
+      <p>WCAG itself is not a law. It becomes legally relevant when a regulation, contract, or court decision references it.</p>
+
+      <hr />
+
+      <h2>What is Section 508?</h2>
+
+      <p><strong>Section 508</strong> is a U.S. federal law (part of the Rehabilitation Act of 1973, refreshed in 2017). It requires federal agencies — and the companies that sell information and communication technology (ICT) to them — to make their digital products accessible.</p>
+
+      <p>Key characteristics:</p>
+      <ul>
+        <li>Applies to federal agencies and federal contractors</li>
+        <li>Covers websites, software, electronic documents, and other ICT</li>
+        <li>Adopts WCAG 2.0 Level A and AA as the technical standard for web content</li>
+        <li>Requires formal documentation, usually in the form of a Voluntary Product Accessibility Template (VPAT) that becomes an Accessibility Conformance Report (ACR)</li>
+      </ul>
+
+      <p>Because WCAG 2.1 and 2.2 are backward-compatible with 2.0, meeting the newer versions also satisfies Section 508 requirements.</p>
+
+  </div>
+  <div class="col-5 ms-5 ">
+    <figure>
+      <img src="{{ site.baseurl}}/assets/img/Blog-Series/Graph.jpg" alt="A11y Roles pie chart" width="70%" class="img-thumbnail">
+      <figcaption class="text-muted fs-6 mt-2"><p>Accessibility Issues (WCAG Failure Type)<br /> Guidelines (WCAG) 2 Failures:</p>
+        <ul>
+          <li>Websites with at least one WCAG 2 failure - 95.9%</li>
+          <li>Low Contrast test - 81.0%</li>
+          <li>Missing alt text for images - 54.5%</li>
+          <li>Empty links - 44.6%</li>
+          <li>Missing document language - 17.1%</li>
+        </ul>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<hr />
+
+<h2>Side-by-Side Comparison</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+    <thead>
+        <tr>
+        <th>Aspect</th>
+        <th>WCAG</th>
+        <th>Section 508</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><strong>Type</strong></td>
+        <td>International technical standard</td>
+        <td>U.S. federal law</td>
+        </tr>
+        <tr>
+        <td><strong>Who creates it</strong></td>
+        <td>W3C (Web Accessibility Initiative)</td>
+        <td>U.S. Access Board / Congress</td>
+        </tr>
+        <tr>
+        <td><strong>Who must follow it</strong></td>
+        <td>Anyone whose law, contract, or policy references it</td>
+        <td>Federal agencies and their contractors</td>
+        </tr>
+        <tr>
+        <td><strong>Technical standard</strong></td>
+        <td>WCAG 2.0 / 2.1 / 2.2 (A, AA, or AAA)</td>
+        <td>WCAG 2.0 Level A and AA (for web content)</td>
+        </tr>
+        <tr>
+        <td><strong>Scope</strong></td>
+        <td>Primarily web content (can be applied more broadly)</td>
+        <td>Web + non-web ICT (software, documents, hardware interfaces)</td>
+        </tr>
+        <tr>
+        <td><strong>Documentation</strong></td>
+        <td>Conformance claims, audit reports, accessibility statements</td>
+        <td>VPAT / ACR is the expected format</td>
+        </tr>
+        <tr>
+        <td><strong>Geographic reach</strong></td>
+        <td>Global</td>
+        <td>United States (federal)</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<hr />
+
+<h2>How They Relate to the ADA</h2>
+
+<p>The Americans with Disabilities Act (ADA) is a separate civil-rights law. Title II covers state and local governments; Title III covers public accommodations (private businesses). Neither Title originally named a specific technical standard for websites. Courts and the Department of Justice have long looked to WCAG as the most widely accepted measure of accessibility. The 2024 Title II web and mobile rule now explicitly requires WCAG 2.1 Level AA for many public entities.</p>
+
+<p>In short:</p>
+<ul>
+  <li><strong>Section 508</strong> = federal agencies and contractors</li>
+  <li><strong>ADA Title II</strong> = state and local government (now with an explicit WCAG 2.1 AA requirement)</li>
+  <li><strong>ADA Title III</strong> = private businesses open to the public (WCAG is the de-facto standard used in litigation)</li>
+</ul>
+
+<h2>Practical Implications</h2>
+
+<p>If you work with federal contracts, you will almost always be asked for a current VPAT/ACR that maps to Section 508 (WCAG 2.0 A/AA). Meeting WCAG 2.1 or 2.2 Level AA satisfies that requirement and also prepares you for broader ADA expectations.</p>
+
+<p>If you are a state or local government entity, school district, or public university, the DOJ Title II rule points you to WCAG 2.1 Level AA. Section 508 documentation practices (clear reporting, independent testing) remain useful even when 508 itself does not apply.</p>
+
+<p>Automated scan reports alone are rarely accepted as sufficient evidence under either framework. Manual evaluation by trained testers produces the kind of documentation that holds up in procurement reviews and legal settings.</p>
+<hr />
+
+<h2>Key Takeaway</h2>
+
+<p>WCAG is the technical standard. Section 508 is one important U.S. law that adopts part of that standard. Knowing the difference lets you target the right version, produce the right documentation, and avoid treating an automated report as proof of compliance.</p>
+
+<p>In the next post we examine the four POUR principles — the foundation that every WCAG success criterion rests on.</p>
+
+<p><strong>Next in the series:</strong> <a href="/monkeyhub/learning-center/wcag-series/04-pour-principles/">POUR Web Design</a></p>

@@ -1,0 +1,129 @@
+---
+layout: series
+title: "Bringing It All Together"
+subtitle: "A practical 30-day action plan to move a site toward WCAG 2.1 AA"
+description: "A realistic week-by-week plan for auditing, prioritizing, fixing, and documenting accessibility improvements on a small-to-medium website."
+date: 2025-10-12 05:00:00 +0000
+category: [WCAG_Series_Beginners, Learning Center]
+subcategories: [wcag-series, beginners]
+tags: [wcag, action-plan, accessibility-roadmap, remediation, level-aa]
+infographic: assets/img/Blog-Series/WCAG-Toolkit.jpg
+download: /assets/MonkeyAcadamy/WCAG 2.1 AA Quick-Scan Checklist v2025.pdf
+is_series: true
+series_title: WCAG Series Beginners
+series: "WCAG Series for Beginners"
+series_order: 7
+permalink: //monkeyhub/learning_center/wcag_series/07_30_day_action_plan/
+---
+
+<p>You now have the foundation: what WCAG is, how it evolved, how it relates to Section 508, the POUR principles, the success criteria, and how requirements are enforced. This post turns that knowledge into a concrete 30-day plan.</p>
+
+<p>The plan is sized for a small-to-medium website (roughly 10–30 key pages or templates). Larger sites can use the same sequence but will need more time and parallel workstreams.</p>
+
+
+<h2>Before You Start</h2>
+
+<ul>
+  <li>Choose a primary target: <strong>WCAG 2.1 Level AA</strong> (or 2.2 Level AA if that better matches your requirements).</li>
+  <li>Identify the scope: public pages, authenticated areas, PDFs, and third-party components that are in scope.</li>
+  <li>Assign clear ownership: who will test, who will fix, and who will sign off.</li>
+  <li>Set up a simple tracking sheet with columns for page/component, success criteria, status, owner, and notes.</li>
+</ul>
+
+<hr />
+
+<div class="row">
+    <div class="col">
+
+        <h2>Week 1: Inventory and Baseline (Days 1–7)</h2>
+
+        <p><strong>Goal:</strong> Know what you have and where the biggest problems are.</p>
+
+        <ol>
+          <li><strong>Inventory</strong> — List all in-scope pages, templates, PDFs, and embedded third-party tools.</li>
+          <li><strong>Automated scan</strong> — Run a reputable automated tool (axe, WAVE, Lighthouse, or similar) on the highest-traffic pages. Export the results.</li>
+          <li><strong>Manual keyboard pass</strong> — Tab through the main user journeys. Note any focus traps, missing focus indicators, or functionality that cannot be reached from the keyboard.</li>
+          <li><strong>Screen-reader spot check</strong> — Use NVDA, VoiceOver, or JAWS on a few key pages to catch name, role, and value problems that automated tools miss.</li>
+          <li><strong>Prioritize</strong> — Rank issues by user impact and frequency. High-impact Level A and AA failures on core journeys come first.</li>
+        </ol>
+
+        <p>By the end of Week 1 you should have a clear, prioritized backlog.</p>
+
+        <hr />
+
+        <h2>Week 2: High-Impact Fixes (Days 8–14)</h2>
+
+        <p><strong>Goal:</strong> Remove the barriers that block the largest number of users.</p>
+
+        <p>Focus on these common high-impact items first:</p>
+        <ul>
+          <li>Missing or poor alternative text (1.1.1)</li>
+          <li>Insufficient color contrast (1.4.3)</li>
+          <li>Keyboard access and visible focus (2.1.1, 2.4.7)</li>
+          <li>Form labels and error identification (3.3.1, 3.3.2)</li>
+          <li>Heading structure and semantic markup (1.3.1)</li>
+        </ul>
+
+        <p>Fix the issues, then re-test the affected pages with both automated tools and manual checks. Document what was changed and what remains open.</p>
+
+    </div>
+    <div class="col col-md-6">
+        <!-- infographic -->
+        <aside class="infograph">
+
+          <!--[infographic]-->
+          <img src="{{site.baseurl}}/{{ page.infographic }}" alt="Decrotive image representing WCAG Section 580" width="80%" class="img-thumbnail" align= "right">
+    </div>
+</div>
+
+<hr />
+
+<h2>Week 3: Broader Coverage and Harder Problems (Days 15–21)</h2>
+
+<p><strong>Goal:</strong> Expand beyond the quick wins and address more complex barriers.</p>
+
+<ul>
+  <li>Review multimedia for captions and transcripts.</li>
+  <li>Test custom components (modals, tabs, menus, date pickers) for correct names, roles, states, and keyboard behavior.</li>
+  <li>Check PDFs and downloadable documents that are in scope.</li>
+  <li>Examine third-party widgets and iframes; document any that cannot be made accessible and plan alternatives or replacements.</li>
+  <li>Re-run automated scans on a wider set of pages to catch regressions.</li>
+</ul>
+
+<p>At this stage you will often discover that some problems require design or content changes, not just code fixes. Capture those decisions.</p>
+
+<hr />
+
+<h2>Week 4: Validation, Documentation, and Handoff (Days 22–30)</h2>
+
+<p><strong>Goal:</strong> Confirm progress, create usable documentation, and set up ongoing practices.</p>
+
+<ol>
+  <li><strong>Final validation</strong> — Re-test the highest-priority user journeys with keyboard and screen reader. Confirm that previously fixed issues stay fixed.</li>
+  <li><strong>Documentation</strong> — Produce a clear summary of what was tested, what was fixed, what remains open, and the rationale for any exceptions. This becomes the starting point for a future VPAT/ACR or internal compliance record.</li>
+  <li><strong>Process</strong> — Define how new content and features will be checked before they go live. Even a lightweight checklist is better than nothing.</li>
+  <li><strong>Owner and schedule</strong> — Assign ongoing responsibility and a realistic review cadence (for example, quarterly manual checks plus continuous automated monitoring).</li>
+</ol>
+
+<hr />
+
+<h2>What Success Looks Like After 30 Days</h2>
+
+<p>You will not have a perfect site. You should have:</p>
+<ul>
+  <li>A documented inventory and prioritized backlog</li>
+  <li>Significant reduction in high-impact Level A and AA barriers on core journeys</li>
+  <li>Clear records of what was tested and fixed</li>
+  <li>A simple process for preventing new barriers</li>
+  <li>A realistic view of remaining work and residual risk</li>
+</ul>
+
+<p>That combination is far more valuable than an unverified “100% compliant” claim.</p>
+<p>Download our <a href="{{ site.baseurl }}{{ page.download }}" Download>WCAG 2.1 AA Quick-Scan Checklist</a></p>
+<hr />
+
+<h2>Key Takeaway</h2>
+
+<p>Accessibility improves through steady, prioritized work backed by testing and documentation. A focused 30-day effort can remove the most serious barriers and create the foundation for continuous improvement. In the final post of this series we look at the practical tools that support this work.</p>
+
+<p><strong>Next in the series:</strong> <a href="/monkeyhub/learning-center/wcag-series/08-toolkit/">WCAG &amp; Section 508 Toolkit</a></p>

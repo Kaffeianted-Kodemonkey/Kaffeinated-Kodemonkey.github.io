@@ -1,0 +1,106 @@
+---
+layout: series
+title: "WCAG Success Criteria"
+subtitle: "How to read and apply the testable requirements in WCAG"
+description: "A practical guide to WCAG success criteria: what they are, how the A / AA / AAA levels work, and how to use them when evaluating or building accessible content."
+date: 2025-10-10 05:00:00 +0000
+category: [WCAG_Series_Beginners, Learning Center]
+subcategories: [wcag-series, beginners]
+tags: [wcag, success-criteria, conformance-levels, level-aa, accessibility-testing]
+infographic: assets/img/Blog-Series/WCAG-Criteria.jpg
+is_series: true
+series_title: WCAG Series Beginners
+series: "WCAG Series for Beginners"
+series_order: 5
+permalink: /monkeyhub/learning_center/wcag_series/05_success_criteria/
+---
+
+<p>The POUR principles give WCAG its structure. The <strong>success criteria</strong> give it its teeth. These are the specific, testable statements that tell you whether content meets the standard.</p>
+
+<h2>What Success Criteria Actually Are</h2>
+
+<p>A success criterion is a precise requirement that can be evaluated as true or false. Each one is written so that different people testing the same content should reach the same conclusion.</p>
+
+<p>Examples:</p>
+<ul>
+  <li><strong>1.1.1 Non-text Content</strong> — All non-text content that is presented to the user has a text alternative that serves the equivalent purpose.</li>
+  <li><strong>1.4.3 Contrast (Minimum)</strong> — The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (with limited exceptions).</li>
+  <li><strong>2.1.1 Keyboard</strong> — All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.</li>
+</ul>
+
+<p>Each success criterion belongs to one of the four POUR principles and is assigned a conformance level: A, AA, or AAA.</p>
+
+
+<hr />
+
+<div class="row">
+  <div class="col">
+      <h2>The Three Conformance Levels</h2>
+
+      <p><strong>Level A</strong> addresses the most critical barriers. Meeting Level A removes obstacles that would otherwise prevent many people from using the content at all. It is necessary but rarely sufficient on its own.</p>
+
+      <p><strong>Level AA</strong> is the practical target for most organizations. It includes all Level A criteria plus additional requirements that significantly improve usability for a wide range of people. Section 508, the DOJ Title II rule, and most international regulations point to Level AA.</p>
+
+      <p><strong>Level AAA</strong> contains the most ambitious criteria. Full conformance to every AAA criterion is difficult and often impractical for an entire website. Many organizations choose to meet specific AAA criteria where they provide clear value (for example, enhanced contrast or sign-language interpretation for key videos) without claiming full AAA conformance.</p>
+
+      <p>When a regulation or contract says “WCAG 2.1 Level AA,” it means every applicable Level A and Level AA success criterion must be met.</p>
+  </div>
+  <div class="col col-md-3">
+    <!-- infographic -->
+    <aside class="infograph">
+
+      <!--[infographic]-->
+      <img src="{{site.baseurl}}/{{ page.infographic }}" alt="WCAG Criteria" width="82%" class="img-thumbnail mt-4">
+    </aside>
+  </div>
+</div>
+
+<hr />
+
+<h2>How to Read a Success Criterion</h2>
+
+<p>Each criterion in the official WCAG documentation follows a consistent pattern:</p>
+<ul>
+  <li><strong>Number and short name</strong> (e.g., 1.4.3 Contrast Minimum)</li>
+  <li><strong>The requirement itself</strong> — written as a testable statement</li>
+  <li><strong>Level</strong> (A, AA, or AAA)</li>
+  <li><strong>Understanding and Technique documents</strong> — detailed explanations, examples, and common failures</li>
+</ul>
+
+<p>You do not need to memorize every criterion. You do need to know how to look them up, understand what “passing” looks like, and recognize common failures.</p>
+
+<hr />
+
+<h2>Common High-Impact Criteria</h2>
+
+<p>Some success criteria appear again and again in real-world audits. Focusing on these first produces the largest improvement for the least effort:</p>
+
+<ul>
+  <li><strong>1.1.1 Non-text Content</strong> — Meaningful alternative text for images and icons</li>
+  <li><strong>1.3.1 Info and Relationships</strong> — Correct use of headings, lists, and labels so structure is programmatically determinable</li>
+  <li><strong>1.4.3 Contrast (Minimum)</strong> — Sufficient color contrast for text</li>
+  <li><strong>2.1.1 Keyboard</strong> — All functionality available from the keyboard</li>
+  <li><strong>2.4.7 Focus Visible</strong> — A visible indication of keyboard focus</li>
+  <li><strong>3.3.2 Labels or Instructions</strong> — Clear labels for form fields</li>
+  <li><strong>4.1.2 Name, Role, Value</strong> — Custom controls correctly exposed to assistive technology</li>
+</ul>
+
+<p>Mastering these seven criteria alone will eliminate a large percentage of the barriers found on typical websites.</p>
+
+<hr />
+
+<h2>Conformance Claims vs. Reality</h2>
+
+<p>A site can claim conformance only if every applicable success criterion at the target level is met on every page in the scope of the claim. Partial conformance is allowed but must be clearly scoped and explained.</p>
+
+<p>Automated tools can detect some failures (especially contrast, missing alt attributes, and certain structural issues). They cannot reliably evaluate many other criteria, such as whether alternative text is meaningful, whether a custom widget is operable, or whether error messages are helpful. Manual testing remains essential for a defensible evaluation.</p>
+
+<hr />
+
+<h2>Key Takeaway</h2>
+
+<p>Success criteria are the measurable heart of WCAG. Level AA is the target that most laws and contracts require. Learning to read the criteria, recognize common failures, and combine automated checks with manual evaluation gives you a practical way to improve accessibility and document your work.</p>
+
+<p>In the next post we look at how accessibility requirements are actually enforced — through government action, private litigation, and procurement rules — and what that means for risk management.</p>
+
+<p><strong>Next in the series:</strong> <a href="/monkeyhub/learning-center/wcag-series/06-enforcement/">Accessibility Enforcement</a></p>

@@ -1,0 +1,122 @@
+---
+layout: series
+title: "POUR Principles"
+subtitle: "The four foundations of every WCAG success criterion"
+description: "A clear explanation of Perceivable, Operable, Understandable, and Robust — the four principles that organize all of WCAG — with practical examples for each."
+date: 2025-10-09 05:00:00 +0000
+category: [WCAG_Series_Beginners, Learning Center]
+subcategories: [wcag-series, beginners]
+tags: [wcag, pour, perceivable, operable, understandable, robust, accessibility-principles]
+infographic: assets/img/Blog-Series/WCAG_Week3_Infograph.jpg
+is_series: true
+series_title: WCAG Series Beginners
+series: "WCAG Series for Beginners"
+series_order: 4
+permalink: /monkeyhub/learning_center/wcag_series/04_pour_principles/
+---
+
+<p>Every success criterion in WCAG is organized under one of four principles: <strong>Perceivable, Operable, Understandable, and Robust</strong>. These principles (often shortened to POUR) have remained the foundation of the standard since WCAG 2.0 in 2008. Understanding them makes the rest of the guidelines much easier to navigate.</p>
+
+
+<hr />
+
+<h2>Perceivable</h2>
+
+<p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+
+<p>This principle addresses the most basic requirement: if a user cannot perceive the content, nothing else matters. Common requirements include:</p>
+<ul>
+  <li>Text alternatives for non-text content (images, icons, charts)</li>
+  <li>Captions and transcripts for audio and video</li>
+  <li>Content that can be presented in different ways without losing meaning (for example, through semantic structure)</li>
+  <li>Sufficient color contrast and the ability to resize text</li>
+</ul>
+
+<p><strong>Practical example:</strong> An image of a product must have meaningful alternative text. A video must have accurate captions. Text and interactive elements must meet minimum contrast ratios so they remain readable.</p>
+
+<hr />
+
+<div class="row">
+  <div class="col">
+
+      <h2>Operable</h2>
+
+      <p>User interface components and navigation must be operable.</p>
+
+      <p>Users must be able to interact with the interface regardless of the input method they use. Key requirements include:</p>
+      <ul>
+        <li>Full keyboard access to all functionality</li>
+        <li>Enough time to read and use content</li>
+        <li>No content that flashes in ways that can cause seizures</li>
+        <li>Clear navigation and visible focus indicators</li>
+        <li>Support for different input methods (pointer, touch, voice)</li>
+      </ul>
+
+      <p><strong>Practical example:</strong> Every interactive element (links, buttons, form controls, menus) must be reachable and usable with the keyboard alone. Focus must be visible so keyboard users know where they are on the page.</p>
+
+      <hr />
+
+      <h2>Understandable</h2>
+
+      <p>Information and the operation of the user interface must be understandable.</p>
+
+      <p>Content and interaction patterns should not create unnecessary confusion. Requirements under this principle cover:</p>
+      <ul>
+        <li>Readable text and clear language</li>
+        <li>Predictable navigation and behavior</li>
+        <li>Help with input errors (clear error identification and suggestions)</li>
+      </ul>
+
+      <p><strong>Practical example:</strong> Form fields should have clear labels. Error messages should identify the problem and, when possible, suggest how to fix it. Navigation should remain consistent across pages so users do not have to re-learn the interface.</p>
+
+  </div>
+
+  <div class="col col-md-4">
+    <!-- infographic -->
+    <aside class="infograph">
+
+      <!--[infographic]-->
+      <img src="{{site.baseurl}}/{{ page.infographic }}" alt="Decrotive image of POUR Principles" width="80%" class="img-thumbnail">
+    </aside>
+  </div>
+</div>
+
+<hr />
+
+<h2>Robust</h2>
+
+<p>Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.</p>
+
+<p>This principle is largely about clean, standards-compliant code. The main requirements are:</p>
+<ul>
+  <li>Valid, well-formed markup</li>
+  <li>Proper use of names, roles, and values so assistive technologies can understand components</li>
+  <li>Compatibility with current and future user agents</li>
+</ul>
+
+<p><strong>Practical example:</strong> Custom controls (such as a custom dropdown or modal) must expose the correct ARIA roles, states, and properties so screen readers can announce them accurately. Invalid or incomplete markup often breaks this communication.</p>
+
+
+<hr />
+
+<h2>How the Principles Work Together</h2>
+
+<p>The four principles are not isolated checklists. A single interface problem can violate more than one principle at the same time. For example, a button that cannot be reached by keyboard fails Operable; if it also lacks a proper accessible name, it fails Robust and may also fail Perceivable.</p>
+
+<p>When you evaluate a page, it is useful to ask four simple questions:</p>
+<ol>
+  <li>Can users perceive the information?</li>
+  <li>Can they operate the controls?</li>
+  <li>Can they understand the content and the interface?</li>
+  <li>Will assistive technologies be able to interpret it reliably?</li>
+</ol>
+
+<p>If the answer to any of these is “no,” you have found a barrier that needs attention.</p>
+
+<hr />
+
+<h2>Key Takeaway</h2>
+
+<p>POUR is the organizing framework of WCAG. Once you are comfortable with the four principles, the individual success criteria become much easier to understand and apply. In the next post we look at those success criteria in more detail — what they are, how the conformance levels work, and how to read them effectively.</p>
+
+<p><strong>Next in the series:</strong> <a href="/monkeyhub/learning-center/wcag-series/05-success-criteria/">WCAG Success Criteria</a></p>
