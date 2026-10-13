@@ -1,37 +1,102 @@
 ---
 layout: inner-pages
 title: "Articles & News"
-description: "Accessibility insights, compliance updates, and practical observations from Kaffeinated Kodemonkey on WCAG, ADA Title II, Section 508, and real-world digital accessibility."
+description: "Practical insights on digital accessibility, compliance developments, and lessons from real-world audits. Written for IT directors, compliance leads, developers, and higher-education teams."
 categories: MonkeyHub
 permalink: /monkeyhub/articles_news/
 ---
 
+<!-- Hero -->
+<div class="p-4 p-md-5 mb-5 text-white rounded-3 bg-dark">
+  <div class="container-fluid py-2">
+    <h1 class="display-6 fw-bold">Articles &amp; News</h1>
+    <p class="col-md-10 fs-5 mb-0">Practical insights on digital accessibility, compliance developments, and lessons from real-world audits. Written for IT directors, compliance leads, developers, and higher-education teams.</p>
+  </div>
+</div>
 
-  <p class="lead">Practical insights on digital accessibility, compliance developments, and lessons from real-world audits. Written for IT directors, compliance leads, developers, and higher-education teams.</p>
-  <p>For step-by-step explainers and the WCAG Series for Beginners, visit the <a href="{{ '/monkeyhub/learning-center/' | relative_url }}">WCAG Learning Center</a>.</p>
+<!-- Articles + News (two columns) -->
+<div class="row g-4 mb-0">
+  <!-- Articles column -->
+  <div class="col-lg-7">
+    <h2 class="text-orange mb-3">Articles</h2>
+    <hr />
+    <p class="text-muted small mb-3">In-depth analysis and compliance guidance.</p>
 
+    {% include post-list.html type="articles" level=2 empty="No articles yet. Check back soon." %}
+  </div>
+
+  <!-- News column -->
+  <div class="col-lg-5">
+    <h2 class="text-orange mb-3">News</h2>
+    <hr />
+    <p class="text-muted small mb-3">Short updates and announcements.</p>
+
+    <div class="card bg-light border-0">
+      <div class="card-body">
+        <p class="mb-0 text-muted">No news items yet. Check back soon for regulatory updates and announcements.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr />
 
+<!-- Browse by Topic -->
+<div class="mb-5">
+  <h2 class="text-orange h4 mb-3">Browse by Topic</h2>
 
-  <h2>Latest Articles</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-3">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title h6 mb-2">
+            <a href="{{ '/monkeyhub/articles_news/' | relative_url }}">Title II &amp; Education</a>
+          </h3>
+          <p class="card-text small mb-0">School districts, higher education, LMS requirements, and the 2027/2028 deadlines.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title h6 mb-2">
+            <a href="{{ '/monkeyhub/articles_news/' | relative_url }}">Litigation &amp; Risk</a>
+          </h3>
+          <p class="card-text small mb-0">Lawsuits, enforcement actions, and what they mean for compliance planning.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title h6 mb-2">
+            <a href="{{ '/monkeyhub/articles_news/' | relative_url }}">WCAG &amp; Standards</a>
+          </h3>
+          <p class="card-text small mb-0">Updates on WCAG versions, Section 508, and related technical standards.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title h6 mb-2">
+            <a href="{{ '/monkeyhub/articles_news/' | relative_url }}">Procurement &amp; Documentation</a>
+          </h3>
+          <p class="card-text small mb-0">VPATs, ACRs, Proof of Compliance Certificates, and audit readiness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  {% include post-list.html type="articles" level=2 empty="No articles yet. Check back soon." %}
-
-
-<hr />
-
-
-  <h2>Browse by Topic</h2>
-  <ul class="topic-links">
-    <li><a href="{{ '/monkeyhub/articles/' | relative_url }}">All Articles</a></li>
-    <li><a href="{{ '/monkeyhub/articles/' | relative_url }}">Title II &amp; Education</a></li>
-    <li><a href="{{ '/monkeyhub/articles/' | relative_url }}">Litigation &amp; Risk</a></li>
-    <li><a href="{{ '/monkeyhub/articles/' | relative_url }}">WCAG &amp; Standards</a></li>
-    <li><a href="{{ '/monkeyhub/articles/' | relative_url }}">LMS &amp; Course Content</a></li>
-  </ul>
-
-  <hr />
-  <h2>Looking for guidance?</h2>
-  <p>Visit the <a href="{{ '/monkeyhub/learning-center/' | relative_url }}">WCAG Learning Center</a> for practical explainers, testing guidance, and the full WCAG Series for Beginners.</p>
-  <p>Need help evaluating your own site or LMS? <a href="https://kaffeinatedkodemonkey.youcanbook.me">Schedule a free consultation</a>.</p>
+<!-- Simple footer links (replaces the two stacked CTAs) -->
+<div class="border-top pt-4">
+  <p class="mb-2">
+    <strong>Looking for step-by-step guidance?</strong>
+    <a href="{{ '/monkeyhub/learning-center/' | relative_url }}">Visit the WCAG Learning Center</a>
+  </p>
+  <p class="mb-5">
+    <strong>Need help evaluating a site or LMS?</strong>
+    <a href="https://kaffeinatedkodemonkey.youcanbook.me">Schedule a free consultation</a>
+  </p>
+</div>
