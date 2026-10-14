@@ -2,109 +2,199 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
    <url>
       <loc>https://www.kaffeinatedkodemonkey.com/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/wcag-report/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/wcag_report/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/a11y-statement/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/privacy_policy/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/ada-compliance/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/a11y_statement/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/privacy-policy/</loc>
-      <lastmod>2026-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/disclaimer/</loc>
-      <lastmod>2026-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/series/</loc>
-      <lastmod>2026-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-   </url>
-   <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/services/web-accessibility-audits/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/ada_compliance/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>https://www.kaffeinatedkodemonkey.com/about/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/article/Litigation-Uncertainty-Layer/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/tos/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/services/accessibility-monitoring/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/support_ticket/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
       <loc>https://www.kaffeinatedkodemonkey.com/services/accessibility-web-design/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/article/LMS-Course-Content/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/articles_news/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/article/deadline-extension-realitycheck/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/disclaimer/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/WCAG_Series/A11y_Enforcement/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/WCAG_Series/WCAG_Section508_Toolkit/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/WCAG_Series/Bringing_It_All_Together</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/services/accessibility-monitoring/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://www.kaffeinatedkodemonkey.com/a11y-policy/tos/</loc>
-      <lastmod>2026-10-01</lastmod>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/litigation-uncertainty-layer/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/services/web-accessibility-audits/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/resources/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/wcag/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/deadline-extension-realitycheck/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/testing/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/design/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/development/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/lms-course-content/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/assistive-tech/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning-center/compliance/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/04_pour_principles/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/06_enforcement/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/07_30_day_action_plan/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/02_evolution_a11y/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/08_toolkit/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/05_success_criteria/</loc>
+      <lastmod>2026-10-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/03_wcag_508/</loc>
+      <lastmod>2026-10-13</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
    </url>
