@@ -248,11 +248,11 @@ section #audit-header, #EnvTerm, #report, #Score {
 }
 
 .manual-testing ul {
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   list-style: none;
-  color: #999;
+  color: darkslategray;
   text-align: left;
-  line-height: 20px;
+  line-height: 15px;
 }
 
 .manual-testing ul li {
