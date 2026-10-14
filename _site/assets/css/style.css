@@ -587,7 +587,7 @@ p {
   background-size: cover;
   padding: 120px 0 80px;
   width: 100%;
-  min-height: 80vh;
+  /*min-height: 10vh;*/
   height: auto;
 }
 

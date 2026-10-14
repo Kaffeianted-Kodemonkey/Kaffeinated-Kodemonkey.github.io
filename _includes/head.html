@@ -3,7 +3,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name ="title" content= '{{ page.title }}'>
   <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting, ADA compliance audits, and Section 508 validation by a DHS Certified Trusted Tester.{% endif %}">
+  <meta name="theme-color" content="#111111">
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 
       {% include seo.html %}
 
@@ -31,6 +34,7 @@
   <!-- Template Main CSS File -->
   <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
   <link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+
 
   <!--facebook pixel -->
   {% include main-pixel.js %}

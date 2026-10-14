@@ -31,36 +31,66 @@
   {% endif %}
 {% endunless %}
 
-{% if current %}
+{% assign nav_url = page.url | remove_first: "/" | remove: "/" %}
+{% assign nav_links = "" | split: "|" %}
+
+{% comment %}
+  MonkeyHub navigation: show the other top-level destinations, excluding the
+  current page where appropriate. List-group styling is intentionally omitted
+  so links render as a plain, unbordered list.
+{% endcomment %}
+
+{% if page.url == "/monkeyhub/" %}
+  {% assign nav_titles = "Articles & News|Learning Center|Resources|Support Ticket" | split: "|" %}
+  {% assign nav_urls = "/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
+{% elsif page.url == "/monkeyhub/articles_news/" %}
+  {% assign nav_titles = "MonkeyHub|Learning Center|Resources|Support Ticket" | split: "|" %}
+  {% assign nav_urls = "/monkeyhub/|/monkeyhub/learning-center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
+{% elsif page.url == "/monkeyhub/learning-center/" %}
+  {% assign nav_titles = "MonkeyHub|Articles & News|Resources|Support Ticket" | split: "|" %}
+  {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
+{% elsif page.url == "/monkeyhub/resources/" %}
+   {% assign nav_titles = "MonkeyHub|Articles & News|Learning Center|Support Ticket" | split: "|" %}
+   {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/support_ticket/" | split: "|" %}
+{% elsif page.url == "/monkeyhub/support_ticket/" %}
+    {% assign nav_titles = "MonkeyHub|Articles & News|Learning Center|Resources|" | split: "|" %}
+    {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/resources/" | split: "|" %}
+{% elsif current %}
+  {% assign nav_titles = current.links | map: "title" %}
+  {% assign nav_urls = current.links | map: "url" %}
+{% endif %}
+
+{% if nav_titles %}
   <nav aria-labelledby="sidebar-heading">
-    <h2 id="sidebar-heading" class="text-orange">{{ current.title }}</h2>
-    <hr>
-    <ul class="fs-5 list-group">
-      {% for link in current.links %}
-        <li class="list-group-item">
-          <a href="{{ link.url | relative_url }}"{% if link.url == page.url %} class="active" aria-current="page"{% endif %}>{{ link.title }}</a>
+    <h2 id="sidebar-heading" class="text-orange">
+      {% if page.url contains "/monkeyhub" %}MonkeyHub{% else %}{{ current.title | default: pcat }}{% endif %}
+    </h2>
+      <hr />
+    <ul class="fs-5 list-unstyled">
+      {% for title in nav_titles %}
+        {% assign link_url = nav_urls[forloop.index0] %}
+        <li class="mb-2">
+          <a href="{{ link_url | relative_url }}"{% if link_url == page.url %} class="active" aria-current="page"{% endif %}>{{ title }}</a>
         </li>
       {% endfor %}
     </ul>
-    <hr />
   </nav>
 {% else %}
   {% assign pcat = page.categories | join: "," | split: "," | first %}
   {% if pcat %}
     <nav aria-labelledby="sidebar-heading">
       <h2 id="sidebar-heading" class="text-orange">{{ pcat }}</h2>
-      <hr>
-      <ul class="fs-5">
+        <hr />
+      <ul class="fs-5 list-unstyled">
         {% assign sort_pages = site.pages | sort: "nav_order" %}
         {% for p in sort_pages %}
           {% if p.categories contains pcat %}
-            <li class="list-group-item">
-              <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} class="isDisabled" aria-current="page"{% endif %}>{{ p.title }}</a>
+            <li class="mb-2">
+              <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
       </ul>
-      <hr />
     </nav>
   {% endif %}
 {% endif %}

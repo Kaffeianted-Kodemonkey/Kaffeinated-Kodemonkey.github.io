@@ -1,0 +1,92 @@
+{
+  "id": "com.kaffeinatedkodemonkey.app",
+  "name": "Kaffeinated Kodemonkey",
+  "short_name": "KodeMonkey",
+  "description": "Digital Accessibility Compliance & Consulting Services. Secure your certified Proof of Compliance Certificate (POCC) for ADA, WCAG 2.2, and Section 508.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "MonkeyHub Articles",
+      "short_name": "Articles",
+      "description": "Explore evolving insights on digital accessibility legislation and design.",
+      "url": "/articles/",
+      "icons": [{ "src": "/assets/icons/shortcut-hub.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Book Free Consultation",
+      "short_name": "Consultation",
+      "description": "Schedule a meeting with a DHS Certified Trusted Tester.",
+      "url": "/contact/",
+      "icons": [{ "src": "/assets/icons/shortcut-book.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "MonkeySupport",
+      "short_name": "Support Ticket",
+      "description": "Submit an accessibility question or ticket to our team.",
+      "url": "/support/",
+      "icons": [{ "src": "/assets/icons/shortcut-support.png", "sizes": "96x96" }]
+    }
+  ]
+}
