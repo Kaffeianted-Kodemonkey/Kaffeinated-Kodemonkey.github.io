@@ -40,7 +40,7 @@ sections:
     prefixes: ["/services/"]
     links:
       - { title: "Web Accessibility Audits", url: "/services/web_accessibility_audits/" }
-      - { title: "Accessibility Monitoring", url: "/services/accessibility_monitoring/" }
+      - { title: "Accessibility Monitoring", url: "/services/web_accessibility_monitoring/" }
       - { title: "Accessible Web Design", url: "/services/accessibility_web_design/" }
 
   - id: policies
