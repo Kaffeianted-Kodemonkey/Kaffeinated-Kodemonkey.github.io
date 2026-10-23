@@ -2,23 +2,23 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name ="title" content= '{{ page.title }}'>
-  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Expert digital accessibility consulting, ADA compliance audits, and Section 508 validation by a DHS Certified Trusted Tester.{% endif %}">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#37517e">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% assign canonical_url = page.url | replace:'index.html','' | absolute_url %}
+  <link rel="canonical" href="{{ canonical_url }}">
   <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
 
       {% include seo.html %}
 
   <!-- Favicons -->
   <link href="{{ site.baseurl }}/assets/img/Kaffeinated_Kodemonkey_Favicon.png" rel="icon">
-  <!-- <link href="{{ site.baseurl }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="{{ site.baseurl }}/assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link href="{{ site.baseurl }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="{{ site.baseurl }}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
@@ -48,10 +48,14 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Kaffeinated Kodemonkey",
-    "image": "https://kaffeinatedkodemonkey.com",
-    "@id": "https://kaffeinatedkodemonkey.com",
-    "url": "https://kaffeinatedkodemonkey.com",
+    "image": {{ '/assets/img/KKM-Logo-sm.png' | absolute_url | jsonify }},
+    "@id": {{ site.url | jsonify }},
+    "url": {{ site.url | jsonify }},
     "telephone": "+1-720-608-1444",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -78,9 +82,9 @@
       "description": "By Appointment Only"
     },
     "sameAs": [
-      "https://twitter.com",
-      "https://github.com",
-      "https://linkedin.com"
+      {{ site.twitter | jsonify }},
+      {{ site.github | jsonify }},
+      {{ site.linkedIn | jsonify }}
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -99,7 +103,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Monitoring + Audit Platform",
-            "description": "Enterprise-grade continuous crawling infrastructure and automated pipeline pipeline scanning with manual compliance verification."
+            "description": "Enterprise-grade continuous crawling infrastructure and automated pipeline scanning with manual compliance verification."
           }
         },
         {

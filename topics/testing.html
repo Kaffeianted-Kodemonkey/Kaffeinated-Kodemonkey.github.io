@@ -6,4 +6,52 @@ permalink: /monkeyhub/learning_center/testing/
 categories: [MonkeyHub, learning center]
 ---
 
-{% include lc-topic.html slug="testing" intro="Manual checks, automated tools, and how to read an audit report." %}
+{% include lc-topic.html slug="testing" intro="A practical guide to finding accessibility barriers: what automated scans catch, what hands-on testing reveals, and how to turn audit findings into a clear repair plan." %}
+
+<section class="mt-4">
+  <h2>Start with a question, not a score</h2>
+  <p>An accessibility test is useful when it answers a real question: Can someone complete the main task with a keyboard? Does a screen reader announce each control clearly? Can a visitor understand the page and recover from an error? A scan score can point you toward trouble, but it cannot answer all of those questions by itself.</p>
+  <p>Good testing combines repeatable automated checks with human review of meaning, interaction, and user journeys. The result should help your team decide what to fix first and how to confirm the fix worked.</p>
+</section>
+
+<section class="mt-4">
+  <h2>What automated scans are good at</h2>
+  <p>Automated tools can quickly inspect many pages for detectable patterns. Depending on the tool and page, they may flag missing accessible names, invalid or incomplete markup, some contrast problems, and other issues that deserve a closer look. Scans are especially useful for establishing a baseline and checking whether familiar problems return after code or content changes.</p>
+  <p>A flagged result is a lead to investigate, not always a confirmed failure. A clean result also does not mean a page is accessible: software cannot reliably judge every word, workflow, or interaction. Treat automated results as one input to testing.</p>
+</section>
+
+<section class="mt-4">
+  <h2>What hands-on testing adds</h2>
+  <p>Manual testing checks whether people can understand and operate the experience in context. A tester can follow important tasks, inspect how controls behave, and assess whether instructions, labels, and feedback make sense. Keyboard-only use and assistive technology checks can uncover barriers that a source-code scan will not settle.</p>
+  <p>For a scoped accessibility evaluation, the tester and organization should agree on the pages, templates, features, user journeys, standard, and conformance level to review. This makes the findings easier to interpret and makes clear what the evaluation did and did not cover.</p>
+</section>
+
+<section class="mt-4">
+  <h2>A practical first-pass checklist</h2>
+  <p>When reviewing a page or workflow, work through it as a person would use it:</p>
+  <ul>
+    <li><strong>Navigate by keyboard:</strong> reach every link and control, follow a sensible focus order, and check that focus stays visible and does not get trapped.</li>
+    <li><strong>Check names and instructions:</strong> confirm form fields, buttons, and links have clear labels and that required formats or errors are explained.</li>
+    <li><strong>Review structure:</strong> scan headings in order and verify that page regions and content relationships are conveyed beyond visual styling.</li>
+    <li><strong>Inspect images and media:</strong> ask whether text alternatives communicate the purpose of meaningful images and whether media has the needed alternatives.</li>
+    <li><strong>Complete key tasks:</strong> submit a form, open a menu, or finish checkout and check that status changes and errors are announced and understandable.</li>
+    <li><strong>Run an automated scan:</strong> investigate the results, confirm which are actual barriers, and look for repeated patterns across similar pages.</li>
+  </ul>
+  <p>This checklist is a starting point, not a complete WCAG conformance evaluation. The right test methods depend on the content, technology, and scope.</p>
+</section>
+
+<section class="mt-4">
+  <h2>How to read an audit report</h2>
+  <p>A useful report makes each finding actionable. Look for the affected page or component, the relevant accessibility requirement, what a person experiences, steps to reproduce the issue, and enough evidence for a developer or content editor to locate it. Clear recommendations should explain the intended outcome without prescribing a single implementation when several fixes are possible.</p>
+  <p>Also check the report’s scope and testing date. A report describes the pages and features evaluated at that time; it is not a permanent guarantee for content or functionality that changes later. After repairs, retest the affected experience and check related templates for the same underlying issue.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Choose the next step</h2>
+  <ul>
+    <li><a href="{% post_url learning_center/2026-10-22-wcag-accessibility-audit-vs-automated-scan %}">Compare a WCAG audit with an automated scan</a> to understand what each method can tell you.</li>
+    <li><a href="{% post_url learning_center/2026-10-22-what-does-a-wcag-accessibility-audit-include %}">See what a WCAG accessibility audit includes</a>, from scope and testing through documented findings.</li>
+    <li><a href="{% post_url learning_center/2026-10-22-when-to-repeat-a-website-accessibility-audit %}">Learn when to repeat an accessibility audit</a> after redesigns, new features, or significant content changes.</li>
+  </ul>
+  <p>For an evaluation with documented findings, visit our <a href="{{ '/services/web_accessibility_audits/' | relative_url }}">WCAG accessibility audit service</a>. For ongoing visibility between evaluations, see <a href="{{ '/services/web_accessibility_monitoring/' | relative_url }}">website accessibility monitoring</a>.</p>
+</section>

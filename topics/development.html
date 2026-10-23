@@ -6,4 +6,54 @@ permalink: /monkeyhub/learning_center/development/
 categories: [MonkeyHub, learning center]
 ---
 
-{% include lc-topic.html slug="development" intro="Accessible forms, modals, menus, and custom components." %}
+{% include lc-topic.html slug="development" intro="Accessible interactions start with sound HTML and predictable behavior. Use these implementation patterns for forms, buttons, navigation, dialogs, and custom controls." %}
+
+<section class="mt-4">
+  <h2>Start with native HTML</h2>
+  <p>Browsers already provide keyboard behavior, focus handling, and accessibility information for standard links, buttons, inputs, and headings. Use the element that matches the action: a link navigates, a button performs an action, and a form control accepts input. Native elements reduce the amount of custom behavior your code must maintain.</p>
+  <p>Build a custom control only when native HTML cannot meet the need. Adding an ARIA role or an accessible name does not add keyboard behavior by itself. A custom component must implement the expected interaction as well as expose its role, name, state, and value.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Make forms understandable and recoverable</h2>
+  <p>Associate every field with a visible label. Place instructions where people can find them before they submit, and identify required fields in text rather than by color alone. Use the appropriate input type and autocomplete values so browsers and assistive technologies can offer useful support.</p>
+  <ul>
+    <li>Describe the expected format before the field when it matters, such as a date or password requirement.</li>
+    <li>When validation fails, identify the field, explain the problem in text, and tell the person how to correct it.</li>
+    <li>Keep entered values when possible so a validation error does not force people to start over.</li>
+    <li>For a long form, provide a linked error summary and move focus to it after submission when appropriate.</li>
+    <li>Announce asynchronous success or failure messages so they are available to assistive technology.</li>
+  </ul>
+  <p>Do not rely on placeholder text as the only label. It can disappear during entry and may be difficult to read. Ensure instructions and error messages are programmatically associated with the relevant field.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Build navigation and menus for real use</h2>
+  <p>Most website navigation is a list of links, so use ordinary links inside a navigation region. The ARIA <code>menu</code> pattern is intended for application-like menus with additional keyboard behavior; applying <code>role="menu"</code> to a regular site navigation without implementing that behavior can make it harder to use.</p>
+  <p>For a collapsible navigation on small screens, use a button that exposes whether the navigation is expanded and controls the associated region. Keep the button’s accessible name clear, update its expanded state when toggled, and ensure the links can be reached and activated by keyboard.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Make dialogs manage focus</h2>
+  <p>A dialog should have a clear accessible name, and opening it should move keyboard focus into a useful place inside it. While a modal dialog is open, users should not be able to interact with content behind it. Provide a visible close control and support the expected keyboard dismissal behavior where appropriate.</p>
+  <p>When the dialog closes, return focus to the control that opened it unless the user’s next step makes a different focus target more helpful. Test long dialog content, validation errors, and small screens so the close control and dialog content remain reachable.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Give custom components a complete interaction model</h2>
+  <p>Before implementing a custom tab set, accordion, combobox, or date picker, write down how a person will operate it. Define which keys move focus, which keys activate an option, how the current state is announced, and where focus goes when the component opens or closes. Then implement and test that behavior consistently.</p>
+  <ul>
+    <li>Expose an accessible name and the correct role for each control.</li>
+    <li>Keep the announced state in sync with what is visible, such as expanded, selected, checked, or disabled.</li>
+    <li>Use a logical tab sequence and do not create keyboard traps.</li>
+    <li>Ensure updates are announced when content changes without a page reload.</li>
+    <li>Support the interaction with keyboard alone, not just mouse, touch, or hover.</li>
+  </ul>
+  <p>Prefer a well-supported native control when it provides the needed behavior. A visually polished widget is not complete until its keyboard and assistive technology behavior works too.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Test the implementation, not just the markup</h2>
+  <p>Automated checks can catch some code-level problems, but they cannot confirm that a complete task is understandable and operable. Test the component in the page where it is used: tab through it, activate its controls, trigger errors and success states, resize the viewport, and check it with relevant assistive technology.</p>
+  <p>Review the <a href="{{ '/monkeyhub/learning_center/design/' | relative_url }}">Design and Content guide</a> for focus, contrast, labels, and content structure, then use the <a href="{{ '/monkeyhub/learning_center/testing/' | relative_url }}">Testing and Audits guide</a> to plan a broader review. For project-level support, see our <a href="{{ '/services/accessibility_web_design/' | relative_url }}">accessible web design and development service</a>.</p>
+</section>

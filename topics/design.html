@@ -6,4 +6,58 @@ permalink: /monkeyhub/learning_center/design/
 categories: [MonkeyHub, learning center]
 ---
 
-{% include lc-topic.html slug="design" intro="Color contrast, focus states, headings, link text, and alt text decisions." %}
+{% include lc-topic.html slug="design" intro="Design and content choices shape whether people can read, understand, and use a page. Use these practical checks for contrast, focus, structure, links, images, and responsive layouts." %}
+
+<section class="mt-4">
+  <h2>Make information easy to see and read</h2>
+  <p>Readable design is more than choosing a legible font. Text needs enough contrast against its background, and people need to be able to resize or reflow it without losing content or functionality. Keep paragraphs focused, use clear labels, and avoid placing essential instructions only in a low contrast placeholder or image.</p>
+  <ul>
+    <li>For most text, use a contrast ratio of at least <strong>4.5:1</strong>. Large text can meet a <strong>3:1</strong> minimum.</li>
+    <li>Meaningful visual information in controls and graphics generally needs at least <strong>3:1</strong> contrast against adjacent colors.</li>
+    <li>Do not use color alone to communicate a status or instruction. Pair color with text, shape, an icon, or another visible cue.</li>
+    <li>Check pages with text enlarged and at narrow viewport widths. Content should remain available without clipped text or unnecessary horizontal scrolling.</li>
+  </ul>
+  <p>Contrast tools can help compare color values, but check the actual text, size, weight, and background in the finished design. A color combination that works in a mockup may change when opacity, an image, or a hover state is added.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Keep keyboard focus visible</h2>
+  <p>People who navigate by keyboard need to see which control is ready to use. Preserve a clear focus indicator on links, buttons, fields, and custom controls. Removing the browser outline without providing a strong replacement can make the page impossible to navigate confidently.</p>
+  <ul>
+    <li>Tab through the page and check that focus follows a sensible order.</li>
+    <li>Make the focus indicator easy to distinguish from nearby colors and content.</li>
+    <li>Check that sticky headers, dialogs, and overlays do not cover the focused control.</li>
+    <li>Confirm that keyboard users can move into and out of menus and dialogs without getting trapped.</li>
+  </ul>
+  <p>Hover styles are not a substitute for focus styles. Give keyboard focus its own visible treatment and keep it consistent across the site.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Use structure to explain the page</h2>
+  <p>Headings provide a map of the content for everyone, including people who navigate by heading lists. Organize them by topic: use one clear page title, then headings for the main sections and nested headings for their subsections. Choose heading levels for structure, not just for their visual size.</p>
+  <p>Use lists for grouped items, meaningful labels for form fields, and semantic tables only when information truly has row and column relationships. Consistent structure makes long pages easier to scan and gives assistive technology useful context.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Write link text that makes sense on its own</h2>
+  <p>Links such as “click here” or “read more” leave people guessing, especially when encountered out of context. Describe the destination or action: “Review the WCAG audit process” tells someone more than “Learn more.” Keep the visible link text specific and make sure it matches the page it opens.</p>
+  <p>If a link opens a document or a new window, make that clear when it affects what the visitor should expect. Related links should be visually recognizable as links and should not rely on color alone.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Choose image alternatives by purpose</h2>
+  <p>Alternative text should communicate an image’s purpose in its context, not mechanically describe every visual detail. Ask what information or action the image adds to the page:</p>
+  <ul>
+    <li><strong>Informative image:</strong> write a concise alternative that conveys its relevant information.</li>
+    <li><strong>Decorative image:</strong> use an empty text alternative so assistive technology can skip it.</li>
+    <li><strong>Image used as a control:</strong> name the action or destination, such as “Search” or “Kaffeinated Kodemonkey home.”</li>
+    <li><strong>Chart or complex graphic:</strong> provide a short identification and make the important data or explanation available in nearby text or a table.</li>
+  </ul>
+  <p>Avoid repeating nearby captions word for word or stuffing alt text with keywords. If the image adds no information and is not interactive, an empty alternative is often the most helpful choice.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Review the experience as it changes</h2>
+  <p>Check representative pages at common viewport sizes and with keyboard navigation. Review menus, forms, error messages, and other interactive states alongside the static page. Design systems and reusable templates can prevent repeated issues, but each implementation still needs review in context.</p>
+  <p>For a broader evaluation, start with the <a href="{{ '/monkeyhub/learning_center/testing/' | relative_url }}">Testing and Audits guide</a>. To understand the requirements these design decisions support, continue to the <a href="/monkeyhub/learning_center/wcag_series/05_success_criteria/">WCAG Success Criteria guide</a> or explore our <a href="{{ '/services/accessibility_web_design/' | relative_url }}">accessible web design service</a>.</p>
+</section>

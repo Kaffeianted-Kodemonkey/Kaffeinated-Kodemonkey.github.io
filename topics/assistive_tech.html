@@ -6,4 +6,49 @@ permalink: /monkeyhub/learning_center/assistive_tech/
 categories: [MonkeyHub, learning center]
 ---
 
-{% include lc-topic.html slug="assistive-tech" intro="How people use screen readers, switch devices, and voice control." %}
+{% include lc-topic.html slug="assistive-tech" intro="Assistive technologies help people read, navigate, and operate digital content in different ways. Learn what common tools do and how to make your site work well with them." %}
+
+<section class="mt-4">
+  <h2>Assistive technology works with the whole experience</h2>
+  <p>People use a mix of built-in and specialized tools to access websites. Some tools speak content, enlarge it, provide captions, or let a person operate controls without a mouse. The browser, operating system, assistive technology, and website all contribute to the experience, so a page that looks correct on screen may still be difficult to use.</p>
+  <p>Accessible implementation gives these tools meaningful structure and predictable behavior: headings are headings, controls have names, focus is visible, and changes are communicated. That foundation helps many people, including those who use different devices or settings than your team expected.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Screen readers: structure, names, and feedback</h2>
+  <p>Screen readers present text and interface information as speech, braille, or both. People may move through a page line by line, jump between headings and landmarks, or navigate directly to links, form controls, and other elements. A useful heading hierarchy, descriptive link text, and clear page regions make those routes easier to understand.</p>
+  <p>Make sure interactive elements expose a clear name, role, and state. A button should identify its action; a form field should have a label; and a disclosure control should communicate whether its content is expanded. When content updates dynamically, provide an appropriate announcement so the change is not missed.</p>
+  <p>Screen reader output varies by browser, operating system, and user settings. Avoid relying on one exact spoken phrase; focus on providing correct semantics and test important tasks with the combinations your audience is likely to use.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Keyboard and switch access: make every action reachable</h2>
+  <p>Many people use a keyboard, switch device, or other input method to move focus through controls and activate them. A switch may let someone scan through choices one at a time, so a long or confusing focus order can make even a simple task slow and difficult.</p>
+  <ul>
+    <li>Keep links, buttons, fields, and custom controls reachable and operable from the keyboard.</li>
+    <li>Use a logical focus order that follows the content and task.</li>
+    <li>Show a clear focus indicator and ensure it is not hidden behind sticky content.</li>
+    <li>Avoid interactions that require dragging, hovering, or precise pointer movement without another way to complete the task.</li>
+    <li>Prevent keyboard traps and give people a clear way to leave menus, dialogs, and other components.</li>
+  </ul>
+  <p>Testing with only a mouse can miss these barriers. Try completing important journeys with a keyboard and verify that every action remains available.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Voice control: use clear, visible names</h2>
+  <p>Voice control lets people speak commands to select controls, follow links, dictate text, or move around a page. Visible labels and accessible names should identify controls in a way that matches what people see and say. Generic labels such as “more” or repeated “click here” links can make voice selection ambiguous.</p>
+  <p>Give controls unique, descriptive names where needed, and avoid changing a control’s accessible name unexpectedly while it is in use. Test that people can activate the same visible action through its spoken name as well as by pointer or keyboard.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Magnification and display settings</h2>
+  <p>People may enlarge content, increase spacing, use a high contrast setting, or zoom into a small portion of the screen. Responsive layouts should adapt without hiding information or forcing people to scroll in two directions to read ordinary content. Text, controls, and focus indicators should remain visible and usable when the page is enlarged.</p>
+  <p>Check pages at narrow viewport widths and with increased text size. Make sure dialogs fit on screen, menus remain reachable, and content does not depend on a fixed height or a particular color scheme.</p>
+</section>
+
+<section class="mt-4">
+  <h2>Test tasks with assistive technology</h2>
+  <p>Choose an important task, such as finding a service, completing a form, or opening a menu. Then test the complete journey with keyboard access and relevant assistive technology. Notice whether someone can identify where they are, understand available actions, complete the task, and recover if something goes wrong.</p>
+  <p>Automated scans can catch some code patterns, but they cannot stand in for this hands-on review. Testing with assistive technology is most useful when it is paired with standards-based evaluation and feedback from people with disabilities. A single test setup does not represent every user or configuration.</p>
+  <p>For practical keyboard and interaction checks, read the <a href="{{ '/monkeyhub/learning_center/testing/' | relative_url }}">Testing and Audits guide</a>. Review the <a href="{{ '/monkeyhub/learning_center/development/' | relative_url }}">Development Patterns guide</a> for implementation details and the <a href="{{ '/monkeyhub/learning_center/design/' | relative_url }}">Design and Content guide</a> for focus, structure, and readable presentation.</p>
+</section>

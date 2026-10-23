@@ -1,0 +1,65 @@
+# Query-led supporting content plan. Topics are based on service intent and
+# existing site content; validate priorities against Search Console data.
+- title: "What Does a WCAG Accessibility Audit Include?"
+  primary_query: "what does a WCAG accessibility audit include"
+  related_queries:
+    - "what is included in a website accessibility audit"
+    - "WCAG audit report example"
+    - "manual accessibility testing vs automated scan"
+  intent: "Learn what a professional audit covers and what the report provides."
+  audience: "Organizations comparing audit services or preparing to assess a website."
+  target_page: "/services/web_accessibility_audits/"
+  internal_links:
+    - anchor: "WCAG accessibility audit and POCC"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "accessibility monitoring service"
+      url: "/services/web_accessibility_monitoring/"
+  angle: "Explain scope, DHS Trusted Tester manual testing, WAVE-powered scans, WEAR findings, and POCC documentation without implying an audit guarantees compliance."
+
+- title: "WCAG Accessibility Audit vs. Automated Scan"
+  primary_query: "WCAG audit vs automated accessibility scan"
+  related_queries:
+    - "can an automated scan verify WCAG compliance"
+    - "what accessibility scanners cannot detect"
+    - "manual accessibility testing"
+  intent: "Compare tools with a scoped manual evaluation and understand their limits."
+  audience: "Website owners, developers, and procurement teams deciding how to evaluate a site."
+  target_page: "/services/web_accessibility_audits/"
+  internal_links:
+    - anchor: "manual WCAG accessibility audit"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "ongoing accessibility monitoring"
+      url: "/services/web_accessibility_monitoring/"
+  angle: "Show how WAVE-powered scans can flag detectable issues while DHS Trusted Tester manual testing assesses additional criteria and interactions."
+
+- title: "When Should You Repeat a Website Accessibility Audit?"
+  primary_query: "when to repeat a website accessibility audit"
+  related_queries:
+    - "how often should a website be audited for accessibility"
+    - "accessibility audit after website redesign"
+    - "annual WCAG audit"
+  intent: "Determine when an existing audit is stale and when to reevaluate a site."
+  audience: "Organizations maintaining websites, especially after redesigns or major releases."
+  target_page: "/services/web_accessibility_audits/"
+  internal_links:
+    - anchor: "renew a WCAG accessibility audit and POCC"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "quarterly accessibility monitoring"
+      url: "/services/web_accessibility_monitoring/"
+  angle: "Explain the annual renewal recommendation, major changes that warrant reassessment, and how ongoing monitoring complements periodic evaluations."
+
+- title: "Accessibility Monitoring for Large Websites and Web Teams"
+  primary_query: "accessibility monitoring for large websites"
+  related_queries:
+    - "ongoing website accessibility monitoring"
+    - "monitor accessibility issues across multiple websites"
+    - "accessibility monitoring for web agencies"
+  intent: "Find a repeatable way to track accessibility findings across changing sites."
+  audience: "Companies with large internal and external sites, development teams, and web agencies."
+  target_page: "/services/web_accessibility_monitoring/"
+  internal_links:
+    - anchor: "website accessibility monitoring"
+      url: "/services/web_accessibility_monitoring/"
+    - anchor: "WCAG accessibility audit and POCC"
+      url: "/services/web_accessibility_audits/"
+  angle: "Describe client platform access for day-to-day scan review, WAVE-powered automated findings, and Kaffeinated Kodemonkey's quarterly evaluation, WEAR report, and POCC documentation."

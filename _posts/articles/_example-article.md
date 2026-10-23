@@ -8,6 +8,6 @@ description: "A real-world look at low-contrast text and what it costs."
 ---
 
 Article text goes here. Mention the guide in the body too:
-read the full explanation of [WCAG 1.4.3 in the Learning Center]({{ '/monkeyhub/learning-center/' | relative_url }}).
+read the full explanation of [WCAG 1.4.3 in the Learning Center]({{ '/monkeyhub/learning_center/' | relative_url }}).
 
 {% include lc-related.html %}

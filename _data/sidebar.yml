@@ -4,9 +4,9 @@
 sections:
   - id: articles
     title: Articles
-    prefixes: ["/monkeyhub/articles/", "/article/"]
+    prefixes: ["/monkeyhub/articles_news/", "/monkeyhub/article/", "/article/"]
     links:
-      - { title: "All articles", url: "/monkeyhub/articles/" }
+      - { title: "All articles", url: "/monkeyhub/articles_news/" }
       - { title: "WCAG Learning Center", url: "/monkeyhub/learning_center/" }
       - { title: "Resources", url: "/monkeyhub/resources/" }
       - { title: "Back to MonkeyHub", url: "/monkeyhub/" }
@@ -30,7 +30,7 @@ sections:
     prefixes: ["/monkeyhub"]
     links:
       - { title: "MonkeyHub", url: "/monkeyhub/" }
-      - { title: "Articles", url: "/monkeyhub/articles/" }
+      - { title: "Articles", url: "/monkeyhub/articles_news/" }
       - { title: "WCAG Learning Center", url: "/monkeyhub/learning_center/" }
       - { title: "Resources", url: "/monkeyhub/resources/" }
       - { title: "Support Ticket", url: "/support_ticket/" }

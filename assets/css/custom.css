@@ -1,240 +1,205 @@
+/* Site-specific styles. Main template styles live in style.css. */
 
-/* Custom styles */
-/* These are designer added or mondifies styles from the main styles.
-   Enter your custom style below */
+:root {
+  --kkm-navy: #37517e;
+  --kkm-navy-hover: #293c5d;
+  --kkm-amber: #a85a00;
+  --kkm-amber-hover: #854700;
+  --kkm-surface: #f3f5fa;
+  --kkm-text: #212529;
+}
 
-/* Skip link */
+/* Keyboard skip link */
 .skip {
   position: absolute;
-  left: -10000px;
   top: auto;
+  left: -10000px;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
 
-/* blockquote background color */
-.bg-kkm-blue{
-  background-color: #37517E;
-  margin: 40px 10px;
-  padding: 5px;
+/* Utility styles */
+.bg-kkm-blue {
+  background-color: var(--kkm-navy);
 }
 
-/* disable url/nav link */
+.text-navy {
+  color: var(--kkm-navy);
+}
+
 .isDisabled {
   color: currentColor;
   cursor: not-allowed;
   opacity: 0.5;
   text-decoration: none;
 }
-btn:first-child:hover, :not(.btn-check)+.btn:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
+
+ul.no-bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.btn-outline-primary {
-    --bs-btn-color: #37517e;
-    --bs-btn-border-color: #37517e;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #37517e;
-    --bs-btn-hover-border-color: #37517e;
-    --bs-btn-focus-shadow-rgb: 13,110,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #37517e;
-    --bs-btn-active-border-color: #37517e;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #37517e;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #37517e;
-    --bs-gradient: none;
+.check-color {
+  color: var(--kkm-amber);
 }
 
-.btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #37517e;
-    --bs-btn-border-color: #37517e;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #37517e;
-    --bs-btn-hover-border-color: #37517e;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #37517e;
-    --bs-btn-active-border-color: #37517e;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #0d6efd;
-    --bs-btn-disabled-border-color: #0d6efd;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.btn-outline-warning {
-    --bs-btn-color: #ffc107;
-    --bs-btn-border-color: #ffc107;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #ffc107;
-    --bs-btn-hover-border-color: #ffc107;
-    --bs-btn-focus-shadow-rgb: 255,193,7;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #ffc107;
-    --bs-btn-active-border-color: #ffc107;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #ffc107;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #ffc107;
-    --bs-gradient: none;
+h1 .title {
+  font-size: 5em;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+.main {
+  min-height: 500px;
 }
 
-.text-navy {
-    color:  #37517e;
-}
-
-h1 .title{
-    font-size: 5.0em;
-
-}
-/****** Main Content *********/
-.main{
-    min-height: 500px;
-
-}
-/******* Call Out *******************/
-/* Base class */
-.callout {}
-
-/* Modifier classes */
-.callout-info {}
-.callout-warning {}
-.callout-danger {}
 .callout-orange {
-    margin: 25px;
-    padding: 20px;
-    width: 70%;
-    background-color: #37517e;
-    border-left: 6px solid darkorange;
-    border-top-right-radius:.5rem;
-    border-bottom-right-radius:.5rem;
-    padding:1rem;
-    text-align:center;
-    color: #fff;
+  width: 70%;
+  margin: 25px;
+  padding: 1rem;
+  border-left: 6px solid var(--kkm-amber);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: var(--kkm-navy);
+  color: #fff;
+  text-align: center;
 }
 
-/****** FAQ links in accordion *****/
 .faq-link a {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 500;
-  outline: none;
+  line-height: 24px;
   cursor: pointer;
 }
 
-/************************************/
-
 .dubble-line {
-  text-decoration-line: underline;
-  text-decoration-color: /*#47B2E4*/ #37517e;
-  text-decoration-style: double;
+  text-decoration: underline double var(--kkm-navy);
   text-decoration-thickness: 2px;
 }
 
-.dubble-line a{
-  color: #37517e /*#216ED4*/;
+.dubble-line a {
+  color: var(--kkm-navy);
 }
 
-.dubble-line a:hover{
-  color: #47B2E4;
+.dubble-line a:hover {
+  color: var(--kkm-amber);
 }
 
-/****************************/
-/** Remove bulltes in uls **/
-/***************************/
-ul.no-bullets {
- list-style-type: none; /* Remove bullets */
- padding: 0; /* Remove padding */
- margin: 0; /* Remove margins */
+/* Buttons */
+.btn-outline-primary {
+  --bs-btn-color: var(--kkm-navy);
+  --bs-btn-border-color: var(--kkm-navy);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kkm-navy);
+  --bs-btn-hover-border-color: var(--kkm-navy);
+  --bs-btn-focus-shadow-rgb: 55, 81, 126;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--kkm-navy-hover);
+  --bs-btn-active-border-color: var(--kkm-navy-hover);
+  --bs-btn-disabled-color: var(--kkm-navy);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--kkm-navy);
+  --bs-gradient: none;
 }
 
-/* blue checkmark */
-.check-color {
-  color: #47b2e4;
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--kkm-navy);
+  --bs-btn-border-color: var(--kkm-navy);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kkm-navy-hover);
+  --bs-btn-hover-border-color: var(--kkm-navy-hover);
+  --bs-btn-focus-shadow-rgb: 55, 81, 126;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--kkm-navy-hover);
+  --bs-btn-active-border-color: var(--kkm-navy-hover);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--kkm-navy);
+  --bs-btn-disabled-border-color: var(--kkm-navy);
 }
-/***************************/
-/* footer email link       */
-/***************************/
+
+.btn-outline-warning {
+  --bs-btn-color: var(--kkm-amber);
+  --bs-btn-border-color: var(--kkm-amber);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kkm-amber-hover);
+  --bs-btn-hover-border-color: var(--kkm-amber-hover);
+  --bs-btn-focus-shadow-rgb: 168, 90, 0;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--kkm-amber-hover);
+  --bs-btn-active-border-color: var(--kkm-amber-hover);
+  --bs-btn-disabled-color: var(--kkm-amber);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--kkm-amber);
+  --bs-gradient: none;
+}
+
+/* Footer */
 #footer {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #footer .footer-top .footer-contact p {
+  margin-bottom: 0;
+  color: #f0c36d;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  /*color: #5e5e5e;*/
-  color: goldenrod;
 }
 
-#footer .footer-top .info .booking .footer-links a{
-  color: #5573B4 /*#777777*/;
-  transition: 0.3s;
+#footer .footer-top .info .booking .footer-links a {
   display: inline-block;
+  color: #c4d3f0;
   line-height: 1;
+  transition: color 0.3s ease;
 }
 
 #footer .footer-top .info .booking .footer-links a:hover {
+  color: #d5e1f4;
   text-decoration: none;
-  color: steelblue
 }
 
-.credits a{
-  color: #BBC5DD /*#777777*/;
+.credits a {
+  color: #bbc5dd;
 }
 
-.credits a:hover{
-  color: #6BC1E9;
+.credits a:hover {
+  color: #c4d3f0;
 }
 
-
-/* inner page sections */
-
-section #audit-header, #EnvTerm, #report, #Score {
-
-}
-
-/*--------------------------------------------------------------
-# Manual Testing
---------------------------------------------------------------*/
+/* Manual testing cards */
 .manual-testing .row {
   padding-top: 40px;
 }
 
 .manual-testing .box {
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-  background: #fff;
   height: 100%;
+  padding: 60px 40px;
   border-top: 4px solid #fff;
   border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
 }
 
 .manual-testing h3 {
-  font-weight: 500;
   margin-bottom: 15px;
+  color: var(--kkm-navy);
   font-size: 20px;
-  color: #37517e;
+  font-weight: 500;
 }
 
 .manual-testing h4 {
-  font-size: 48px;
-  color: #37517e;
-  font-weight: 400;
-  font-family: "Jost", sans-serif;
   margin-bottom: 25px;
+  color: var(--kkm-navy);
+  font-family: "Jost", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
 }
 
 .manual-testing h4 sup {
@@ -242,36 +207,32 @@ section #audit-header, #EnvTerm, #report, #Score {
 }
 
 .manual-testing h4 span {
-  color: #47b2e4;
-  font-size: 18px;
   display: block;
+  color: var(--kkm-amber);
+  font-size: 18px;
 }
 
 .manual-testing ul {
-  /*padding: 20px 0;*/
-  list-style: none;
-  color: darkslategray;
-  text-align: left;
+  color: var(--kkm-text);
   line-height: 15px;
+  list-style: none;
+  text-align: left;
 }
 
 .manual-testing ul li {
-  padding: 10px 0 10px 30px;
   position: relative;
+  padding: 10px 0 10px 30px;
 }
 
 .manual-testing ul i {
-  color: #28a745;
-  font-size: 24px;
   position: absolute;
-  left: 0;
   top: 6px;
+  left: 0;
+  color: #146c43;
+  font-size: 24px;
 }
 
-.manual-testing ul .na {
-  color: #ccc;
-}
-
+.manual-testing ul .na,
 .manual-testing ul .na i {
   color: #ccc;
 }
@@ -283,87 +244,48 @@ section #audit-header, #EnvTerm, #report, #Score {
 .manual-testing .buy-btn {
   display: inline-block;
   padding: 12px 35px;
+  border: 1px solid var(--kkm-amber);
   border-radius: 50px;
-  color: #47b2e4;
-  transition: none;
+  color: var(--kkm-amber);
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
-  transition: 0.3s;
-  border: 1px solid #47b2e4;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.manual-testing .buy-btn:hover {
-  background: #47b2e4;
+.manual-testing .buy-btn:hover,
+.manual-testing .featured .buy-btn {
+  background-color: var(--kkm-amber);
   color: #fff;
 }
 
 .manual-testing .featured {
-  border-top-color: #47b2e4;
-}
-
-.manual-testing .featured .buy-btn {
-  background: #47b2e4;
-  color: #fff;
+  border-top-color: var(--kkm-amber);
 }
 
 .manual-testing .featured .buy-btn:hover {
-  background: #23a3df;
+  background-color: var(--kkm-amber-hover);
 }
 
-/*.infograph-fcw1 {
-  background-color: transparent;
-  background-image: url("/assets/img/blog-series/WCAG_Blog1_background.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 5%;
-  /*width: 25%;
-}
-
-.newsletter{
-  color: #1E2031;
-  position: absolute;
-  top: 165%;
-  left: 78%;
-  /*margin-top: 153%;
-  max-height: 153%;
-  margin-left: 50px;
-}*/
-
-.chat-buttons{
+/* Chat controls */
+.chat-buttons {
   margin-top: -80px;
 }
 
-@media (max-width: 991.98px) {
-  .chat-buttons{
-    margin-top: 0px;
-    padding: 2%;
-  }
-}
-
-element.style {
-    background-color: #293C5D !important;
-}
-
-/* ==========================================================================
-   Static Accessible Client Grid Styles
-   ========================================================================== */
-
+/* Client grid */
 .client-grid-card {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Reduces height constraint by 1/2 (Max 90px) & handles diverse logo bounds */
 .client-grid-logo {
-  max-height: 90px;
   width: auto;
+  max-height: 90px;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.7;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-/* Typography Hierarchy for Compliance Details */
 .client-grid-title {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -374,7 +296,6 @@ element.style {
   line-height: 1.2;
 }
 
-/* Micro-Interactions: Smooth fade to full color on Hover and Keyboard Focus */
 .client-grid-card:hover .client-grid-logo,
 .client-grid-card a:focus .client-grid-logo {
   filter: grayscale(0%);
@@ -383,4 +304,11 @@ element.style {
 
 .client-grid-card:hover {
   transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+  .chat-buttons {
+    margin-top: 0;
+    padding: 2%;
+  }
 }

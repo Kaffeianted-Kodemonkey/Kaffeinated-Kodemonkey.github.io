@@ -42,19 +42,19 @@
 
 {% if page.url == "/monkeyhub/" %}
   {% assign nav_titles = "Articles & News|Learning Center|Resources|Support Ticket" | split: "|" %}
-  {% assign nav_urls = "/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
+  {% assign nav_urls = "/monkeyhub/articles_news/|/monkeyhub/learning_center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
 {% elsif page.url == "/monkeyhub/articles_news/" %}
   {% assign nav_titles = "MonkeyHub|Learning Center|Resources|Support Ticket" | split: "|" %}
-  {% assign nav_urls = "/monkeyhub/|/monkeyhub/learning-center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
-{% elsif page.url == "/monkeyhub/learning-center/" %}
+  {% assign nav_urls = "/monkeyhub/|/monkeyhub/learning_center/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
+{% elsif page.url == "/monkeyhub/learning_center/" %}
   {% assign nav_titles = "MonkeyHub|Articles & News|Resources|Support Ticket" | split: "|" %}
   {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/resources/|/monkeyhub/support_ticket/" | split: "|" %}
 {% elsif page.url == "/monkeyhub/resources/" %}
    {% assign nav_titles = "MonkeyHub|Articles & News|Learning Center|Support Ticket" | split: "|" %}
-   {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/support_ticket/" | split: "|" %}
+   {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning_center/|/monkeyhub/support_ticket/" | split: "|" %}
 {% elsif page.url == "/monkeyhub/support_ticket/" %}
     {% assign nav_titles = "MonkeyHub|Articles & News|Learning Center|Resources|" | split: "|" %}
-    {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning-center/|/monkeyhub/resources/" | split: "|" %}
+    {% assign nav_urls = "/monkeyhub/|/monkeyhub/articles_news/|/monkeyhub/learning_center/|/monkeyhub/resources/" | split: "|" %}
 {% elsif current %}
   {% assign nav_titles = current.links | map: "title" %}
   {% assign nav_urls = current.links | map: "url" %}

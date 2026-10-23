@@ -20,9 +20,9 @@
 
 # title: Web Accessibility Consulting & Compliance Services
 # company: Kaffeinated Kodemonkey
-email: support@kaffeinatedkodemonkey.com
+email: kaffeinatedkodemonkey@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  HB21-1110 & ADA compliance audits for CO gov & edu. DHS Trusted Tester certified. Get your POCC to avoid fines. Free consultation!
+  Nationwide WCAG accessibility audits, WAVE-powered scans, WEAR reports, POCC documentation, and ongoing website monitoring by a DHS Certified Trusted Tester.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.kaffeinatedkodemonkey.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: https://x.com/kfn8dKodeMonkey

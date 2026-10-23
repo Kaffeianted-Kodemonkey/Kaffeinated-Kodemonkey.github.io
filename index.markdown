@@ -11,7 +11,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: homepage-template
-title: Web Accessibility Consulting & Compliance Services
-description: DHS Certified Trusted Tester delivering ADA compliance, Section 508 audits, and formal VPAT/ACR reporting. Secure your Proof of Compliance Certificate.
+title: WCAG Accessibility Audits & Monitoring
+description: Nationwide WCAG accessibility audits, WAVE-powered scans, WEAR reports, POCC documentation, and ongoing website monitoring by a DHS Certified Trusted Tester.
 url: https://www.kaffeinatedkodemonkey.com/
 ---

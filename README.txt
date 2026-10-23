@@ -5,7 +5,7 @@ _includes/post-list.html           NEW  one list used by Articles and Learning C
 _includes/lc-topic.html            NEW  list for one Learning Center topic
 _includes/lc-related.html          NEW  "Related reading" box (series.html already calls it)
 _data/sidebar.yml                  NEW  sidebar links, edit here to change them
-articles.html                      REPLACE your current Articles page (permalink /monkeyhub/articles/)
+articles.html                      REPLACE your current Articles page (permalink /monkeyhub/articles_news/)
 learning-center.html               REPLACE your current Learning Center page
 topics/*.html                      NEW  six topic pages
 _posts/learning_center/*.md        NEW  WCAG 2.1 vs 2.2 guide
