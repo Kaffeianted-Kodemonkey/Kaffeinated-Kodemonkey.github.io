@@ -3,6 +3,7 @@ layout: post
 title: "When Should You Repeat a Website Accessibility Audit?"
 date: 2026-10-22
 categories: [learning_center]
+nav_section: learning_center
 topic: compliance
 description: "Learn when to repeat a website accessibility audit, including annual reviews, major updates, and changes that can affect WCAG evaluation findings."
 tags: [wcag, accessibility-audit, website-maintenance, accessibility-monitoring, trusted-tester]

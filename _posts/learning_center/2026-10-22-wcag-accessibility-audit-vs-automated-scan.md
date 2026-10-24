@@ -3,6 +3,7 @@ layout: post
 title: "WCAG Accessibility Audit vs. Automated Scan: What’s the Difference?"
 date: 2026-10-22
 categories: [learning_center]
+nav_section: learning_center
 topic: compliance
 description: "Compare automated accessibility scans with a scoped WCAG audit, including what WAVE-powered checks can flag and what manual testing adds."
 tags: [wcag, accessibility-audit, automated-testing, manual-testing, trusted-tester, wave]

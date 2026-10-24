@@ -12,6 +12,6 @@
 
 layout: homepage-template
 title: WCAG Accessibility Audits & Monitoring
-description: Nationwide WCAG accessibility audits, WAVE-powered scans, WEAR reports, POCC documentation, and ongoing website monitoring by a DHS Certified Trusted Tester.
+description: Scoped WCAG accessibility evaluations with WAVE-powered scans, manual testing, documented findings, POCC materials, and ongoing monitoring.
 url: https://www.kaffeinatedkodemonkey.com/
 ---

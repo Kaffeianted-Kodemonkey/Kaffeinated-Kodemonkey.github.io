@@ -3,6 +3,7 @@ layout: post
 title: "Accessibility Monitoring for Large Websites and Web Teams"
 date: 2026-10-22
 categories: [learning_center]
+nav_section: learning_center
 topic: compliance
 description: "See how accessibility monitoring helps large-site teams review scan findings, alongside quarterly WCAG evaluation and reporting."
 tags: [accessibility-monitoring, large-websites, web-agencies, wcag, wave, trusted-tester]

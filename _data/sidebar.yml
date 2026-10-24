@@ -16,7 +16,7 @@ sections:
     prefixes: ["/monkeyhub/learning_center/"]
     links:
       - { title: "Learning Center home", url: "/monkeyhub/learning_center/" }
-      - { title: "Start here", url: "/monkeyhub/learning_center/#start-here" }
+      - { title: "Start here", url: "/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/" }
       - { title: "WCAG in plain language", url: "/monkeyhub/learning_center/wcag/" }
       - { title: "Testing and audits", url: "/monkeyhub/learning_center/testing/" }
       - { title: "Design and content", url: "/monkeyhub/learning_center/design/" }
@@ -49,7 +49,7 @@ sections:
     links:
       - { title: "ADA Compliance", url: "/a11y_policy/ada_compliance/" }
       - { title: "Accessibility Statement", url: "/a11y_policy/a11y_statement/" }
-      - { title: "WCAG Report", url: "/a11y_policy/wcag_report/" }
+      - { title: "WCAG Evaluation Audit Report (WEAR)", url: "/a11y_policy/wcag_report/" }
       - { title: "Terms of Service", url: "/a11y_policy/tos/" }
       - { title: "Disclaimer", url: "/a11y_policy/disclaimer/" }
       - { title: "Privacy Policy", url: "/a11y_policy/privacy_policy/" }

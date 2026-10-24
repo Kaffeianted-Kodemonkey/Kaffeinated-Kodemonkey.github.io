@@ -3,6 +3,7 @@ layout: post
 title: "What Does a WCAG Accessibility Audit Include?"
 date: 2026-10-22
 categories: [learning_center]
+nav_section: learning_center
 topic: compliance
 description: "Learn what a WCAG accessibility audit covers, how manual DHS Trusted Tester testing and WAVE scans work together, and what the report documents."
 tags: [wcag, accessibility-audit, accessibility-evaluation, trusted-tester, wave, POCC, WEAR]

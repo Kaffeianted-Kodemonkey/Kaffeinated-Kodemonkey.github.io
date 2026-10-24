@@ -12,7 +12,11 @@
   internal_links:
     - anchor: "WCAG accessibility audit and POCC"
       url: "/services/web_accessibility_audits/"
-    - anchor: "accessibility monitoring service"
+    - anchor: "scoped website accessibility audit"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "accessibility monitoring with quarterly WCAG evaluations"
+      url: "/services/web_accessibility_monitoring/"
+    - anchor: "ongoing website accessibility monitoring"
       url: "/services/web_accessibility_monitoring/"
   angle: "Explain scope, DHS Trusted Tester manual testing, WAVE-powered scans, WEAR findings, and POCC documentation without implying an audit guarantees compliance."
 
@@ -28,7 +32,11 @@
   internal_links:
     - anchor: "manual WCAG accessibility audit"
       url: "/services/web_accessibility_audits/"
-    - anchor: "ongoing accessibility monitoring"
+    - anchor: "documented WCAG audit and POCC service"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "ongoing website accessibility monitoring"
+      url: "/services/web_accessibility_monitoring/"
+    - anchor: "quarterly accessibility evaluations and scan monitoring"
       url: "/services/web_accessibility_monitoring/"
   angle: "Show how WAVE-powered scans can flag detectable issues while DHS Trusted Tester manual testing assesses additional criteria and interactions."
 
@@ -44,7 +52,11 @@
   internal_links:
     - anchor: "renew a WCAG accessibility audit and POCC"
       url: "/services/web_accessibility_audits/"
-    - anchor: "quarterly accessibility monitoring"
+    - anchor: "scoped accessibility audit after a website redesign"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "quarterly website accessibility monitoring"
+      url: "/services/web_accessibility_monitoring/"
+    - anchor: "monitoring between manual WCAG evaluations"
       url: "/services/web_accessibility_monitoring/"
   angle: "Explain the annual renewal recommendation, major changes that warrant reassessment, and how ongoing monitoring complements periodic evaluations."
 
@@ -58,8 +70,12 @@
   audience: "Companies with large internal and external sites, development teams, and web agencies."
   target_page: "/services/web_accessibility_monitoring/"
   internal_links:
-    - anchor: "website accessibility monitoring"
+    - anchor: "website accessibility monitoring service"
+      url: "/services/web_accessibility_monitoring/"
+    - anchor: "ongoing scan monitoring with quarterly WCAG evaluations"
       url: "/services/web_accessibility_monitoring/"
     - anchor: "WCAG accessibility audit and POCC"
+      url: "/services/web_accessibility_audits/"
+    - anchor: "manual WCAG accessibility audit and evaluation"
       url: "/services/web_accessibility_audits/"
   angle: "Describe client platform access for day-to-day scan review, WAVE-powered automated findings, and Kaffeinated Kodemonkey's quarterly evaluation, WEAR report, and POCC documentation."

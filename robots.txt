@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /private/  # Block any sensitive subfolders
+Disallow: /private/
 Disallow: /monkeyhub/support_ticket/
 
 Sitemap: https://www.kaffeinatedkodemonkey.com/sitemap.xml
