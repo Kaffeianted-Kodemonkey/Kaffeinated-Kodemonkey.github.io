@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# title: Web Accessibility Consulting & Compliance Services
-# company: Kaffeinated Kodemonkey
+title: Kaffeinated Kodemonkey
+company: Kaffeinated Kodemonkey
 email: kaffeinatedkodemonkey@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Nationwide WCAG accessibility audits, WAVE-powered scans, WEAR reports, POCC documentation, and ongoing website monitoring by a DHS Certified Trusted Tester.

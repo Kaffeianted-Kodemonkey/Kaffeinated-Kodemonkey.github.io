@@ -3,93 +3,89 @@
   
   
     
+      
   <url>
     <loc>http://localhost:4000/</loc>
     
     
   </url>
+      
     
   
     
   
     
-  <url>
-    <loc>http://localhost:4000/Book_Consultation</loc>
-    
-    
-  </url>
-    
-  
-    
-  <url>
-    <loc>http://localhost:4000/REMOVE/OLD_newsletter/</loc>
-    
-    
-  </url>
-    
-  
-    
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/a11y_statement/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/ada_compliance/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/disclaimer/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/privacy_policy/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/tos/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/a11y_policy/wcag_report/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/about/</loc>
     
     
   </url>
+      
     
   
     
-  <url>
-    <loc>http://localhost:4000/assets/img/support-ticket/</loc>
-    
-    
-  </url>
+      
     
   
     
@@ -97,109 +93,135 @@
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/articles_news/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/assistive_tech/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/compliance/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/design/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/development/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/testing/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/learning_center/wcag/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/monkeyhub/resources/</loc>
     
     
   </url>
+      
     
   
     
   
     
+      
   <url>
     <loc>http://localhost:4000/services/accessibility_web_design/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/services/web_accessibility_audits/</loc>
     
     
   </url>
+      
     
   
     
+      
   <url>
     <loc>http://localhost:4000/services/web_accessibility_monitoring/</loc>
     
     
   </url>
+      
     
   
     
