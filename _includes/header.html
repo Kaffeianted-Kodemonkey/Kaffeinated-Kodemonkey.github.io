@@ -1,11 +1,11 @@
 <header id="header" class="fixed-top header-inner-pages">
-  <a href="{{ site.baseurl }}/#about" class="skip">Skip to main content</a>
+  <a href="#main-content" class="skip">Skip to main content</a>
 
   <div class="container-fluid d-flex ms-3">
 
     <!-- <h1><a href="index.html">{{ site.title }}</a></h1> -->
     <!-- Uncomment below if you prefer to use an image logo -->
-    <p class="mt-3"><a href="{{site.url}}" class="img-thumbnail inf-fluid logo me-auto"><img src="{{ site.baseurl }}/assets/img/KKM-Banner.png" alt="Kaffeinated Kodemonkey" class="img-fluid"></a></p>
+    <p class="mt-3"><a href="{{ site.url }}" class="logo me-auto"><picture><source media="(max-width: 767px)" srcset="{{ '/assets/img/KKM-Logo-sm.png' | relative_url }}"><img src="{{ '/assets/img/KKM-Banner.png' | relative_url }}" alt="Kaffeinated Kodemonkey" class="img-fluid"></picture></a></p>
 
     <nav id="navbar" class="navbar">
         <div class="container-fluid">
@@ -17,8 +17,8 @@
                 <li><a class="nav-link scrollto" href="{{ site.baseurl }}/#contact">Contact Us</a></li>
             </ul>
 
-            <p><a class="btn btn-outline-orange text-white ms-5  mt-3 pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></p>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <p><a class="btn btn-outline-orange text-white ms-5  mt-3 pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation <span class="visually-hidden">(opens in a new tab)</span></a></p>
+            <button type="button" class="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navbar"><i class="bi bi-list" aria-hidden="true"></i></button>
         </div>
     </nav><!-- .navbar -->
 

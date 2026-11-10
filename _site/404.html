@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="theme-color" content="#37517e">
+  <meta name="theme-color" content="#263B5A">
 
   <link rel="manifest" href="/manifest.json">
 
@@ -82,13 +82,13 @@
 <body>
 
   <header id="header" class="fixed-top header-inner-pages">
-  <a href="/#about" class="skip">Skip to main content</a>
+  <a href="#main-content" class="skip">Skip to main content</a>
 
   <div class="container-fluid d-flex ms-3">
 
     <!-- <h1><a href="index.html">Kaffeinated Kodemonkey</a></h1> -->
     <!-- Uncomment below if you prefer to use an image logo -->
-    <p class="mt-3"><a href="http://localhost:4000" class="img-thumbnail inf-fluid logo me-auto"><img src="/assets/img/KKM-Banner.png" alt="Kaffeinated Kodemonkey" class="img-fluid"></a></p>
+    <p class="mt-3"><a href="http://localhost:4000" class="logo me-auto"><picture><source media="(max-width: 767px)" srcset="/assets/img/KKM-Logo-sm.png"><img src="/assets/img/KKM-Banner.png" alt="Kaffeinated Kodemonkey" class="img-fluid"></picture></a></p>
 
     <nav id="navbar" class="navbar">
         <div class="container-fluid">
@@ -100,8 +100,8 @@
                 <li><a class="nav-link scrollto" href="/#contact">Contact Us</a></li>
             </ul>
 
-            <p><a class="btn btn-outline-orange text-white ms-5  mt-3 pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation</a></p>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <p><a class="btn btn-outline-orange text-white ms-5  mt-3 pe-4" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" rel="nofollow">Book Free Consultation <span class="visually-hidden">(opens in a new tab)</span></a></p>
+            <button type="button" class="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navbar"><i class="bi bi-list" aria-hidden="true"></i></button>
         </div>
     </nav><!-- .navbar -->
 
@@ -109,7 +109,7 @@
 </header><!-- End Header -->
 
 
-  <main id="main">
+  <main id="main-content">
 
     <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
@@ -164,8 +164,8 @@
   <div class="col">
     <h3>Affiliates</h3>
     <ul class="no-bullets">
-      <li><a href="https://prz.io/149K6enU0" target="_blank" rel="nofollow"><img src="/assets/img/affiliates/Black-Rifle-Coffee.png" class="img-fluid" alt="Black Rifle Coffee"></a></li>
-      <li class="pt-2"><a href="https://mudwtr.com/?rfsn=5657995.6e61db9.91385" target="_blank"><img src="/assets/img/mud-water.png" class="img-fluid" alt="Mud Water"></a></li>
+      <li><a href="https://prz.io/149K6enU0" target="_blank" rel="nofollow"><img src="/assets/img/affiliates/Black-Rifle-Coffee.png" class="img-fluid" alt="Black Rifle Coffee"><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+      <li class="pt-2"><a href="https://mudwtr.com/?rfsn=5657995.6e61db9.91385" target="_blank"><img src="/assets/img/mud-water.png" class="img-fluid" alt="Mud Water"><span class="visually-hidden"> (opens in a new tab)</span></a></li>
       <!-- <li><a href="https://www.link-assistant.com/buy.html?id=SPS_PRO_YEAR&referral=d56d9562ec18e8f907776ee183a5e84a" target="_blank"><img src="" alt="SEO PowerSuite"></a></li> -->
     </ul>
   </div>
@@ -211,7 +211,7 @@
           <div class="address">
             <i class="bi bi-geo-alt"></i>
             <h4>Location:</h4>
-            <p>Rangely, Colorado, United States<br>Serving clients nationwide</p>
+            <p>NW, Colorado, US<br>Serving clients nationwide</p>
           </div>
 
           <div class="hours">
@@ -231,12 +231,12 @@
           <div class="email">
             <i class="bi bi-envelope"></i>
             <h4>Email:</h4>
-            <p><a href="mailto:kaffeinatedkodemonkey@gmail.com?subject=Website%20accessibility%20inquiry">kaffeinatedkodemonkey@gmail.com</a></p>
+            <p><strong>Support:</strong> <a href="mailto:kaffeinatedkodemonkey@gmail.com?subject=Website%20accessibility%20inquiry">A11y-Dev Team</a></p>
           </div>
 
           <div class="booking">
             <i class="bi-calendar-event"></i>
-            <p class="pt-2"><a class="btn btn-sm btn-primary" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank">Book Consultation</a></p>
+            <p class="pt-2"><a class="btn btn-sm btn-primary" href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank">Book Consultation<span class="visually-hidden"> (opens in a new tab)</span></a></p>
           </div>
 
           <img src="/assets/img/Google-Maps.png" alt="Google Map of Rangely Colorado" class="img-fluid mt-3 mb-3 border border-3 rounded">
@@ -258,7 +258,9 @@
         <form action="https://formspree.io/f/mrbylyaq" method="post">
   <div class="row g-3">
     <div class="col-md-6">
+      <label for="contact-fname">First name</label>
       <input
+        id="contact-fname"
         type="text"
         name="fname"
         class="form-control form-control-sm"
@@ -269,7 +271,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-lname">Last name</label>
       <input
+        id="contact-lname"
         type="text"
         name="lname"
         class="form-control form-control-sm"
@@ -280,7 +284,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-email">Email</label>
       <input
+        id="contact-email"
         type="email"
         name="email"
         class="form-control form-control-sm"
@@ -291,7 +297,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-phone">Phone Number</label>
       <input
+        id="contact-phone"
         type="tel"
         name="phone"
         class="form-control form-control-sm"
@@ -303,7 +311,8 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-12 mt-0 mb-4">
-      <select name="Services" class="form-select" aria-label="Services" required>
+      <label for="contact-services">Services</label>
+      <select id="contact-services" name="Services" class="form-select" aria-label="Services" required>
         <option value="" disabled selected>Select a Service</option>
         <option value="pv">POCC/VPAT</option>
         <option value="am">A11y Monitoring</option>
@@ -312,7 +321,9 @@
       </select>
     </div>
     <div class="col-md-12 mt-0">
+      <label for="contact-message">Message</label>
       <textarea aria-label="Message"
+        id="contact-message"
         name="message"
         class="form-control"
         placeholder="Leave us a Message"
@@ -321,7 +332,7 @@
       ></textarea>
     </div>
     <div class="col-md-12">
-      <p><a type="submit" class="btn btn-md btn-primary">Discuss My Project</a></p>
+      <p><button type="submit" class="btn btn-md btn-primary">Discuss My Project</button></p>
     </div>
   </div>
 </form>
@@ -356,7 +367,7 @@
         <h3 class="text-orange">Discuss Your WCAG Accessibility Needs</h3>
         <p class="fs-5 mt-4">Speak with a DHS Certified Trusted Tester about a WCAG accessibility audit, WEAR report, and POCC documentation. We can discuss evaluation scope, findings, and practical next steps for your organization.</p>
 
-        <p><a href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" class="btn btn-md btn-warning text-white" aria-label="Schedule a free accessibility consultation with a compliance specialist"><strong>Schedule Free Consultation</strong></a></p>
+        <p><a href="https://kaffeinatedkodemonkey.youcanbook.me" target="_blank" class="btn btn-md btn-warning text-white" aria-label="Schedule a free accessibility consultation with a compliance specialist (opens in a new tab)"><strong>Schedule Free Consultation</strong></a></p>
       </div>
 
       <!-- Center Column: Visual Anchor Branding -->
@@ -474,11 +485,11 @@
       <!-- bottom Row -->
       <div class="row ms-3 pb-3 text-dark">
         <!-- left column -->
-        <div class="col-12 col-md-3 footer-contact ms-3">
+        <div class="col-12 col-md-3 footer-contact ms-3 ms-5 ps-5">
           <h4>Memberships &amp; Badges</h4>
-          <img src="/assets/img/professional-member.png"
+          <!--<img src="/assets/img/professional-member.png"
             alt="International Association of Accessibility Professionals (IAAP) Professional Member Seal" width="10%"
-            class="img-fluid mt-2" />
+            class="img-fluid mt-2" />-->
           <img src="/assets/img/POCC-Seal.png"
             alt="Kaffeinated Kodemonkey Verified Proof of Compliance Certificate (POCC) Digital Site Seal" width="12%"
             class="img-fluid ms-4 mt-1" />
@@ -489,7 +500,7 @@
         <div class="col footer-contact text-center mt-0">
           <h4>Fueling Our Team's Focus</h4>
           <p>At Kaffeinated Kodemonkey, we stay sharp for your audits with balanced energy—powered by <br />
-            <a href="https://mudwtr.com/?rfsn=5657995.6e61db9.91385" target="_blank" rel="noopener">MUD\WTR</a>, our
+            <a href="https://mudwtr.com/?rfsn=5657995.6e61db9.91385" target="_blank" rel="noopener">MUD\WTR<span class="visually-hidden"> (opens in a new tab)</span></a>, our
             go-to coffee
             alternative for sustained focus without the crash.
           </p>
@@ -497,16 +508,16 @@
         <!-- right column -->
         <div class="col-12 col-md-3 footer-contact ms-5 mt-4">
           <h4>Our Social Networks</h4>
-          <div class="social-links">
+          <div class="social-links ms-5 ps-3">
             <a href="https://x.com/kfn8dKodeMonkey" title="Follow Kaffeinated Kodemonkey on Twitter" target="_blank"
               rel="noopener"><i class="bi bi-twitter" aria-hidden="true"></i><span
-                class="visually-hidden">Twitter</span></a>
+                class="visually-hidden">Follow Kaffeinated Kodemonkey on Twitter (opens in a new tab)</span></a>
             <a href="https://github.com/Kaffeianted-Kodemonkey" title="View Kaffeinated Kodemonkey Open Source Repositories on GitHub"
               target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i><span
-                class="visually-hidden">GitHub</span></a>
+                class="visually-hidden">View Kaffeinated Kodemonkey Open Source Repositories on GitHub (opens in a new tab)</span></a>
             <a href="https://www.linkedin.com/in/kaffeinatedkodemonkey/" title="Connect with Kaffeinated Kodemonkey on LinkedIn" target="_blank"
               rel="noopener"><i class="bi bi-linkedin" aria-hidden="true"></i><span
-                class="visually-hidden">LinkedIn</span></a>
+                class="visually-hidden">Connect with Kaffeinated Kodemonkey on LinkedIn (opens in a new tab)</span></a>
           </div>
 
         </div>
@@ -514,6 +525,7 @@
     </div>
   </div>
 </footer>
+<script src="/assets/js/main.js" defer></script>
 
 
 </body>

@@ -1,7 +1,9 @@
 <form action="https://formspree.io/f/mrbylyaq" method="post">
   <div class="row g-3">
     <div class="col-md-6">
+      <label for="support-fname">First name</label>
       <input
+        id="support-fname"
         type="text"
         name="fname"
         class="form-control form-control-sm"
@@ -12,7 +14,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="support-lname">Last name</label>
       <input
+        id="support-lname"
         type="text"
         name="lname"
         class="form-control form-control-sm"
@@ -23,7 +27,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="support-email">Email</label>
       <input
+        id="support-email"
         type="email"
         name="email"
         class="form-control form-control-sm"
@@ -34,19 +40,24 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="support-phone">Phone Number</label>
+      <p id="support-phone-format" class="fs-6 text-muted">Format: 123-456-7890</p>
       <input
+        id="support-phone"
         type="tel"
         name="phone"
         class="form-control form-control-sm"
         placeholder="Phone Number (e.g., 123-456-7890)"
         aria-label="Phone Number"
+        aria-describedby="support-phone-format"
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         required
       />
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-12 mt-0 mb-4">
-      <select name="Services" class="form-select" aria-label="Services" required>
+      <label for="support-services">Services</label>
+      <select id="support-services" name="Services" class="form-select" aria-label="Services" required>
         <option value="" disabled selected>Select a Service</option>
         <option value="pv">POCC/VPAT</option>
         <option value="am">A11y Monitoring</option>
@@ -55,7 +66,9 @@
       </select>
     </div>
     <div class="col-md-12 mt-0">
+      <label for="support-message">Message</label>
       <textarea
+        id="support-message"
         name="message"
         class="form-control"
         placeholder="Leave us a Message"

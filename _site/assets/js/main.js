@@ -110,9 +110,14 @@
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    const isOpen = select('#navbar').classList.toggle('navbar-mobile')
+    const icon = this.querySelector('i')
+    if (icon) {
+      icon.classList.toggle('bi-list', !isOpen)
+      icon.classList.toggle('bi-x', isOpen)
+    }
+    this.setAttribute('aria-expanded', isOpen)
+    this.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu')
   })
 
   /**
@@ -136,8 +141,10 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.remove('bi-x')
+        navbarToggle.classList.add('bi-list')
+        navbarToggle.setAttribute('aria-expanded', 'false')
+        navbarToggle.setAttribute('aria-label', 'Open navigation menu')
       }
       scrollto(this.hash)
     }

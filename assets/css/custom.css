@@ -1,12 +1,112 @@
 /* Site-specific styles. Main template styles live in style.css. */
 
 :root {
-  --kkm-navy: #37517e;
-  --kkm-navy-hover: #293c5d;
-  --kkm-amber: #a85a00;
-  --kkm-amber-hover: #854700;
-  --kkm-surface: #f3f5fa;
-  --kkm-text: #212529;
+  /* Kaffeinated Kodemonkey base palette (WCAG 2.2 AA pairings) */
+  --kkm-blue: #375A82;
+  --kkm-blue-hover: #294361;
+  --kkm-orange: #D98945;
+  --kkm-orange-text: #A9581F;
+  --kkm-orange-hover: #B66B30;
+  --kkm-cta-orange: #F0C36D;
+  --kkm-cta-orange-hover: #D9A94F;
+  --kkm-cta-ink: #172033;
+  --kkm-yellow: #F0C36D;
+  --kkm-yellow-soft: #F0C36D;
+  --kkm-surface: #FAFAF7;
+  --kkm-text: #252A31;
+  --kkm-navy: #263B5A;
+  --kkm-navy-hover: var(--kkm-blue-hover);
+  --kkm-amber: var(--kkm-orange-text);
+  --kkm-amber-hover: var(--kkm-orange-hover);
+
+  --bs-primary: var(--kkm-blue);
+  --bs-primary-rgb: 55, 90, 130;
+  --bs-secondary: #586271;
+  --bs-secondary-rgb: 88, 98, 113;
+  --bs-warning: var(--kkm-orange);
+  --bs-warning-rgb: 240, 195, 109;
+  --bs-success-rgb: 33, 110, 78;
+  --bs-danger-rgb: 180, 35, 47;
+  --bs-light: var(--kkm-surface);
+  --bs-light-rgb: 250, 250, 247;
+  --bs-dark: var(--kkm-navy);
+  --bs-dark-rgb: 38, 59, 90;
+  --bs-primary-text-emphasis: #294361;
+  --bs-primary-bg-subtle: #E8EEF4;
+  --bs-primary-border-subtle: #B8C7D8;
+  --bs-warning-text-emphasis: #70420F;
+  --bs-warning-border-subtle: #D9A94F;
+  --bs-warning-bg-subtle: var(--kkm-yellow);
+  --bs-body-color: var(--kkm-text);
+  --bs-body-bg: var(--kkm-surface);
+  --bs-secondary-color: #586271;
+  --bs-border-color: #D8DEE7;
+  --bs-success: #216E4E;
+  --bs-danger: #B4232F;
+  --bs-highlight-bg: var(--kkm-yellow-soft);
+  --bs-link-color: var(--kkm-blue);
+  --bs-link-color-rgb: 55, 90, 130;
+  --bs-link-hover-color: var(--kkm-blue-hover);
+  --bs-link-hover-color-rgb: 41, 67, 97;
+  --bs-focus-ring-color: rgba(55, 90, 130, 0.25);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--kkm-blue);
+  --bs-btn-border-color: var(--kkm-blue);
+  --bs-btn-hover-bg: var(--kkm-blue-hover);
+  --bs-btn-hover-border-color: var(--kkm-blue-hover);
+  --bs-btn-active-bg: var(--kkm-navy);
+  --bs-btn-active-border-color: var(--kkm-navy);
+}
+
+.btn-warning {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--kkm-orange);
+  --bs-btn-border-color: var(--kkm-orange);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kkm-orange-hover);
+  --bs-btn-hover-border-color: var(--kkm-orange-hover);
+}
+
+.text-orange { color: var(--kkm-orange-text) !important; }
+.bg-orange { background-color: var(--kkm-orange) !important; }
+
+/* CTA actions use high contrast across the dark photographic background. */
+.cta .btn-warning {
+  --bs-btn-color: var(--kkm-cta-ink);
+  --bs-btn-bg: var(--kkm-cta-orange);
+  --bs-btn-border-color: var(--kkm-cta-orange);
+  --bs-btn-hover-color: var(--kkm-cta-ink);
+  --bs-btn-hover-bg: var(--kkm-cta-orange-hover);
+  --bs-btn-hover-border-color: var(--kkm-cta-orange-hover);
+  --bs-btn-active-color: var(--kkm-cta-ink);
+  --bs-btn-active-bg: var(--kkm-cta-orange-hover);
+  --bs-btn-active-border-color: var(--kkm-cta-orange-hover);
+}
+
+.cta .btn-outline-warning {
+  --bs-btn-color: #fff3c4;
+  --bs-btn-border-color: #fff3c4;
+  --bs-btn-hover-color: var(--kkm-cta-ink);
+  --bs-btn-hover-bg: #fff3c4;
+  --bs-btn-hover-border-color: #fff3c4;
+  --bs-btn-active-color: var(--kkm-cta-ink);
+  --bs-btn-active-bg: #fff3c4;
+  --bs-btn-active-border-color: #fff3c4;
+}
+
+.cta .text-orange {
+  color: #ffb36b;
+}
+
+.cta h3.text-orange,
+.cta h3.text-warning {
+  color: #E3A05E !important;
+}
+
+.cta li > span.text-warning {
+  color: #F0C36D !important;
 }
 
 /* Keyboard skip link */
@@ -17,6 +117,36 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.skip:focus,
+.skip:focus-visible {
+  z-index: 10000;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 0.75rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 0.25rem;
+  background: var(--kkm-navy);
+  color: #fff;
+  clip: auto;
+  text-decoration: underline;
+}
+
+/* Keep a clear keyboard indicator across site controls, including controls
+   whose component styles remove the browser's default outline. */
+:focus-visible {
+  outline: 3px solid var(--kkm-orange);
+  outline-offset: 3px;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--kkm-blue);
 }
 
 /* Utility styles */
@@ -214,14 +344,47 @@ h1 .title {
 
 .manual-testing ul {
   color: var(--kkm-text);
-  line-height: 15px;
-  list-style: none;
+  line-height: normal;
+  list-style: disc;
   text-align: left;
 }
 
 .manual-testing ul li {
   position: relative;
   padding: 10px 0 10px 30px;
+  line-height: inherit;
+}
+
+/* Keep the contact details and form panels equal in height on wide screens. */
+@media (min-width: 992px) {
+  #contact > .container-fluid > .row {
+    align-items: stretch;
+  }
+
+  #contact > .container-fluid > .row > .col-lg-5,
+  #contact > .container-fluid > .row > .col-lg-7 {
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    box-sizing: border-box;
+  }
+
+  #contact .info {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact .info > img {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 180px;
+    object-fit: cover;
+  }
+
+  #contact .php-email-form {
+    height: 100%;
+  }
 }
 
 .manual-testing ul i {
@@ -307,6 +470,33 @@ h1 .title {
 }
 
 @media (max-width: 991.98px) {
+  #contact > .container-fluid > .row > [class*="col-"] + [class*="col-"] {
+    margin-top: 1.5rem;
+  }
+
+  #footer .footer-top > .footer-contact,
+  #footer .row > .footer-contact {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #footer .footer-top > .footer-contact + .footer-contact {
+    margin-top: 1.5rem !important;
+  }
+
+  #footer .footer-top .footer-contact h3,
+  #footer .footer-top .footer-contact p,
+  #footer .footer-top .footer-contact .social-links {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  #footer .row > .footer-contact h4 {
+    margin-top: 1rem;
+  }
+
   .chat-buttons {
     margin-top: 0;
     padding: 2%;

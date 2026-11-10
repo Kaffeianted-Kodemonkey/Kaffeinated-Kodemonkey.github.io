@@ -35,9 +35,9 @@
  --bs-info: #0dcaf0;
  --bs-warning: #ffc107;
  --bs-danger: #dc3545;
- --bs-light: #f3f5fa;
+ --bs-light: #FAFAF7;
  /*--bs-dark: #212529;*/
- --bs-dark: #283A5A;
+ --bs-dark: #263B5A;
  --bs-primary-rgb: 13, 110, 253;
  --bs-secondary-rgb: 108, 117, 125;
  --bs-success-rgb: 25, 135, 84;
@@ -138,12 +138,12 @@ body {
 }
 
 a {
-  color: #37517e;
+  color: #375A82;
   text-decoration: none;
 }
 
 a:hover {
-  color: #293c5d;
+  color: #294361;
   text-decoration: none;
 }
 
@@ -159,16 +159,44 @@ p {
 }
 
 .text-orange{
-  color: #a85a00 !important;
+  color: #A9581F !important;
 }
 
 .bg-orange{
-  background-color: #a85a00 !important;
+  background-color: #D98945 !important;
+}
+
+/* Full-width pricing notes keep longer service details easy to scan. */
+.pricing-note-card {
+  border: 0;
+  border-left: 4px solid #a85a00;
+  border-radius: 0.35rem;
+  box-shadow: 0 2px 10px rgba(34, 53, 82, 0.1);
+}
+
+.pricing-note-card .card-body {
+  padding: 1.25rem 1.5rem;
+}
+
+.pricing-note-card .card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-note-card .card-title i {
+  font-size: 1.15em;
+}
+
+.pricing-note-card hr {
+  margin: 0 0 1rem;
+  opacity: 0.15;
 }
 
 .table-orange {
     --bs-table-color: #fff;
-    --bs-table-bg: #37517e;
+    --bs-table-bg: #375A82;
     --bs-table-border-color: #4d5154;
     --bs-table-striped-bg: #2c3034;
     --bs-table-striped-color: #fff;
@@ -181,23 +209,23 @@ p {
 }
 
 .text-success {
-  color: #146c43 !important;
+  color: #216E4E !important;
 }
 
 .btn-outline-orange {
-  --bs-btn-color: #a85a00 !important;
-  --bs-btn-border-color: #a85a00 !important;
+  --bs-btn-color: #A9581F !important;
+  --bs-btn-border-color: #A9581F !important;
   --bs-btn-hover-color: #fff !important;
-  --bs-btn-hover-bg: #854700 !important;
-  --bs-btn-hover-border-color: #854700 !important;
-  --bs-btn-focus-shadow-rgb: 168,90,0 !important;
+  --bs-btn-hover-bg: #B66B30 !important;
+  --bs-btn-hover-border-color: #B66B30 !important;
+  --bs-btn-focus-shadow-rgb: 169,88,31 !important;
   --bs-btn-active-color: #fff !important;
-  --bs-btn-active-bg: #854700 !important;
-  --bs-btn-active-border-color: #854700 !important;
+  --bs-btn-active-bg: #B66B30 !important;
+  --bs-btn-active-border-color: #B66B30 !important;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
-  --bs-btn-disabled-color: #a85a00 !important;
+  --bs-btn-disabled-color: #A9581F !important;
   --bs-btn-disabled-bg: transparent !important;
-  --bs-btn-disabled-border-color: #a85a00 !important;
+  --bs-btn-disabled-border-color: #A9581F !important;
   --bs-gradient: none !important;
 }
 
@@ -213,7 +241,7 @@ p {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: #375A82;
 }
 
 #preloader:before {
@@ -221,7 +249,7 @@ p {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #375A82;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -259,14 +287,14 @@ p {
 }
 
 .btn-warning {
-    background-color: #37517e; /* Your desired background color */
-    border-color: #37517e;    /* Your desired border color */
+    background-color: #375A82; /* Your desired background color */
+    border-color: #375A82;    /* Your desired border color */
     color: white;             /* Text color for contrast */
 }
 
 .btn-warning:hover {
-    background-color: #293c5d; /* Darker shade for hover effect */
-    border-color: #293c5d;
+    background-color: #294361; /* Darker shade for hover effect */
+    border-color: #294361;
     color: white;
 }
 
@@ -332,7 +360,20 @@ p {
 }
 
 #header .logo img {
-  max-height: 40px;
+  display: block;
+  width: auto;
+  max-height: 52px;
+}
+
+#header .logo picture {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #header .logo img {
+    max-height: 64px;
+    max-width: 64px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -472,13 +513,31 @@ p {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
+  border: 0;
+  background: transparent;
   color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+  position: relative;
+  z-index: 1000;
   line-height: 0;
   transition: 0.5s;
 }
+
+.mobile-nav-toggle:focus-visible {
+  outline: 3px solid #ffbd69;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.mobile-nav-toggle i { display: block; }
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -492,6 +551,8 @@ p {
   .navbar ul {
     display: none;
   }
+
+  .navbar > .container-fluid { justify-content: flex-end; }
 }
 
 .navbar-mobile {
@@ -530,7 +591,7 @@ p {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 18px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .navbar-mobile a:hover,
@@ -542,7 +603,7 @@ p {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .navbar-mobile .dropdown ul {
@@ -736,7 +797,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: #FAFAF7;
 }
 
 .section-title {
@@ -751,7 +812,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #375A82;
 }
 
 .section-title h2::before {
@@ -876,7 +937,7 @@ section {
 .pocc .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .pocc .content h4 {
@@ -1001,7 +1062,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: #375A82;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1038,7 +1099,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: #375A82;
 }
 
 .skills .progress .skill .val {
@@ -1085,7 +1146,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #37517e;
+  color: #375A82;
   transition: ease-in-out 0.3s;
 }
 
@@ -1347,7 +1408,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .team .member span {
@@ -1393,7 +1454,7 @@ section {
 }
 
 .team .member .social a i {
-  color: #37517e;
+  color: #375A82;
   font-size: 16px;
   margin: 0 2px;
 }
@@ -1430,12 +1491,12 @@ section {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: #37517e;
+  color: #375A82;
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
@@ -1597,7 +1658,7 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: #375A82;
   transition: 0.3s;
 }
 
@@ -1650,7 +1711,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #375A82;
 }
 
 .contact .info p {
@@ -1788,7 +1849,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #37517E;
+  background: #375A82;
   border: 0;
   padding: 12px 34px;
   color: #ffffff /*#fff*/;
@@ -1825,7 +1886,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f3f5fa;
+  background: #FAFAF7;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1839,7 +1900,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #37517e;
+  color: #375A82;
 }
 
 .breadcrumbs ol {
@@ -1867,14 +1928,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 1.2rem;
-  /*background: #37517e;*/
+  /*background: #375A82;*/
   background: /*#fff*/ var(--bs-light);
 }
 
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f3f5fa;
+  background: #FAFAF7;
   text-align: center;
   font-size: 15px;
   color: #444444;
@@ -1886,7 +1947,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #375A82;
 }
 
 #footer .footer-newsletter form {
@@ -1926,7 +1987,7 @@ section {
 }
 
 #footer .footer-top {
-    color:  #f3f5fa;
+    color:  #FAFAF7;
   padding: 30px 0 10px 0;
   background: /*#fff*/ var(--bs-dark);
 }
@@ -1942,8 +2003,8 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  /*color: #37517e;*/
-  color: #f3f5fa;
+  /*color: #375A82;*/
+  color: #FAFAF7;
 }
 
 #footer .footer-top .footer-contact p {

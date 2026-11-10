@@ -1,7 +1,9 @@
 <form action="https://formspree.io/f/mrbylyaq" method="post">
   <div class="row g-3">
     <div class="col-md-6">
+      <label for="contact-fname">First name</label>
       <input
+        id="contact-fname"
         type="text"
         name="fname"
         class="form-control form-control-sm"
@@ -12,7 +14,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-lname">Last name</label>
       <input
+        id="contact-lname"
         type="text"
         name="lname"
         class="form-control form-control-sm"
@@ -23,7 +27,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-email">Email</label>
       <input
+        id="contact-email"
         type="email"
         name="email"
         class="form-control form-control-sm"
@@ -34,7 +40,9 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
+      <label for="contact-phone">Phone Number</label>
       <input
+        id="contact-phone"
         type="tel"
         name="phone"
         class="form-control form-control-sm"
@@ -46,7 +54,8 @@
       <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-12 mt-0 mb-4">
-      <select name="Services" class="form-select" aria-label="Services" required>
+      <label for="contact-services">Services</label>
+      <select id="contact-services" name="Services" class="form-select" aria-label="Services" required>
         <option value="" disabled selected>Select a Service</option>
         <option value="pv">POCC/VPAT</option>
         <option value="am">A11y Monitoring</option>
@@ -55,7 +64,9 @@
       </select>
     </div>
     <div class="col-md-12 mt-0">
+      <label for="contact-message">Message</label>
       <textarea aria-label="Message"
+        id="contact-message"
         name="message"
         class="form-control"
         placeholder="Leave us a Message"
@@ -64,7 +75,7 @@
       ></textarea>
     </div>
     <div class="col-md-12">
-      <p><a type="submit" class="btn btn-md btn-primary">Discuss My Project</a></p>
+      <p><button type="submit" class="btn btn-md btn-primary">Discuss My Project</button></p>
     </div>
   </div>
 </form>
