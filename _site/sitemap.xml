@@ -5,7 +5,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/</loc>
     
     
   </url>
@@ -17,7 +17,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/a11y_statement/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/a11y_statement/</loc>
     
     
   </url>
@@ -27,7 +27,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/ada_compliance/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/ada_compliance/</loc>
     
     
   </url>
@@ -37,7 +37,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/disclaimer/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/disclaimer/</loc>
     
     
   </url>
@@ -47,7 +47,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/privacy_policy/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/privacy_policy/</loc>
     
     
   </url>
@@ -57,7 +57,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/tos/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/tos/</loc>
     
     
   </url>
@@ -67,7 +67,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/a11y_policy/wcag_report/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/a11y_policy/wcag_report/</loc>
     
     
   </url>
@@ -77,7 +77,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/about/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/about/</loc>
     
     
   </url>
@@ -91,7 +91,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/</loc>
     
     
   </url>
@@ -101,7 +101,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/articles_news/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/articles_news/</loc>
     
     
   </url>
@@ -111,7 +111,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/</loc>
     
     
   </url>
@@ -121,7 +121,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/assistive_tech/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/assistive_tech/</loc>
     
     
   </url>
@@ -131,7 +131,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/compliance/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/compliance/</loc>
     
     
   </url>
@@ -141,7 +141,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/design/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/design/</loc>
     
     
   </url>
@@ -151,7 +151,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/development/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/development/</loc>
     
     
   </url>
@@ -161,7 +161,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/testing/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/testing/</loc>
     
     
   </url>
@@ -171,7 +171,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag/</loc>
     
     
   </url>
@@ -181,7 +181,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/monkeyhub/resources/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/resources/</loc>
     
     
   </url>
@@ -193,7 +193,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/services/accessibility_web_design/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/services/accessibility_web_design/</loc>
     
     
   </url>
@@ -203,7 +203,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/services/web_accessibility_audits/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/services/web_accessibility_audits/</loc>
     
     
   </url>
@@ -213,7 +213,7 @@
     
       
   <url>
-    <loc>http://localhost:4000/services/web_accessibility_monitoring/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/services/web_accessibility_monitoring/</loc>
     
     
   </url>
@@ -226,7 +226,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/learning_center/accessibility-monitoring-for-large-websites/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/learning_center/accessibility-monitoring-for-large-websites/</loc>
     
     <lastmod>2026-10-22T00:00:00-06:00</lastmod>
   </url>
@@ -234,7 +234,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/learning_center/wcag-accessibility-audit-vs-automated-scan/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/learning_center/wcag-accessibility-audit-vs-automated-scan/</loc>
     
     <lastmod>2026-10-22T00:00:00-06:00</lastmod>
   </url>
@@ -242,7 +242,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/learning_center/what-does-a-wcag-accessibility-audit-include/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/learning_center/what-does-a-wcag-accessibility-audit-include/</loc>
     
     <lastmod>2026-10-22T00:00:00-06:00</lastmod>
   </url>
@@ -250,7 +250,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/learning_center/when-to-repeat-a-website-accessibility-audit/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/learning_center/when-to-repeat-a-website-accessibility-audit/</loc>
     
     <lastmod>2026-10-22T00:00:00-06:00</lastmod>
   </url>
@@ -258,7 +258,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/article/deadline_extension_realitycheck/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/deadline_extension_realitycheck/</loc>
     
     <lastmod>2026-09-24T09:04:14-06:00</lastmod>
   </url>
@@ -266,7 +266,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/article/litigation_uncertainty_layer/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/litigation_uncertainty_layer/</loc>
     
     <lastmod>2026-09-25T09:04:14-06:00</lastmod>
   </url>
@@ -274,7 +274,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/article/lms_course_content/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/article/lms_course_content/</loc>
     
     <lastmod>2026-09-26T09:04:14-06:00</lastmod>
   </url>
@@ -282,7 +282,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/01_introduction_WCAG_508/</loc>
     
     <lastmod>2025-10-06T06:00:00-06:00</lastmod>
   </url>
@@ -290,7 +290,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/02_evolution_a11y/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/02_evolution_a11y/</loc>
     
     <lastmod>2025-10-07T02:00:00-06:00</lastmod>
   </url>
@@ -298,7 +298,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/03_wcag_508/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/03_wcag_508/</loc>
     
     <lastmod>2025-10-08T06:00:00-06:00</lastmod>
   </url>
@@ -306,7 +306,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/04_pour_principles/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/04_pour_principles/</loc>
     
     <lastmod>2025-10-08T23:00:00-06:00</lastmod>
   </url>
@@ -314,7 +314,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/05_success_criteria/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/05_success_criteria/</loc>
     
     <lastmod>2025-10-09T23:00:00-06:00</lastmod>
   </url>
@@ -322,7 +322,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/06_enforcement/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/06_enforcement/</loc>
     
     <lastmod>2025-10-10T23:00:00-06:00</lastmod>
   </url>
@@ -330,7 +330,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/07_30_day_action_plan/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/07_30_day_action_plan/</loc>
     
     <lastmod>2025-10-11T23:00:00-06:00</lastmod>
   </url>
@@ -338,7 +338,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/monkeyhub/learning_center/wcag_series/08_toolkit/</loc>
+    <loc>https://www.kaffeinatedkodemonkey.com/monkeyhub/learning_center/wcag_series/08_toolkit/</loc>
     
     <lastmod>2025-10-12T23:00:00-06:00</lastmod>
   </url>
