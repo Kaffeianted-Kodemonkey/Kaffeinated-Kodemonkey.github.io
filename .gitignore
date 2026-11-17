@@ -6,3 +6,6 @@ _site
 vendor
 _site/feed.xml
 _includes/test.html
+# Private Search Console exports; keep local for analysis, never commit.
+/assets/documents/https___www.kaffeinatedkodemonkey.com_-Coverage-2026-11-17.xlsx
+/assets/documents/https___www.kaffeinatedkodemonkey.com_-Performance-on-Search-2026-11-17.xlsx

@@ -120,6 +120,24 @@
     this.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu')
   })
 
+  document.addEventListener('keydown', function(e) {
+    if (e.key !== 'Escape') return
+
+    const navbar = select('#navbar')
+    if (!navbar || !navbar.classList.contains('navbar-mobile')) return
+
+    const toggle = select('.mobile-nav-toggle')
+    const icon = toggle && toggle.querySelector('i')
+    navbar.classList.remove('navbar-mobile')
+    if (icon) {
+      icon.classList.remove('bi-x')
+      icon.classList.add('bi-list')
+    }
+    toggle.setAttribute('aria-expanded', 'false')
+    toggle.setAttribute('aria-label', 'Open navigation menu')
+    toggle.focus()
+  })
+
   /**
    * Mobile nav dropdowns activate
    */
@@ -141,8 +159,11 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.remove('bi-x')
-        navbarToggle.classList.add('bi-list')
+        const icon = navbarToggle.querySelector('i')
+        if (icon) {
+          icon.classList.remove('bi-x')
+          icon.classList.add('bi-list')
+        }
         navbarToggle.setAttribute('aria-expanded', 'false')
         navbarToggle.setAttribute('aria-label', 'Open navigation menu')
       }

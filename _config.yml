@@ -51,7 +51,7 @@ category-list: [Services, Policies, ADA-Compliance]
 permalink: /:categories/:title/
 
 gems: ['kramdown']
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile', 'AGENTS.md', 'README.md', 'docs', 'assets/documents/AGENTS.md', 'assets/documents/github-backlog.md', 'assets/documents/search-and-accessibility-baseline.md', 'assets/documents/https___www.kaffeinatedkodemonkey.com_-Coverage-2026-11-17.xlsx', 'assets/documents/https___www.kaffeinatedkodemonkey.com_-Performance-on-Search-2026-11-17.xlsx']
 
 
 # Exclude from processing.

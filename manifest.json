@@ -75,7 +75,7 @@
       "icons": [{ "src": "/assets/icons/shortcut-hub.png", "sizes": "96x96" }]
     },
     {
-      "name": "Book Free Consultation",
+      "name": "Book a Free 30-Minute Consultation",
       "short_name": "Consultation",
       "description": "Schedule a meeting with a DHS Certified Trusted Tester.",
       "url": "/contact/",

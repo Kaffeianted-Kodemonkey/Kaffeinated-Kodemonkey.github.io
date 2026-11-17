@@ -1,30 +1,35 @@
 <form action="https://formspree.io/f/mrbylyaq" method="post">
+  <p id="contact-form-requirements" class="fs-6 text-muted">Fields marked <span class="text-danger">*</span> are required. If submission is blocked, complete the required fields identified below.</p>
   <div class="row g-3">
     <div class="col-md-6">
-      <label for="contact-fname">First name</label>
+      <label for="contact-fname">First name (required)</label>
       <input
         id="contact-fname"
         type="text"
         name="fname"
+        autocomplete="given-name"
         class="form-control form-control-sm"
         placeholder="First name"
         aria-label="First name"
+        aria-describedby="contact-fname-required"
         required
       />
-      <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
+      <p id="contact-fname-required" class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
-      <label for="contact-lname">Last name</label>
+      <label for="contact-lname">Last name (required)</label>
       <input
         id="contact-lname"
         type="text"
         name="lname"
+        autocomplete="family-name"
         class="form-control form-control-sm"
         placeholder="Last name"
         aria-label="Last name"
+        aria-describedby="contact-lname-required"
         required
       />
-      <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
+      <p id="contact-lname-required" class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
       <label for="contact-email">Email</label>
@@ -32,36 +37,38 @@
         id="contact-email"
         type="email"
         name="email"
+        autocomplete="email"
         class="form-control form-control-sm"
         placeholder="Email"
         aria-label="Email"
+        aria-describedby="contact-email-required"
         required
       />
-      <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
+      <p id="contact-email-required" class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-6">
-      <label for="contact-phone">Phone Number</label>
+      <label for="contact-phone">Phone (optional)</label>
       <input
         id="contact-phone"
         type="tel"
         name="phone"
+        autocomplete="tel"
         class="form-control form-control-sm"
-        placeholder="Phone Number (e.g., 123-456-7890)"
-        aria-label="Phone Number"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        required
+        placeholder="Phone (optional)"
+        aria-label="Phone (optional)"
       />
-      <p class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
+      <p class="fs-6 text-muted">Optional</p>
     </div>
     <div class="col-md-12 mt-0 mb-4">
       <label for="contact-services">Services</label>
-      <select id="contact-services" name="Services" class="form-select" aria-label="Services" required>
+      <select id="contact-services" name="Services" class="form-select" aria-label="Services" aria-describedby="contact-services-required" required>
         <option value="" disabled selected>Select a Service</option>
         <option value="pv">POCC/VPAT</option>
         <option value="am">A11y Monitoring</option>
         <option value="wd">POUR Web Design</option>
         <option value="other">Other</option>
       </select>
+      <p id="contact-services-required" class="fs-6 text-muted"><span class="text-danger">*</span> Required</p>
     </div>
     <div class="col-md-12 mt-0">
       <label for="contact-message">Message</label>
